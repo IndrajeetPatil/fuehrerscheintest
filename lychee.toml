@@ -1,0 +1,26 @@
+# lychee link checker configuration. Run: make link-check
+
+exclude_path = [
+  "node_modules",
+  "dist",
+  ".git",
+  "coverage",
+  "scripts/.venv",
+  "src/data",
+  # Vite resolves its root-relative asset links at build time.
+  "index.html",
+  "404.html",
+]
+
+exclude = [
+  # Local dev and preview servers.
+  "^http://localhost",
+  "^http://127\\.0\\.0\\.1",
+  # The repository and the published app exist only once they are published.
+  "^https://github\\.com/IndrajeetPatil/fuehrerscheintest",
+  "^https://www\\.indrapatil\\.com/fuehrerscheintest",
+]
+
+# GitHub returns 429 without a token; lychee reads GITHUB_TOKEN when set.
+max_retries = 3
+accept = ["200..=299", "429"]

@@ -1,0 +1,694 @@
+# Zusatzstoff Klasse B: questions specific to cars. Ten of the thirty
+# questions in a class B exam come from here. Same format and rules as
+# grundstoff.toml.
+
+[[questions]]
+id = "B001"
+topic = "verhalten"
+points = 3
+law = "§ 3 StVO"
+keep_order = true
+correct = [1]
+
+[questions.de]
+q = "Wie schnell dürfen Sie mit einem Pkw innerhalb geschlossener Ortschaften höchstens fahren, wenn nichts anderes angeordnet ist?"
+o = ["30 km/h", "50 km/h", "60 km/h"]
+why = "Innerhalb geschlossener Ortschaften beträgt die zulässige Höchstgeschwindigkeit für alle Kraftfahrzeuge 50 km/h, sofern Verkehrszeichen nichts anderes anordnen."
+
+[questions.en]
+q = "What is the speed limit for a car in built-up areas, unless signs say otherwise?"
+o = ["30 km/h", "50 km/h", "60 km/h"]
+why = "In built-up areas the speed limit for all motor vehicles is 50 km/h, unless signs say otherwise."
+
+[[questions]]
+id = "B002"
+topic = "verhalten"
+points = 3
+law = "§ 3 StVO"
+keep_order = true
+correct = [1]
+
+[questions.de]
+q = "Wie schnell dürfen Sie mit einem Pkw außerhalb geschlossener Ortschaften auf einer Landstraße mit einem Fahrstreifen je Richtung höchstens fahren?"
+o = ["80 km/h", "100 km/h", "120 km/h"]
+why = "Außerorts gilt für Pkw 100 km/h. Die Grenze entfällt auf Autobahnen, auf Straßen mit baulich getrennten Richtungsfahrbahnen und auf Straßen mit mindestens zwei markierten Fahrstreifen je Richtung."
+
+[questions.en]
+q = "What is the speed limit for a car on a country road with one lane in each direction?"
+o = ["80 km/h", "100 km/h", "120 km/h"]
+why = "Outside built-up areas the limit for cars is 100 km/h. It does not apply on motorways, dual carriageways or roads with at least two marked lanes in each direction."
+
+[[questions]]
+id = "B003"
+topic = "verhalten"
+points = 4
+law = "§ 18 StVO"
+keep_order = true
+correct = [1]
+
+[questions.de]
+q = "Wie schnell dürfen Sie mit einem Pkw mit Anhänger auf der Autobahn höchstens fahren, wenn keine Ausnahmegenehmigung vorliegt?"
+o = ["60 km/h", "80 km/h", "100 km/h"]
+why = "Für Pkw mit Anhänger gelten außerorts und auf Autobahnen 80 km/h. Nur mit einer eingetragenen Tempo-100-Zulassung sind auf Autobahnen 100 km/h erlaubt."
+
+[questions.en]
+q = "What is the speed limit for a car towing a trailer on the motorway, without a special permit?"
+o = ["60 km/h", "80 km/h", "100 km/h"]
+why = "Cars towing a trailer are limited to 80 km/h outside built-up areas and on motorways. Only with a registered 100 km/h approval may they go 100 km/h on motorways."
+
+[[questions]]
+id = "B004"
+topic = "verhalten"
+points = 3
+law = "§ 3 StVO"
+keep_order = true
+correct = [1]
+
+[questions.de]
+q = "Wie schnell dürfen Sie mit Schneeketten höchstens fahren?"
+o = ["30 km/h", "50 km/h", "80 km/h"]
+why = "Mit Schneeketten beträgt die Höchstgeschwindigkeit auch unter günstigsten Umständen 50 km/h."
+
+[questions.en]
+q = "What is the highest speed you may drive at with snow chains fitted?"
+o = ["30 km/h", "50 km/h", "80 km/h"]
+why = "With snow chains the speed limit is 50 km/h, even in the best conditions."
+
+[[questions]]
+id = "B005"
+topic = "verhalten"
+points = 3
+keep_order = true
+correct = [1]
+
+[questions.de]
+q = "Welche Richtgeschwindigkeit gilt auf Autobahnen für Pkw?"
+o = ["120 km/h", "130 km/h", "150 km/h"]
+why = "Auf Autobahnen ohne Tempolimit gilt für Pkw eine Richtgeschwindigkeit von 130 km/h. Wer schneller fährt, kann bei einem Unfall eine Mithaftung tragen."
+
+[questions.en]
+q = "What is the recommended speed for cars on motorways?"
+o = ["120 km/h", "130 km/h", "150 km/h"]
+why = "On motorways without a speed limit, the recommended speed for cars is 130 km/h. Drivers who go faster can share liability in an accident."
+
+[[questions]]
+id = "B006"
+topic = "technik"
+points = 3
+law = "§ 36 StVZO"
+keep_order = true
+correct = [1]
+
+[questions.de]
+q = "Welche Profiltiefe müssen die Reifen eines Pkw mindestens haben?"
+o = ["1,0 mm", "1,6 mm", "3,0 mm"]
+why = "Das Hauptprofil muss am ganzen Umfang mindestens 1,6 mm tief sein. Für Sommerreifen werden 3 mm, für Winterreifen 4 mm empfohlen, weil der Bremsweg bei Nässe und Schnee darunter deutlich länger wird."
+
+[questions.en]
+q = "What is the minimum tread depth for a car's tyres?"
+o = ["1.0 mm", "1.6 mm", "3.0 mm"]
+why = "The main tread must be at least 1.6 mm deep all round. 3 mm is recommended for summer tyres and 4 mm for winter tyres, because braking distances on wet and snowy roads grow markedly below that."
+
+[[questions]]
+id = "B007"
+topic = "technik"
+points = 4
+law = "§ 2 StVO"
+correct = [0]
+
+[questions.de]
+q = "Mit welchen Reifen dürfen Sie bei Glatteis, Schneeglätte oder Schneematsch fahren?"
+o = [
+  "Mit Reifen, die das Alpine-Symbol (Bergpiktogramm mit Schneeflocke) tragen",
+  "Mit Sommerreifen, wenn das Profil mindestens 4 mm tief ist",
+  "Mit beliebigen Reifen, wenn ich langsam fahre",
+]
+why = "Bei winterlichen Straßenverhältnissen dürfen Kraftfahrzeuge nur mit Reifen für winterliche Wetterverhältnisse fahren. Diese tragen das Alpine-Symbol."
+
+[questions.en]
+q = "Which tyres may you use on black ice, packed snow or slush?"
+o = [
+  "Tyres marked with the alpine symbol (a mountain with a snowflake)",
+  "Summer tyres, if the tread is at least 4 mm deep",
+  "Any tyres, if I drive slowly",
+]
+why = "In wintry conditions, motor vehicles may only use tyres for wintry weather, which carry the alpine symbol."
+
+[[questions]]
+id = "B008"
+topic = "betrieb"
+points = 3
+law = "§ 22 StVO"
+correct = [0]
+
+[questions.de]
+q = "Wie muss Ladung im Pkw gesichert sein?"
+o = [
+  "So, dass sie selbst bei einer Vollbremsung oder einem plötzlichen Ausweichen nicht verrutscht, umfällt oder herabfällt",
+  "Nur für Fahrten auf der Autobahn",
+  "Nur, wenn sie schwerer als 50 kg ist",
+]
+why = "Ladung muss so verstaut und gesichert sein, dass sie selbst bei Vollbremsung oder plötzlicher Ausweichbewegung nicht verrutschen, umfallen, herabfallen oder vermeidbaren Lärm erzeugen kann."
+
+[questions.en]
+q = "How must a load in a car be secured?"
+o = [
+  "So that it cannot slide, topple or fall even under emergency braking or a sudden swerve",
+  "Only for journeys on the motorway",
+  "Only if it weighs more than 50 kg",
+]
+why = "A load must be stowed and secured so that it cannot slide, topple, roll about, fall off or make avoidable noise, even under emergency braking or a sudden swerve."
+
+[[questions]]
+id = "B009"
+topic = "betrieb"
+points = 3
+law = "§ 22 StVO"
+keep_order = true
+correct = [1]
+
+[questions.de]
+q = "Ab welchem Überstand nach hinten müssen Sie Ladung besonders kenntlich machen, etwa mit einer hellroten Fahne?"
+o = [
+  "Ab mehr als 0,5 m über die Rückstrahler",
+  "Ab mehr als 1 m über die Rückstrahler",
+  "Ab mehr als 1,5 m über die Rückstrahler",
+]
+why = "Ragt Ladung mehr als 1 m über die Rückstrahler hinaus, muss ihr Ende kenntlich gemacht werden, etwa mit einer hellroten Fahne von mindestens 30 × 30 cm."
+
+[questions.en]
+q = "From what overhang at the back must a load be specially marked, for example with a bright red flag?"
+o = [
+  "More than 0.5 m beyond the rear reflectors",
+  "More than 1 m beyond the rear reflectors",
+  "More than 1.5 m beyond the rear reflectors",
+]
+why = "If a load sticks out more than 1 m beyond the rear reflectors, its end must be marked, for example with a bright red flag of at least 30 × 30 cm."
+
+[[questions]]
+id = "B010"
+topic = "technik"
+points = 2
+correct = [0, 1]
+
+[questions.de]
+q = "Wann prüfen Sie den Reifendruck?"
+o = [
+  "Bei kalten Reifen",
+  "Regelmäßig, etwa alle zwei Wochen und vor langen Fahrten oder mit schwerer Beladung",
+  "Nur bei der Hauptuntersuchung",
+]
+why = "Warme Reifen zeigen einen zu hohen Druck an, also misst man kalt. Reifen verlieren langsam Luft; zu wenig Druck verlängert den Bremsweg, verschlechtert die Kurvenstabilität und erhöht den Verbrauch."
+
+[questions.en]
+q = "When do you check the tyre pressure?"
+o = [
+  "When the tyres are cold",
+  "Regularly, about every two weeks, and before long journeys or carrying heavy loads",
+  "Only at the periodic vehicle inspection",
+]
+why = "Warm tyres read too high, so measure them cold. Tyres slowly lose air; too little pressure lengthens braking distances, weakens grip in bends and raises consumption."
+
+[[questions]]
+id = "B011"
+topic = "technik"
+points = 3
+correct = [0]
+
+[questions.de]
+q = "Warum muss die Bremsflüssigkeit regelmäßig erneuert werden?"
+o = [
+  "Sie nimmt Wasser auf, wodurch ihr Siedepunkt sinkt",
+  "Sie verdunstet mit der Zeit",
+  "Sie wird mit der Zeit dickflüssig",
+]
+why = "Bremsflüssigkeit zieht Feuchtigkeit an. Mit dem Wasseranteil sinkt der Siedepunkt, und bei starker Beanspruchung können sich Dampfblasen bilden, so dass die Bremse versagt."
+
+[questions.en]
+q = "Why must brake fluid be replaced regularly?"
+o = [
+  "It absorbs water, which lowers its boiling point",
+  "It evaporates over time",
+  "It thickens over time",
+]
+why = "Brake fluid attracts moisture. As its water content rises its boiling point falls, and under heavy use vapour bubbles can form so that the brakes fail."
+
+[[questions]]
+id = "B012"
+topic = "technik"
+points = 3
+correct = [0, 1]
+
+[questions.de]
+q = "Was bewirkt das Antiblockiersystem (ABS) bei einer Vollbremsung?"
+o = [
+  "Das Fahrzeug bleibt lenkbar",
+  "Die Räder blockieren nicht",
+  "Der Bremsweg wird unter allen Umständen kürzer",
+]
+why = "ABS verhindert, dass die Räder blockieren, so dass das Fahrzeug auch bei einer Vollbremsung lenkbar bleibt. Auf losem Untergrund wie Schotter oder Neuschnee kann der Bremsweg sogar länger werden."
+
+[questions.en]
+q = "What does the anti-lock braking system (ABS) do under emergency braking?"
+o = [
+  "The vehicle can still be steered",
+  "The wheels do not lock",
+  "The braking distance is shorter in all conditions",
+]
+why = "ABS stops the wheels from locking, so the vehicle can still be steered under full braking. On loose surfaces such as gravel or fresh snow, the braking distance can even get longer."
+
+[[questions]]
+id = "B013"
+topic = "betrieb"
+points = 3
+law = "§ 53a StVZO"
+correct = [0, 1, 2]
+
+[questions.de]
+q = "Was müssen Sie in einem Pkw mitführen?"
+o = [
+  "Ein Warndreieck",
+  "Einen Verbandkasten",
+  "Eine Warnweste",
+  "Einen Feuerlöscher",
+]
+why = "In jedem Pkw müssen ein Warndreieck, eine Warnweste und ein Verbandkasten mitgeführt werden. Ein Feuerlöscher ist nur in bestimmten Fahrzeugen wie Bussen vorgeschrieben."
+
+[questions.en]
+q = "What must you carry in a car?"
+o = [
+  "A warning triangle",
+  "A first-aid kit",
+  "A high-visibility vest",
+  "A fire extinguisher",
+]
+why = "Every car must carry a warning triangle, a high-visibility vest and a first-aid kit. A fire extinguisher is required only in certain vehicles such as buses."
+
+[[questions]]
+id = "B014"
+topic = "betrieb"
+points = 2
+law = "§ 29 StVZO"
+correct = [0]
+
+[questions.de]
+q = "Wie oft muss ein Pkw zur Hauptuntersuchung?"
+o = [
+  "Alle 2 Jahre, ein neues Fahrzeug erstmals nach 3 Jahren",
+  "Jedes Jahr",
+  "Alle 4 Jahre",
+]
+why = "Pkw müssen alle 24 Monate zur Hauptuntersuchung, neu zugelassene Fahrzeuge erstmals nach 36 Monaten."
+
+[questions.en]
+q = "How often must a car undergo the periodic vehicle inspection?"
+o = [
+  "Every 2 years, a new car for the first time after 3 years",
+  "Every year",
+  "Every 4 years",
+]
+why = "Cars must be inspected every 24 months, and newly registered cars for the first time after 36 months."
+
+[[questions]]
+id = "B015"
+topic = "eignung"
+points = 4
+law = "§ 6 FeV"
+correct = [0, 1]
+
+[questions.de]
+q = "Welche Anhänger dürfen Sie mit der Fahrerlaubnis der Klasse B ziehen?"
+o = [
+  "Anhänger mit einer zulässigen Gesamtmasse von höchstens 750 kg",
+  "Schwerere Anhänger, wenn die zulässige Gesamtmasse der Kombination 3500 kg nicht übersteigt",
+  "Jeden Anhänger, den das Zugfahrzeug laut Zulassung ziehen darf",
+]
+why = "Klasse B erlaubt Anhänger bis 750 kg zulässiger Gesamtmasse, schwerere nur, wenn die Kombination insgesamt höchstens 3500 kg zulässige Gesamtmasse hat. Für mehr braucht man B96 oder BE."
+
+[questions.en]
+q = "Which trailers may you tow with a class B licence?"
+o = [
+  "Trailers with a maximum permitted mass of up to 750 kg",
+  "Heavier trailers, if the combination's maximum permitted mass does not exceed 3500 kg",
+  "Any trailer the towing vehicle is registered to tow",
+]
+why = "Class B allows trailers up to 750 kg maximum permitted mass, and heavier ones only if the whole combination stays within 3500 kg. Anything more needs B96 or BE."
+
+[[questions]]
+id = "B016"
+topic = "eignung"
+points = 3
+law = "§ 6 FeV"
+keep_order = true
+correct = [1]
+
+[questions.de]
+q = "Bis zu welcher zulässigen Gesamtmasse dürfen Sie mit Klasse B Kraftfahrzeuge führen?"
+o = ["2800 kg", "3500 kg", "7500 kg"]
+why = "Klasse B gilt für Kraftfahrzeuge bis 3500 kg zulässiger Gesamtmasse, die für höchstens acht Personen außer dem Fahrer gebaut sind."
+
+[questions.en]
+q = "Up to what maximum permitted mass may you drive motor vehicles with a class B licence?"
+o = ["2800 kg", "3500 kg", "7500 kg"]
+why = "Class B covers motor vehicles up to 3500 kg maximum permitted mass, built to carry no more than eight people besides the driver."
+
+[[questions]]
+id = "B017"
+topic = "eignung"
+points = 4
+law = "§ 48a FeV"
+correct = [0, 1]
+
+[questions.de]
+q = "Was gilt beim begleiteten Fahren ab 17?"
+o = [
+  "Ich darf nur mit einer in der Prüfungsbescheinigung namentlich eingetragenen Begleitperson fahren",
+  "Die Begleitperson muss mindestens 30 Jahre alt sein",
+  "Die Begleitperson darf mir ins Lenkrad greifen und Fahraufgaben übernehmen",
+]
+why = "Begleitpersonen müssen in der Prüfungsbescheinigung stehen, mindestens 30 Jahre alt sein und seit fünf Jahren Klasse B haben. Sie stehen nur als Ansprechpartner zur Verfügung und geben Rat oder kurze Hinweise."
+
+[questions.en]
+q = "What applies to accompanied driving from age 17?"
+o = [
+  "I may drive only with a companion named on my test certificate",
+  "The companion must be at least 30 years old",
+  "The companion may grab the wheel and take over driving tasks",
+]
+why = "Companions must be named on the test certificate, be at least 30 and have held a class B licence for five years. They are there only to talk to, giving advice or brief pointers."
+
+[[questions]]
+id = "B018"
+topic = "betrieb"
+points = 4
+law = "§ 21 StVO"
+correct = [0]
+
+[questions.de]
+q = "Ein Kind ist 8 Jahre alt und 130 cm groß. Wie darf es im Pkw mitfahren?"
+o = [
+  "Nur mit einer für das Kind geeigneten Kinderrückhalteeinrichtung",
+  "Mit dem normalen Sicherheitsgurt, weil es älter als 6 Jahre ist",
+  "Auf dem Schoß eines Erwachsenen, wenn beide angeschnallt sind",
+]
+why = "Kinder unter 12 Jahren, die kleiner als 150 cm sind, dürfen auf Sitzen mit Gurtpflicht nur in einer für sie geeigneten Kinderrückhalteeinrichtung mitfahren."
+
+[questions.en]
+q = "A child is 8 years old and 130 cm tall. How may they travel in a car?"
+o = [
+  "Only in a child restraint suited to them",
+  "With the normal seat belt, because they are older than 6",
+  "On an adult's lap, if both are belted",
+]
+why = "Children under 12 who are shorter than 150 cm may only travel in seats with seat belts if they use a child restraint suited to them."
+
+[[questions]]
+id = "B019"
+topic = "betrieb"
+points = 4
+law = "§ 35a StVZO"
+correct = [0]
+
+[questions.de]
+q = "Wann darf ein rückwärtsgerichteter Kindersitz auf dem Beifahrersitz benutzt werden?"
+o = [
+  "Nur wenn der Beifahrer-Frontairbag abgeschaltet ist",
+  "Immer, wenn das Kind angeschnallt ist",
+  "Nur auf kurzen Strecken innerorts",
+]
+why = "Ein auslösender Frontairbag trifft die Rückenlehne eines rückwärtsgerichteten Kindersitzes mit großer Wucht. Auf einem Sitz mit aktivem Frontairbag ist ein solcher Sitz deshalb nicht zulässig."
+
+[questions.en]
+q = "When may a rear-facing child seat be used on the front passenger seat?"
+o = [
+  "Only when the passenger front airbag is switched off",
+  "Always, as long as the child is belted in",
+  "Only on short trips in built-up areas",
+]
+why = "A deploying front airbag strikes the back of a rear-facing child seat with great force, so such a seat is not allowed where the front airbag is active."
+
+[[questions]]
+id = "B020"
+topic = "gefahren"
+points = 4
+correct = [0]
+
+[questions.de]
+q = "Sie fahren ein langes, steiles Gefälle hinab. Wie verhindern Sie, dass die Bremsen überhitzen?"
+o = [
+  "Einen niedrigen Gang einlegen und die Motorbremse nutzen",
+  "Im Leerlauf rollen und mit der Fußbremse bremsen",
+  "Dauernd leicht auf der Bremse stehen",
+]
+why = "Bei Dauerbremsung werden die Bremsen heiß und verlieren Wirkung. Ein niedriger Gang lässt den Motor bremsen; die Fußbremse dient nur zum kurzen, kräftigen Nachbremsen."
+
+[questions.en]
+q = "You are driving down a long, steep descent. How do you stop the brakes overheating?"
+o = [
+  "Select a low gear and use engine braking",
+  "Coast in neutral and use the foot brake",
+  "Keep the brake lightly pressed all the way",
+]
+why = "Constant braking makes the brakes hot and weak. A low gear lets the engine do the braking; use the foot brake only for short, firm applications."
+
+[[questions]]
+id = "B021"
+topic = "technik"
+points = 3
+correct = [0, 1]
+
+[questions.de]
+q = "Ihr Pkw ist schwer beladen. Was ändert sich?"
+o = [
+  "Der Bremsweg wird länger",
+  "Die Scheinwerfer müssen gegebenenfalls mit der Leuchtweitenregulierung tiefer gestellt werden",
+  "Das Fahrzeug wird in Kurven stabiler",
+]
+why = "Mehr Masse verlängert den Bremsweg und verändert das Fahrverhalten in Kurven. Hinten schwer beladen leuchten die Scheinwerfer höher und blenden, wenn man sie nicht tiefer stellt."
+
+[questions.en]
+q = "Your car is heavily loaded. What changes?"
+o = [
+  "The braking distance gets longer",
+  "The headlights may need lowering with the headlight levelling control",
+  "The car becomes more stable in bends",
+]
+why = "More mass lengthens the braking distance and changes handling in bends. Loaded at the back, the headlights point higher and dazzle others unless lowered."
+
+[[questions]]
+id = "B022"
+topic = "technik"
+points = 2
+correct = [0, 2]
+
+[questions.de]
+q = "Während der Fahrt leuchtet die Öldruck-Kontrollleuchte auf. Was tun Sie?"
+o = [
+  "So bald wie möglich verkehrsgerecht anhalten und den Motor abstellen",
+  "Bis zur nächsten Werkstatt weiterfahren",
+  "Den Ölstand prüfen",
+]
+why = "Ohne Öldruck wird der Motor nicht mehr geschmiert und kann in kurzer Zeit schwer beschädigt werden. Anhalten, Motor abstellen und den Ölstand prüfen."
+
+[questions.en]
+q = "While you are driving, the oil pressure warning light comes on. What do you do?"
+o = [
+  "Stop safely as soon as possible and switch off the engine",
+  "Drive on to the next garage",
+  "Check the oil level",
+]
+why = "Without oil pressure the engine is no longer lubricated and can be badly damaged within a short time. Stop, switch off the engine and check the oil level."
+
+[[questions]]
+id = "B023"
+topic = "verhalten"
+points = 4
+law = "§ 9 StVO"
+correct = [0, 1]
+
+[questions.de]
+q = "Was gilt beim Rückwärtsfahren?"
+o = [
+  "Eine Gefährdung anderer muss ausgeschlossen sein, wenn nötig lasse ich mich einweisen",
+  "Auf Autobahnen und Kraftfahrstraßen ist es verboten",
+  "Beim Rückwärtsfahren habe ich Vorrang",
+]
+why = "Beim Rückwärtsfahren muss sich der Fahrer so verhalten, dass eine Gefährdung anderer ausgeschlossen ist, erforderlichenfalls mit Einweiser. Auf Autobahnen und Kraftfahrstraßen ist es ganz verboten."
+
+[questions.en]
+q = "What applies when reversing?"
+o = [
+  "I must rule out endangering others, and have someone guide me if necessary",
+  "It is prohibited on motorways and expressways",
+  "I have priority while reversing",
+]
+why = "Drivers reversing must rule out endangering others, with someone guiding them if necessary. On motorways and expressways reversing is prohibited altogether."
+
+[[questions]]
+id = "B024"
+topic = "verhalten"
+points = 3
+law = "§ 17 StVO"
+correct = [0]
+
+[questions.de]
+q = "Reicht in der Dämmerung das Tagfahrlicht aus?"
+o = [
+  "Nein, ich muss die vorgeschriebene Beleuchtung, also das Abblendlicht, einschalten",
+  "Ja",
+  "Ja, außer auf der Autobahn",
+]
+why = "In der Dämmerung und bei Dunkelheit ist die vorgeschriebene Beleuchtung zu benutzen. Tagfahrlicht schaltet die Schlussleuchten meist nicht ein, so dass das Fahrzeug von hinten schlecht zu sehen ist."
+
+[questions.en]
+q = "Are daytime running lights enough at dusk?"
+o = [
+  "No, I must switch on the required lights, that is the dipped headlights",
+  "Yes",
+  "Yes, except on the motorway",
+]
+why = "At dusk and in the dark, the required lights must be used. Daytime running lights usually leave the rear lights off, so the car is hard to see from behind."
+
+[[questions]]
+id = "B025"
+topic = "umwelt"
+points = 3
+correct = [0]
+
+[questions.de]
+q = "Wie verhalten Sie sich vor einer roten Ampel, um Kraftstoff zu sparen?"
+o = [
+  "Mit eingelegtem Gang ausrollen lassen, so dass die Schubabschaltung wirkt",
+  "Auskuppeln und im Leerlauf rollen",
+  "Bis kurz vor der Ampel Gas geben und dann stark bremsen",
+]
+why = "Rollt der Wagen mit eingelegtem Gang, unterbricht die Schubabschaltung die Kraftstoffzufuhr. Im Leerlauf verbraucht der Motor dagegen weiter Kraftstoff."
+
+[questions.en]
+q = "How do you save fuel when approaching a red light?"
+o = [
+  "Let the car coast in gear, so that the fuel cut-off works",
+  "Press the clutch and coast in neutral",
+  "Keep accelerating until just before the light, then brake hard",
+]
+why = "When the car coasts in gear, the fuel cut-off stops the fuel supply. In neutral the engine keeps burning fuel."
+
+[[questions]]
+id = "B026"
+topic = "technik"
+points = 2
+correct = [0, 2]
+
+[questions.de]
+q = "Was bewirkt die Rekuperation bei einem Elektroauto?"
+o = [
+  "Beim Verzögern wird Bewegungsenergie in elektrische Energie zurückverwandelt",
+  "Der Akku lädt sich im Stand von selbst auf",
+  "Das Fahrzeug verzögert spürbar, sobald ich vom Fahrpedal gehe",
+]
+why = "Bei der Rekuperation arbeitet der Elektromotor als Generator und lädt den Akku. Dabei bremst das Auto spürbar, oft schon ohne Betätigung der Bremse."
+
+[questions.en]
+q = "What does regenerative braking do in an electric car?"
+o = [
+  "When slowing down, kinetic energy is turned back into electrical energy",
+  "The battery charges itself while parked",
+  "The car slows noticeably as soon as I lift off the accelerator",
+]
+why = "With regenerative braking the electric motor works as a generator and charges the battery. The car slows noticeably, often without the brake pedal."
+
+[[questions]]
+id = "B027"
+topic = "gefahren"
+points = 4
+correct = [0]
+
+[questions.de]
+q = "Warum müssen Sie mit einem Elektroauto bei niedriger Geschwindigkeit besonders auf Fußgänger und Radfahrer achten?"
+o = [
+  "Weil es bei niedriger Geschwindigkeit kaum zu hören ist",
+  "Weil es langsamer beschleunigt als ein Verbrenner",
+  "Weil Fußgänger vor Elektroautos keinen Vorrang haben",
+]
+why = "Elektroautos sind bei geringer Geschwindigkeit fast lautlos. Fußgänger und Radfahrer, die sich auf ihr Gehör verlassen, bemerken sie oft erst spät."
+
+[questions.en]
+q = "Why must you watch out especially for pedestrians and cyclists in an electric car at low speed?"
+o = [
+  "Because it can hardly be heard at low speed",
+  "Because it accelerates more slowly than a combustion car",
+  "Because pedestrians have no priority over electric cars",
+]
+why = "Electric cars are almost silent at low speed. Pedestrians and cyclists who rely on their hearing often notice them late."
+
+[[questions]]
+id = "B028"
+topic = "betrieb"
+points = 3
+correct = [0, 1]
+
+[questions.de]
+q = "Was beachten Sie beim Tanken?"
+o = [
+  "Den Motor abstellen",
+  "Nicht rauchen und kein offenes Feuer",
+  "Die Zündung eingeschaltet lassen, damit die Tankanzeige stimmt",
+]
+why = "Kraftstoffdämpfe sind leicht entzündlich. Beim Tanken muss der Motor aus sein, und Rauchen und offenes Feuer sind tabu."
+
+[questions.en]
+q = "What do you watch for when refuelling?"
+o = [
+  "Switch off the engine",
+  "No smoking and no naked flames",
+  "Leave the ignition on so the fuel gauge is accurate",
+]
+why = "Fuel vapour ignites easily. The engine must be off while refuelling, and smoking and naked flames are off limits."
+
+[[questions]]
+id = "B029"
+topic = "gefahren"
+points = 4
+correct = [0, 1]
+
+[questions.de]
+q = "Sie fahren mit einem Anhänger. Was ändert sich im Vergleich zur Fahrt ohne Anhänger?"
+o = [
+  "Der Bremsweg wird länger",
+  "Beim Überholen brauche ich deutlich mehr Strecke",
+  "Seitenwind wirkt sich weniger aus",
+]
+why = "Ein Anhänger verlängert Brems- und Überholwege, und das Gespann reagiert empfindlicher auf Seitenwind und Lenkbewegungen."
+
+[questions.en]
+q = "You are towing a trailer. What changes compared with driving without one?"
+o = [
+  "The braking distance gets longer",
+  "I need much more distance to overtake",
+  "Crosswinds have less effect",
+]
+why = "A trailer lengthens braking and overtaking distances, and the combination reacts more sensitively to crosswinds and steering."
+
+[[questions]]
+id = "B030"
+topic = "technik"
+points = 3
+correct = [0, 1]
+
+[questions.de]
+q = "Woran erkennen Sie, dass die Stoßdämpfer verschlissen sein könnten?"
+o = [
+  "Das Fahrzeug schaukelt nach Bodenwellen nach",
+  "Die Reifen nutzen sich ungleichmäßig ab",
+  "Der Kraftstoffverbrauch sinkt",
+]
+why = "Verschlissene Stoßdämpfer lassen die Räder springen: Das Fahrzeug schaukelt nach, die Reifen nutzen sich fleckig ab, und Bremsweg und Kurvenhalt werden schlechter."
+
+[questions.en]
+q = "How can you tell that the shock absorbers might be worn?"
+o = [
+  "The car keeps bouncing after bumps",
+  "The tyres wear unevenly",
+  "Fuel consumption drops",
+]
+why = "Worn shock absorbers let the wheels bounce: the car keeps rocking, the tyres wear in patches, and braking and grip in bends get worse."

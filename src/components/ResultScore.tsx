@@ -1,0 +1,60 @@
+import type { ReactElement } from "react";
+
+import { minutes, percent } from "#lib/format.ts";
+import { EXAM, accuracy, passed, scoredOutOf } from "#lib/quiz.ts";
+import type { SessionSummary } from "#lib/schemas.ts";
+
+import { PassChip } from "./PassChip.tsx";
+
+function examNote(summary: SessionSummary): string {
+  const fives =
+    summary.fivePointMisses >= EXAM.fivePointFail
+      ? ` ${summary.fivePointMisses} missed 5-point questions fail the test on their own.`
+      : "";
+  return `${summary.correct} of ${summary.questionCount} questions right. Pass with at most ${EXAM.maxErrorPoints} error points.${passed(summary) ? "" : fives}`;
+}
+
+function note(summary: SessionSummary): string {
+  const main =
+    summary.mode === "exam"
+      ? examNote(summary)
+      : `${percent(accuracy(summary))} correct on first try.`;
+  return `${main} Time: ${minutes(summary.durationMs)}.`;
+}
+
+/**
+ * The headline score of a finished session: error points for a mock exam,
+ * correct answers for practice.
+ * @param props - The session summary.
+ * @returns Score, pass or fail, and timing.
+ */
+function ResultScore(
+  props: Readonly<{ summary: SessionSummary }>,
+): ReactElement {
+  const { summary } = props;
+  const exam = summary.mode === "exam";
+  return (
+    <div className="mt-8 flex flex-wrap items-end gap-x-10 gap-y-4">
+      {exam ? (
+        <p className="text-[4rem] leading-none font-semibold">
+          {summary.errorPoints}
+          <span className="text-2xl text-muted">
+            {" "}
+            Fehlerpunkte · error points
+          </span>
+        </p>
+      ) : (
+        <p className="text-[4rem] leading-none font-semibold">
+          {summary.correct}
+          <span className="text-2xl text-muted"> / {scoredOutOf(summary)}</span>
+        </p>
+      )}
+      <div className="space-y-2 pb-1">
+        {exam ? <PassChip result={summary} /> : null}
+        <p className="text-sm text-muted">{note(summary)}</p>
+      </div>
+    </div>
+  );
+}
+
+export { ResultScore };

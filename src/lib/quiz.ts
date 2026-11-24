@@ -1,0 +1,255 @@
+// Drawing questions for mock exams and practice sessions. Pure functions, so
+// every rule is unit-tested with a seeded random number generator.
+import { needsReview, priority } from "./mastery.ts";
+import type { Stats } from "./mastery.ts";
+import type { Focus, Question, SessionSummary } from "./schemas.ts";
+
+type Rng = () => number;
+
+interface PracticeOptions {
+  questions: readonly Question[];
+  focus: Focus;
+  stats: Stats;
+  size: number;
+  selected?: readonly string[];
+  rng?: Rng;
+}
+
+interface Sample<Item> {
+  items: readonly Item[];
+  weight: (item: Item) => number;
+  count: number;
+  rng: Rng;
+}
+
+type Picker = (
+  pool: readonly Question[],
+  options: Required<PracticeOptions>,
+) => Question[];
+
+/** Format of the official class B theory test (first licence). */
+const EXAM = {
+  basic: 20,
+  classB: 10,
+  total: 30,
+  /** Points the real test's questions are worth together. */
+  points: 110,
+  /** Passed with at most this many error points ... */
+  maxErrorPoints: 10,
+  /** ... unless this many 5-point questions were answered wrongly. */
+  fivePointFail: 2,
+  minutes: 45,
+} as const;
+
+/** Points of the questions that decide on their own. */
+const TOP_POINTS = 5;
+
+/** Share of a smart-mix session reserved for missed or shaky questions. */
+const REVIEW_SHARE = 0.5;
+const MIN_WEIGHT = 1e-6;
+
+function randomIndex(rng: Rng, length: number): number {
+  return Math.floor(rng() * length);
+}
+
+/**
+ * Unbiased shuffle: repeatedly draws uniformly from the items left, which is
+ * equivalent to Fisher–Yates.
+ * @param items - Items to shuffle; left untouched.
+ * @param rng - Random number generator in [0, 1).
+ * @returns A shuffled copy.
+ */
+function shuffle<Item>(items: readonly Item[], rng: Rng = Math.random): Item[] {
+  const remaining = [...items];
+  const out: Item[] = [];
+  while (remaining.length > 0) {
+    const index = randomIndex(rng, remaining.length);
+    out.push(...remaining.splice(index, 1));
+  }
+  return out;
+}
+
+/**
+ * Weighted sampling without replacement (Efraimidis–Spirakis).
+ * @param sample - Candidates, their weights, how many to pick, randomness.
+ * @returns The picked items, highest key first.
+ */
+function weightedSample<Item>(sample: Sample<Item>): Item[] {
+  const keyed = sample.items.map((item) => {
+    const weight = Math.max(sample.weight(item), MIN_WEIGHT);
+    return { item, key: sample.rng() ** (1 / weight) };
+  });
+  return keyed
+    .toSorted((left, right) => right.key - left.key)
+    .slice(0, sample.count)
+    .map((entry) => entry.item);
+}
+
+/**
+ * Draws a mock exam like the real test: 20 Grundstoff questions followed by 10
+ * class B questions, each block in random order.
+ * @param questions - The whole catalogue.
+ * @param rng - Random number generator in [0, 1).
+ * @returns The 30 exam questions.
+ */
+function drawExam(
+  questions: readonly Question[],
+  rng: Rng = Math.random,
+): Question[] {
+  const pick = (section: Question["section"], size: number): Question[] =>
+    shuffle(
+      questions.filter((entry) => entry.section === section),
+      rng,
+    ).slice(0, size);
+  return [...pick("G", EXAM.basic), ...pick("B", EXAM.classB)];
+}
+
+/**
+ * Display order of a question's options, as catalogue indices.
+ * @param entry - The question.
+ * @param shuffleOptions - Whether shuffling is switched on.
+ * @param rng - Random number generator in [0, 1).
+ * @returns Option indices in display order.
+ */
+function optionOrder(
+  entry: Question,
+  shuffleOptions: boolean,
+  rng: Rng = Math.random,
+): number[] {
+  const indices = entry.de.o.map((_option, index) => index);
+  return shuffleOptions && !entry.keepOrder ? shuffle(indices, rng) : indices;
+}
+
+function smartMix(
+  pool: readonly Question[],
+  { stats, size, rng }: Required<PracticeOptions>,
+): Question[] {
+  const weight = (entry: Question): number => priority(stats[entry.id]);
+  const isReview = (entry: Question): boolean => needsReview(stats[entry.id]);
+  const review = weightedSample({
+    items: pool.filter((entry) => isReview(entry)),
+    weight,
+    count: Math.ceil(size * REVIEW_SHARE),
+    rng,
+  });
+  const rest = weightedSample({
+    items: pool.filter((entry) => !isReview(entry)),
+    weight,
+    count: size - review.length,
+    rng,
+  });
+  return shuffle([...review, ...rest], rng);
+}
+
+function pickFiltered(
+  pool: readonly Question[],
+  { size, rng }: Required<PracticeOptions>,
+  keep: (entry: Question) => boolean,
+): Question[] {
+  return shuffle(
+    pool.filter((entry) => keep(entry)),
+    rng,
+  ).slice(0, size);
+}
+
+const PICKERS: Readonly<Record<Focus, Picker>> = {
+  smart: smartMix,
+  new: (pool, options) =>
+    pickFiltered(
+      pool,
+      options,
+      (entry) => options.stats[entry.id] === undefined,
+    ),
+  mistakes: (pool, options) =>
+    pickFiltered(pool, options, (entry) =>
+      needsReview(options.stats[entry.id]),
+    ),
+  heavy: (pool, options) =>
+    pickFiltered(pool, options, (entry) => entry.points === TOP_POINTS),
+  all: (pool, { rng }) => shuffle(pool, rng),
+  selected: (pool, { selected, rng }) => {
+    const ids = new Set(selected);
+    return shuffle(
+      pool.filter((entry) => ids.has(entry.id)),
+      rng,
+    );
+  },
+};
+
+/**
+ * Picks the questions of a practice session.
+ * @param options - Catalogue, focus, statistics and size.
+ * @returns The questions, in random order.
+ */
+function practiceQuestions(options: PracticeOptions): Question[] {
+  const full: Required<PracticeOptions> = {
+    selected: [],
+    rng: Math.random,
+    ...options,
+  };
+  return PICKERS[full.focus](full.questions, full);
+}
+
+type Verdict = Pick<SessionSummary, "errorPoints" | "fivePointMisses">;
+
+/**
+ * Whether a mock exam passes: at most 10 error points, and fewer than two
+ * wrongly answered 5-point questions.
+ * @param result - Error points and missed 5-point questions.
+ * @returns True when the exam is passed.
+ */
+function passed(result: Verdict): boolean {
+  return (
+    result.errorPoints <= EXAM.maxErrorPoints &&
+    result.fivePointMisses < EXAM.fivePointFail
+  );
+}
+
+type Scored = Pick<
+  SessionSummary,
+  | "correct"
+  | "answered"
+  | "questionCount"
+  | "mode"
+  | "errorPoints"
+  | "maxPoints"
+>;
+
+/**
+ * What a session's score counts out of: every question of an exam, the
+ * answered ones in practice.
+ * @param session - A finished session.
+ * @returns The number of questions the score is out of.
+ */
+function scoredOutOf(session: Scored): number {
+  return session.mode === "exam" ? session.questionCount : session.answered;
+}
+
+/**
+ * The share of the session done right: points kept in an exam, first-try
+ * accuracy in practice.
+ * @param session - A finished session.
+ * @returns A number between 0 and 1.
+ */
+function accuracy(session: Scored): number {
+  if (session.mode === "exam") {
+    return session.maxPoints === 0
+      ? 0
+      : 1 - session.errorPoints / session.maxPoints;
+  }
+  return session.answered === 0 ? 0 : session.correct / session.answered;
+}
+
+export {
+  EXAM,
+  TOP_POINTS,
+  accuracy,
+  drawExam,
+  optionOrder,
+  passed,
+  practiceQuestions,
+  scoredOutOf,
+  shuffle,
+  weightedSample,
+};
+export type { PracticeOptions, Rng, Verdict };

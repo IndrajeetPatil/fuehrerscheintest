@@ -1,0 +1,3490 @@
+{
+ "topics": [
+  {
+   "code": "gefahren",
+   "de": "Gefahrenlehre",
+   "en": "Hazard awareness"
+  },
+  {
+   "code": "verhalten",
+   "de": "Verhalten im Straßenverkehr",
+   "en": "Behaviour in traffic"
+  },
+  {
+   "code": "vorfahrt",
+   "de": "Vorfahrt und Vorrang",
+   "en": "Right of way"
+  },
+  {
+   "code": "zeichen",
+   "de": "Verkehrszeichen",
+   "en": "Traffic signs"
+  },
+  {
+   "code": "umwelt",
+   "de": "Umweltschutz",
+   "en": "Environmental protection"
+  },
+  {
+   "code": "technik",
+   "de": "Technik",
+   "en": "Vehicle technology"
+  },
+  {
+   "code": "eignung",
+   "de": "Eignung und Befähigung",
+   "en": "Fitness and licences"
+  },
+  {
+   "code": "betrieb",
+   "de": "Betrieb der Fahrzeuge",
+   "en": "Operating vehicles"
+  }
+ ],
+ "questions": [
+  {
+   "id": "G001",
+   "section": "G",
+   "topic": "vorfahrt",
+   "points": 5,
+   "de": {
+    "q": "Was müssen Sie an diesem Verkehrszeichen tun?",
+    "o": [
+     "Vorfahrt gewähren",
+     "Immer anhalten, auch wenn die Straße frei ist",
+     "Notfalls anhalten, wenn ich Vorfahrtberechtigte sonst gefährden oder wesentlich behindern würde"
+    ],
+    "why": "Zeichen 205 verlangt, die Vorfahrt zu gewähren. Ein Halt ist nur nötig, wenn die Vorfahrtberechtigten sonst gefährdet oder wesentlich behindert würden; anders als beim Stoppschild muss man nicht in jedem Fall anhalten."
+   },
+   "en": {
+    "q": "What must you do at this sign?",
+    "o": [
+     "Give way",
+     "Always stop, even if the road is clear",
+     "Stop if necessary, when I would otherwise endanger or significantly hinder traffic with priority"
+    ],
+    "why": "Sign 205 means give way. You only need to stop when you would otherwise endanger or significantly hinder traffic with priority; unlike a stop sign, it does not require a stop every time."
+   },
+   "correct": [
+    0,
+    2
+   ],
+   "sign": {
+    "code": "z205",
+    "number": "205",
+    "de": "Vorfahrt gewähren",
+    "en": "Give way"
+   },
+   "law": {
+    "ref": "§ 8 StVO",
+    "url": "https://www.gesetze-im-internet.de/stvo_2013/__8.html"
+   },
+   "keepOrder": false
+  },
+  {
+   "id": "G002",
+   "section": "G",
+   "topic": "vorfahrt",
+   "points": 5,
+   "de": {
+    "q": "Wo müssen Sie an diesem Verkehrszeichen anhalten?",
+    "o": [
+     "An der Haltlinie, wenn eine vorhanden ist",
+     "Ohne Haltlinie dort, wo ich die andere Straße übersehen kann",
+     "Nur wenn Querverkehr kommt"
+    ],
+    "why": "Bei Zeichen 206 muss man immer anhalten und Vorfahrt gewähren, auch bei freier Straße. Gehalten wird an der Haltlinie oder, wenn keine vorhanden ist, dort, wo die andere Straße zu übersehen ist."
+   },
+   "en": {
+    "q": "Where must you stop at this sign?",
+    "o": [
+     "At the stop line, if there is one",
+     "Without a stop line, where I can see along the other road",
+     "Only if there is crossing traffic"
+    ],
+    "why": "Sign 206 requires a full stop and giving way every time, even on an empty road. Stop at the stop line or, if there is none, where you can see along the other road."
+   },
+   "correct": [
+    0,
+    1
+   ],
+   "sign": {
+    "code": "z206",
+    "number": "206",
+    "de": "Halt. Vorfahrt gewähren",
+    "en": "Stop and give way"
+   },
+   "law": {
+    "ref": "Anlage 2 StVO",
+    "url": "https://www.gesetze-im-internet.de/stvo_2013/anlage_2.html"
+   },
+   "keepOrder": false
+  },
+  {
+   "id": "G003",
+   "section": "G",
+   "topic": "vorfahrt",
+   "points": 5,
+   "de": {
+    "q": "An einer Kreuzung gibt es weder Verkehrszeichen noch Ampeln. Wer hat Vorfahrt?",
+    "o": [
+     "Wer von rechts kommt",
+     "Wer geradeaus fährt",
+     "Wer auf der breiteren Straße fährt"
+    ],
+    "why": "Ohne Verkehrszeichen, Ampel oder Polizei gilt „rechts vor links“. Breite oder Ausbau der Straße spielen keine Rolle."
+   },
+   "en": {
+    "q": "A crossroads has neither signs nor traffic lights. Who has priority?",
+    "o": [
+     "Whoever comes from the right",
+     "Whoever is going straight on",
+     "Whoever is on the wider road"
+    ],
+    "why": "Without signs, lights or police, traffic from the right has priority. The width or surface of the road makes no difference."
+   },
+   "correct": [
+    0
+   ],
+   "sign": null,
+   "law": {
+    "ref": "§ 8 StVO",
+    "url": "https://www.gesetze-im-internet.de/stvo_2013/__8.html"
+   },
+   "keepOrder": false
+  },
+  {
+   "id": "G004",
+   "section": "G",
+   "topic": "vorfahrt",
+   "points": 5,
+   "de": {
+    "q": "Sie kommen aus einem Feldweg auf eine Straße. Wer hat Vorfahrt?",
+    "o": [
+     "Der Verkehr auf der Straße, auch wenn er von links kommt",
+     "Ich, wenn ich von rechts komme",
+     "Wer zuerst an der Einmündung ankommt"
+    ],
+    "why": "Wer aus einem Feld- oder Waldweg kommt, hat keine Vorfahrt nach „rechts vor links“. Der Verkehr auf der Straße darf zuerst fahren, von welcher Seite er auch kommt."
+   },
+   "en": {
+    "q": "You are coming out of a farm track onto a road. Who has priority?",
+    "o": [
+     "The traffic on the road, even when it comes from the left",
+     "I do, if I come from the right",
+     "Whoever reaches the junction first"
+    ],
+    "why": "Traffic coming out of a farm or forest track does not get priority from the right. Traffic on the road goes first, whichever side it comes from."
+   },
+   "correct": [
+    0
+   ],
+   "sign": null,
+   "law": {
+    "ref": "§ 8 StVO",
+    "url": "https://www.gesetze-im-internet.de/stvo_2013/__8.html"
+   },
+   "keepOrder": false
+  },
+  {
+   "id": "G005",
+   "section": "G",
+   "topic": "vorfahrt",
+   "points": 5,
+   "de": {
+    "q": "Sie wollen aus einer Grundstücksausfahrt auf die Straße fahren. Was gilt?",
+    "o": [
+     "Ich muss eine Gefährdung anderer ausschließen",
+     "Wenn nötig, lasse ich mich einweisen",
+     "Fußgänger auf dem Gehweg müssen mich vorbeilassen"
+    ],
+    "why": "Wer aus einem Grundstück auf die Straße fährt, muss eine Gefährdung anderer ausschließen und sich erforderlichenfalls einweisen lassen. Fußgänger und der fließende Verkehr gehen vor."
+   },
+   "en": {
+    "q": "You want to drive out of a property onto the road. What applies?",
+    "o": [
+     "I must rule out endangering anyone",
+     "If necessary, I have someone guide me out",
+     "Pedestrians on the pavement must let me through"
+    ],
+    "why": "Drivers leaving a property must rule out endangering others and, if necessary, be guided out. Pedestrians and moving traffic come first."
+   },
+   "correct": [
+    0,
+    1
+   ],
+   "sign": null,
+   "law": {
+    "ref": "§ 10 StVO",
+    "url": "https://www.gesetze-im-internet.de/stvo_2013/__10.html"
+   },
+   "keepOrder": false
+  },
+  {
+   "id": "G006",
+   "section": "G",
+   "topic": "vorfahrt",
+   "points": 4,
+   "de": {
+    "q": "Ein Polizeibeamter an einer Kreuzung hebt einen Arm senkrecht hoch. Was bedeutet das?",
+    "o": [
+     "Alle warten vor der Kreuzung auf das nächste Zeichen",
+     "Der Querverkehr darf fahren",
+     "Wer sich schon in der Kreuzung befindet, muss sie räumen"
+    ],
+    "why": "Ein hochgehobener Arm wirkt wie Gelb an der Ampel: Vor der Kreuzung auf das nächste Zeichen warten. Wer bereits in der Kreuzung ist, muss sie räumen."
+   },
+   "en": {
+    "q": "A police officer at a crossroads raises one arm straight up. What does that mean?",
+    "o": [
+     "Everyone waits before the crossroads for the next signal",
+     "Crossing traffic may go",
+     "Anyone already in the crossroads must clear it"
+    ],
+    "why": "A raised arm works like an amber light: wait before the crossroads for the next signal. Anyone already in the crossroads must clear it."
+   },
+   "correct": [
+    0,
+    2
+   ],
+   "sign": null,
+   "law": {
+    "ref": "§ 36 StVO",
+    "url": "https://www.gesetze-im-internet.de/stvo_2013/__36.html"
+   },
+   "keepOrder": false
+  },
+  {
+   "id": "G007",
+   "section": "G",
+   "topic": "vorfahrt",
+   "points": 4,
+   "de": {
+    "q": "Ein Polizeibeamter regelt eine Kreuzung mit Ampel und Verkehrszeichen. Wonach richten Sie sich?",
+    "o": [
+     "Nach den Zeichen des Polizeibeamten",
+     "Nach der Ampel",
+     "Nach den Verkehrszeichen"
+    ],
+    "why": "Zeichen und Weisungen von Polizeibeamten gehen allen anderen Anordnungen und Regeln vor, also auch Ampeln und Verkehrszeichen."
+   },
+   "en": {
+    "q": "A police officer directs traffic at a crossroads with lights and signs. Which do you follow?",
+    "o": [
+     "The police officer's signals",
+     "The traffic lights",
+     "The road signs"
+    ],
+    "why": "Signals and instructions from police officers override every other rule, including traffic lights and road signs."
+   },
+   "correct": [
+    0
+   ],
+   "sign": null,
+   "law": {
+    "ref": "§ 36 StVO",
+    "url": "https://www.gesetze-im-internet.de/stvo_2013/__36.html"
+   },
+   "keepOrder": false
+  },
+  {
+   "id": "G008",
+   "section": "G",
+   "topic": "vorfahrt",
+   "points": 4,
+   "de": {
+    "q": "Die Ampel zeigt Rot, rechts daneben hängt dieses Schild. Was gilt, wenn Sie rechts abbiegen wollen?",
+    "o": [
+     "Nach dem Anhalten darf ich rechts abbiegen",
+     "Ich darf ohne anzuhalten rechts abbiegen",
+     "Fußgänger und Fahrzeuge der freigegebenen Richtung darf ich weder behindern noch gefährden"
+    ],
+    "why": "Mit dem Grünpfeil ist das Rechtsabbiegen bei Rot erst nach dem Anhalten erlaubt. Eine Behinderung oder Gefährdung anderer, vor allem des Fußgänger- und Fahrzeugverkehrs der freigegebenen Richtung, muss ausgeschlossen sein."
+   },
+   "en": {
+    "q": "The light is red and this sign hangs to its right. What applies if you want to turn right?",
+    "o": [
+     "After stopping, I may turn right",
+     "I may turn right without stopping",
+     "I must neither hinder nor endanger pedestrians and vehicles that have a green light"
+    ],
+    "why": "The green arrow allows a right turn on red only after a full stop. You must rule out hindering or endangering anyone, especially pedestrians and vehicles in the direction that has green."
+   },
+   "correct": [
+    0,
+    2
+   ],
+   "sign": {
+    "code": "z720",
+    "number": "720",
+    "de": "Grünpfeil",
+    "en": "Green arrow"
+   },
+   "law": {
+    "ref": "§ 37 StVO",
+    "url": "https://www.gesetze-im-internet.de/stvo_2013/__37.html"
+   },
+   "keepOrder": false
+  },
+  {
+   "id": "G009",
+   "section": "G",
+   "topic": "vorfahrt",
+   "points": 5,
+   "de": {
+    "q": "Was bedeutet dieses Verkehrszeichen?",
+    "o": [
+     "Ich habe an der nächsten Kreuzung oder Einmündung Vorfahrt",
+     "Ich habe bis zum Ende der Straße Vorfahrt",
+     "An der nächsten Kreuzung gilt „rechts vor links“"
+    ],
+    "why": "Zeichen 301 gibt die Vorfahrt nur an der nächsten Kreuzung oder Einmündung. Danach gelten wieder die allgemeinen Regeln, solange kein neues Zeichen steht."
+   },
+   "en": {
+    "q": "What does this sign mean?",
+    "o": [
+     "I have priority at the next crossroads or junction",
+     "I have priority until the end of the road",
+     "Priority from the right applies at the next crossroads"
+    ],
+    "why": "Sign 301 gives priority at the next crossroads or junction only. After it, the general rules apply again unless another sign says otherwise."
+   },
+   "correct": [
+    0
+   ],
+   "sign": {
+    "code": "z301",
+    "number": "301",
+    "de": "Vorfahrt",
+    "en": "Priority at the next junction"
+   },
+   "law": {
+    "ref": "Anlage 3 StVO",
+    "url": "https://www.gesetze-im-internet.de/stvo_2013/anlage_3.html"
+   },
+   "keepOrder": false
+  },
+  {
+   "id": "G010",
+   "section": "G",
+   "topic": "vorfahrt",
+   "points": 4,
+   "de": {
+    "q": "Was bedeutet dieses Verkehrszeichen?",
+    "o": [
+     "Ich fahre auf einer Vorfahrtstraße",
+     "Außerorts darf ich auf der Fahrbahn nicht parken",
+     "An der nächsten Kreuzung gilt „rechts vor links“"
+    ],
+    "why": "Zeichen 306 kennzeichnet eine Vorfahrtstraße; die Vorfahrt gilt bis zum nächsten Zeichen 205, 206 oder 307. Außerhalb geschlossener Ortschaften ist das Parken auf ihrer Fahrbahn verboten."
+   },
+   "en": {
+    "q": "What does this sign mean?",
+    "o": [
+     "I am on a priority road",
+     "Outside built-up areas, I must not park on the carriageway",
+     "Priority from the right applies at the next crossroads"
+    ],
+    "why": "Sign 306 marks a priority road; priority lasts until the next sign 205, 206 or 307. Outside built-up areas, parking on its carriageway is prohibited."
+   },
+   "correct": [
+    0,
+    1
+   ],
+   "sign": {
+    "code": "z306",
+    "number": "306",
+    "de": "Vorfahrtstraße",
+    "en": "Priority road"
+   },
+   "law": {
+    "ref": "Anlage 3 StVO",
+    "url": "https://www.gesetze-im-internet.de/stvo_2013/anlage_3.html"
+   },
+   "keepOrder": false
+  },
+  {
+   "id": "G011",
+   "section": "G",
+   "topic": "vorfahrt",
+   "points": 4,
+   "de": {
+    "q": "Was bedeutet dieses Verkehrszeichen?",
+    "o": [
+     "Die Vorfahrtstraße endet",
+     "An der nächsten Kreuzung muss ich mit einer anderen Vorfahrtregel rechnen",
+     "Ab hier gilt eine Höchstgeschwindigkeit von 30 km/h"
+    ],
+    "why": "Zeichen 307 beendet die Vorfahrtstraße. An der nächsten Kreuzung gilt, was dort angeordnet ist, sonst „rechts vor links“."
+   },
+   "en": {
+    "q": "What does this sign mean?",
+    "o": [
+     "The priority road ends",
+     "At the next crossroads I must expect a different priority rule",
+     "From here, the speed limit is 30 km/h"
+    ],
+    "why": "Sign 307 ends the priority road. At the next crossroads, whatever is signed there applies, otherwise priority from the right."
+   },
+   "correct": [
+    0,
+    1
+   ],
+   "sign": {
+    "code": "z307",
+    "number": "307",
+    "de": "Ende der Vorfahrtstraße",
+    "en": "End of priority road"
+   },
+   "law": {
+    "ref": "Anlage 3 StVO",
+    "url": "https://www.gesetze-im-internet.de/stvo_2013/anlage_3.html"
+   },
+   "keepOrder": false
+  },
+  {
+   "id": "G012",
+   "section": "G",
+   "topic": "vorfahrt",
+   "points": 5,
+   "de": {
+    "q": "Was bedeutet dieses Verkehrszeichen?",
+    "o": [
+     "An der nächsten Kreuzung oder Einmündung gilt „rechts vor links“",
+     "Ich habe an der nächsten Kreuzung Vorfahrt",
+     "An der nächsten Kreuzung muss ich anhalten"
+    ],
+    "why": "Zeichen 102 warnt vor einer Kreuzung oder Einmündung mit Vorfahrt von rechts. Wer von rechts kommt, darf zuerst fahren."
+   },
+   "en": {
+    "q": "What does this sign mean?",
+    "o": [
+     "Priority from the right applies at the next crossroads or junction",
+     "I have priority at the next crossroads",
+     "I must stop at the next crossroads"
+    ],
+    "why": "Sign 102 warns of a crossroads or junction with priority from the right. Traffic from the right goes first."
+   },
+   "correct": [
+    0
+   ],
+   "sign": {
+    "code": "z102",
+    "number": "102",
+    "de": "Kreuzung oder Einmündung mit Vorfahrt von rechts",
+    "en": "Crossroads with priority from the right"
+   },
+   "law": {
+    "ref": "Anlage 1 StVO",
+    "url": "https://www.gesetze-im-internet.de/stvo_2013/anlage_1.html"
+   },
+   "keepOrder": false
+  },
+  {
+   "id": "G013",
+   "section": "G",
+   "topic": "vorfahrt",
+   "points": 5,
+   "de": {
+    "q": "Sie wollen an einer Kreuzung links abbiegen. Ein entgegenkommendes Auto will geradeaus fahren. Wer muss warten?",
+    "o": [
+     "Ich muss den Gegenverkehr durchfahren lassen",
+     "Der Gegenverkehr muss mich abbiegen lassen",
+     "Wer zuerst an der Kreuzung ist, fährt zuerst"
+    ],
+    "why": "Wer links abbiegt, muss entgegenkommende Fahrzeuge durchfahren lassen, auch Straßenbahnen und Fahrräder."
+   },
+   "en": {
+    "q": "You want to turn left at a crossroads. An oncoming car wants to go straight on. Who must wait?",
+    "o": [
+     "I must let the oncoming traffic through",
+     "The oncoming traffic must let me turn",
+     "Whoever reaches the crossroads first goes first"
+    ],
+    "why": "Drivers turning left must let oncoming vehicles through, including trams and bicycles."
+   },
+   "correct": [
+    0
+   ],
+   "sign": null,
+   "law": {
+    "ref": "§ 9 StVO",
+    "url": "https://www.gesetze-im-internet.de/stvo_2013/__9.html"
+   },
+   "keepOrder": false
+  },
+  {
+   "id": "G014",
+   "section": "G",
+   "topic": "vorfahrt",
+   "points": 5,
+   "de": {
+    "q": "Sie biegen rechts ab. Ein Radfahrer fährt neben Ihnen auf dem Radweg geradeaus weiter, Fußgänger gehen über die Straße, in die Sie abbiegen. Was tun Sie?",
+    "o": [
+     "Den Radfahrer geradeaus durchfahren lassen",
+     "Auf die Fußgänger besondere Rücksicht nehmen und wenn nötig warten",
+     "Zügig vor dem Radfahrer abbiegen, da ich schneller bin"
+    ],
+    "why": "Wer abbiegt, muss Fahrräder durchfahren lassen, die in gleicher Richtung auf oder neben der Fahrbahn fahren. Auf Fußgänger ist besondere Rücksicht zu nehmen; wenn nötig, muss man warten."
+   },
+   "en": {
+    "q": "You are turning right. A cyclist beside you on the cycle lane is going straight on, and pedestrians are crossing the road you are turning into. What do you do?",
+    "o": [
+     "Let the cyclist go straight on first",
+     "Take particular care of the pedestrians and wait if necessary",
+     "Turn quickly in front of the cyclist, since I am faster"
+    ],
+    "why": "Drivers turning must let through bicycles travelling the same way on or beside the carriageway. Pedestrians need particular care; wait if necessary."
+   },
+   "correct": [
+    0,
+    1
+   ],
+   "sign": null,
+   "law": {
+    "ref": "§ 9 StVO",
+    "url": "https://www.gesetze-im-internet.de/stvo_2013/__9.html"
+   },
+   "keepOrder": false
+  },
+  {
+   "id": "G015",
+   "section": "G",
+   "topic": "vorfahrt",
+   "points": 4,
+   "de": {
+    "q": "Sie fahren in einen Kreisverkehr ein, an dessen Einfahrt das Zeichen „Vorfahrt gewähren“ steht. Was gilt?",
+    "o": [
+     "Der Verkehr auf der Kreisfahrbahn hat Vorfahrt",
+     "Beim Einfahren darf ich nicht blinken",
+     "Beim Einfahren muss ich links blinken"
+    ],
+    "why": "Steht das Zeichen 215 (Kreisverkehr) unter Zeichen 205, hat der Verkehr im Kreis Vorfahrt. Beim Einfahren ist der Blinker unzulässig; innerhalb des Kreisverkehrs darf man auf der Fahrbahn nicht halten."
+   },
+   "en": {
+    "q": "You are entering a roundabout with a give-way sign at the entry. What applies?",
+    "o": [
+     "Traffic on the roundabout has priority",
+     "I must not indicate when entering",
+     "I must indicate left when entering"
+    ],
+    "why": "Where sign 215 (roundabout) stands below sign 205, traffic on the roundabout has priority. Indicating when entering is not allowed, and you must not stop on the roundabout's carriageway."
+   },
+   "correct": [
+    0,
+    1
+   ],
+   "sign": null,
+   "law": {
+    "ref": "§ 8 StVO",
+    "url": "https://www.gesetze-im-internet.de/stvo_2013/__8.html"
+   },
+   "keepOrder": false
+  },
+  {
+   "id": "G016",
+   "section": "G",
+   "topic": "vorfahrt",
+   "points": 5,
+   "de": {
+    "q": "Hinter Ihnen nähert sich ein Fahrzeug mit Blaulicht und Einsatzhorn. Was müssen Sie tun?",
+    "o": [
+     "Sofort freie Bahn schaffen",
+     "Nichts, solange ich Vorfahrt habe",
+     "Erst an der nächsten Haltebucht Platz machen"
+    ],
+    "why": "Blaues Blinklicht zusammen mit dem Einsatzhorn ordnet an, dass alle anderen sofort freie Bahn schaffen müssen."
+   },
+   "en": {
+    "q": "A vehicle with a blue flashing light and siren is approaching from behind. What must you do?",
+    "o": [
+     "Make way immediately",
+     "Nothing, as long as I have priority",
+     "Make way only at the next lay-by"
+    ],
+    "why": "A blue flashing light together with a siren requires everyone else to make way immediately."
+   },
+   "correct": [
+    0
+   ],
+   "sign": null,
+   "law": {
+    "ref": "§ 38 StVO",
+    "url": "https://www.gesetze-im-internet.de/stvo_2013/__38.html"
+   },
+   "keepOrder": false
+  },
+  {
+   "id": "G017",
+   "section": "G",
+   "topic": "verhalten",
+   "points": 4,
+   "de": {
+    "q": "Auf einer Autobahn mit drei Fahrstreifen stockt der Verkehr. Sie fahren auf dem mittleren Fahrstreifen. Wohin weichen Sie für die Rettungsgasse aus?",
+    "o": [
+     "Nach rechts",
+     "Nach links",
+     "Gar nicht, ich bleibe in der Mitte"
+    ],
+    "why": "Die Rettungsgasse entsteht zwischen dem äußerst linken und dem rechts daneben liegenden Fahrstreifen. Wer links fährt, weicht nach links aus; alle anderen nach rechts."
+   },
+   "en": {
+    "q": "Traffic is slowing to a crawl on a three-lane motorway and you are in the middle lane. Which way do you move to form an emergency corridor?",
+    "o": [
+     "To the right",
+     "To the left",
+     "Not at all; I stay in the middle"
+    ],
+    "why": "The emergency corridor forms between the leftmost lane and the lane next to it. Drivers in the leftmost lane move left; everyone else moves right."
+   },
+   "correct": [
+    0
+   ],
+   "sign": null,
+   "law": {
+    "ref": "§ 11 StVO",
+    "url": "https://www.gesetze-im-internet.de/stvo_2013/__11.html"
+   },
+   "keepOrder": false
+  },
+  {
+   "id": "G018",
+   "section": "G",
+   "topic": "gefahren",
+   "points": 5,
+   "de": {
+    "q": "Zwischen geparkten Autos rollt ein Ball auf die Fahrbahn. Womit müssen Sie rechnen?",
+    "o": [
+     "Dass ein Kind hinterherläuft",
+     "Nur mit dem Ball; Kinder achten auf den Verkehr",
+     "Dass der Ball von allein liegen bleibt"
+    ],
+    "why": "Kinder laufen einem Ball oft ohne auf den Verkehr zu achten hinterher. Gegenüber Kindern muss man sich so verhalten, dass ihre Gefährdung ausgeschlossen ist: langsamer fahren und bremsbereit sein."
+   },
+   "en": {
+    "q": "A ball rolls onto the road between parked cars. What must you expect?",
+    "o": [
+     "A child running after it",
+     "Only the ball; children watch the traffic",
+     "That the ball will stop by itself"
+    ],
+    "why": "Children often run after a ball without looking at the traffic. Around children you must rule out endangering them: slow down and be ready to brake."
+   },
+   "correct": [
+    0
+   ],
+   "sign": null,
+   "law": {
+    "ref": "§ 3 StVO",
+    "url": "https://www.gesetze-im-internet.de/stvo_2013/__3.html"
+   },
+   "keepOrder": false
+  },
+  {
+   "id": "G019",
+   "section": "G",
+   "topic": "gefahren",
+   "points": 5,
+   "de": {
+    "q": "Am Fahrbahnrand steht ein älterer Mensch, der unsicher wirkt und die Straße überqueren möchte. Wie verhalten Sie sich?",
+    "o": [
+     "Ich verringere die Geschwindigkeit",
+     "Ich bin bremsbereit",
+     "Ich hupe und fahre zügig weiter"
+    ],
+    "why": "Gegenüber Kindern, hilfsbedürftigen und älteren Menschen muss man sich so verhalten, dass eine Gefährdung ausgeschlossen ist, vor allem durch geringere Geschwindigkeit und Bremsbereitschaft."
+   },
+   "en": {
+    "q": "An elderly person who seems unsteady is standing at the kerb, wanting to cross. How do you behave?",
+    "o": [
+     "I reduce my speed",
+     "I am ready to brake",
+     "I sound the horn and drive on briskly"
+    ],
+    "why": "Around children, people in need of help and elderly people you must rule out endangering them, above all by slowing down and being ready to brake."
+   },
+   "correct": [
+    0,
+    1
+   ],
+   "sign": null,
+   "law": {
+    "ref": "§ 3 StVO",
+    "url": "https://www.gesetze-im-internet.de/stvo_2013/__3.html"
+   },
+   "keepOrder": false
+  },
+  {
+   "id": "G020",
+   "section": "G",
+   "topic": "gefahren",
+   "points": 5,
+   "de": {
+    "q": "Ein Linienbus steht mit eingeschaltetem Warnblinklicht an einer Haltestelle. Wie verhalten Sie sich?",
+    "o": [
+     "Nur mit Schrittgeschwindigkeit vorbeifahren, auch im Gegenverkehr",
+     "Wenn nötig warten, damit Fahrgäste nicht gefährdet werden",
+     "Zügig vorbeifahren, bevor die Fahrgäste aussteigen"
+    ],
+    "why": "An haltenden Linien- und Schulbussen mit Warnblinklicht darf nur mit Schrittgeschwindigkeit und mit ausreichendem Abstand vorbeigefahren werden. Das gilt auch für den Gegenverkehr; wenn nötig, muss man warten."
+   },
+   "en": {
+    "q": "A service bus is standing at a stop with its hazard lights on. How do you behave?",
+    "o": [
+     "Pass only at walking pace, even in the opposite direction",
+     "Wait if necessary, so that passengers are not endangered",
+     "Pass quickly, before the passengers get off"
+    ],
+    "why": "Service and school buses at a stop with hazard lights on may be passed only at walking pace and with enough room. This applies to oncoming traffic too; wait if necessary."
+   },
+   "correct": [
+    0,
+    1
+   ],
+   "sign": null,
+   "law": {
+    "ref": "§ 20 StVO",
+    "url": "https://www.gesetze-im-internet.de/stvo_2013/__20.html"
+   },
+   "keepOrder": false
+  },
+  {
+   "id": "G021",
+   "section": "G",
+   "topic": "gefahren",
+   "points": 5,
+   "de": {
+    "q": "Ein Schulbus nähert sich mit eingeschaltetem Warnblinklicht einer Haltestelle. Dürfen Sie ihn überholen?",
+    "o": [
+     "Nein",
+     "Ja, mit Schrittgeschwindigkeit",
+     "Ja, wenn kein Gegenverkehr kommt"
+    ],
+    "why": "Linien- und Schulbusse, die sich mit Warnblinklicht einer Haltestelle nähern, dürfen nicht überholt werden."
+   },
+   "en": {
+    "q": "A school bus with its hazard lights on is approaching a stop. May you overtake it?",
+    "o": [
+     "No",
+     "Yes, at walking pace",
+     "Yes, if there is no oncoming traffic"
+    ],
+    "why": "Service and school buses approaching a stop with their hazard lights on must not be overtaken."
+   },
+   "correct": [
+    0
+   ],
+   "sign": null,
+   "law": {
+    "ref": "§ 20 StVO",
+    "url": "https://www.gesetze-im-internet.de/stvo_2013/__20.html"
+   },
+   "keepOrder": false
+  },
+  {
+   "id": "G022",
+   "section": "G",
+   "topic": "gefahren",
+   "points": 4,
+   "de": {
+    "q": "Wegen Nebels beträgt die Sichtweite weniger als 50 m. Wie schnell dürfen Sie höchstens fahren?",
+    "o": [
+     "30 km/h",
+     "50 km/h",
+     "80 km/h"
+    ],
+    "why": "Bei einer Sichtweite unter 50 m durch Nebel, Schneefall oder Regen sind höchstens 50 km/h erlaubt, wenn nicht eine noch geringere Geschwindigkeit geboten ist."
+   },
+   "en": {
+    "q": "Fog has cut visibility to less than 50 m. What is the highest speed you may drive at?",
+    "o": [
+     "30 km/h",
+     "50 km/h",
+     "80 km/h"
+    ],
+    "why": "When fog, snow or rain cut visibility below 50 m, the limit is 50 km/h, or lower if the conditions call for it."
+   },
+   "correct": [
+    1
+   ],
+   "sign": null,
+   "law": {
+    "ref": "§ 3 StVO",
+    "url": "https://www.gesetze-im-internet.de/stvo_2013/__3.html"
+   },
+   "keepOrder": true
+  },
+  {
+   "id": "G023",
+   "section": "G",
+   "topic": "gefahren",
+   "points": 4,
+   "de": {
+    "q": "Wann dürfen Sie die Nebelschlussleuchte einschalten?",
+    "o": [
+     "Wenn die Sichtweite durch Nebel weniger als 50 m beträgt",
+     "Bei Regen in der Dämmerung",
+     "Immer, wenn das Abblendlicht eingeschaltet ist"
+    ],
+    "why": "Die Nebelschlussleuchte blendet nachfolgende Fahrer und darf nur bei Sichtweiten unter 50 m durch Nebel benutzt werden."
+   },
+   "en": {
+    "q": "When may you switch on the rear fog light?",
+    "o": [
+     "When fog cuts visibility to less than 50 m",
+     "In rain at dusk",
+     "Whenever the dipped headlights are on"
+    ],
+    "why": "The rear fog light dazzles drivers behind and may be used only when fog cuts visibility below 50 m."
+   },
+   "correct": [
+    0
+   ],
+   "sign": null,
+   "law": {
+    "ref": "§ 17 StVO",
+    "url": "https://www.gesetze-im-internet.de/stvo_2013/__17.html"
+   },
+   "keepOrder": false
+  },
+  {
+   "id": "G024",
+   "section": "G",
+   "topic": "gefahren",
+   "points": 4,
+   "de": {
+    "q": "Bei starkem Regen wird die Lenkung plötzlich leicht – Aquaplaning. Was tun Sie?",
+    "o": [
+     "Gas wegnehmen und auskuppeln",
+     "Kräftig bremsen",
+     "Das Lenkrad ruhig halten"
+    ],
+    "why": "Beim Aquaplaning schwimmen die Reifen auf. Gas wegnehmen und auskuppeln, das Lenkrad gerade halten und nicht bremsen, bis die Reifen wieder greifen."
+   },
+   "en": {
+    "q": "In heavy rain the steering suddenly feels light: aquaplaning. What do you do?",
+    "o": [
+     "Ease off the accelerator and press the clutch",
+     "Brake hard",
+     "Keep the steering wheel steady"
+    ],
+    "why": "When aquaplaning, the tyres float on the water. Ease off, press the clutch, hold the wheel straight and do not brake until the tyres grip again."
+   },
+   "correct": [
+    0,
+    2
+   ],
+   "sign": null,
+   "law": null,
+   "keepOrder": false
+  },
+  {
+   "id": "G025",
+   "section": "G",
+   "topic": "gefahren",
+   "points": 4,
+   "de": {
+    "q": "Nachts steht ein Reh im Scheinwerferlicht auf der Fahrbahn. Was tun Sie?",
+    "o": [
+     "Abblenden und hupen",
+     "Bremsen, wenn nötig bis zum Stillstand",
+     "Ruckartig ausweichen",
+     "Das Fernlicht anlassen, damit das Tier besser sieht"
+    ],
+    "why": "Fernlicht lässt Wild erstarren. Abblenden und hupen vertreibt es, und kontrolliertes Bremsen ist sicherer als ein Ausweichmanöver, das in den Gegenverkehr oder gegen einen Baum führen kann."
+   },
+   "en": {
+    "q": "At night a deer is standing in your headlights on the road. What do you do?",
+    "o": [
+     "Dip the headlights and sound the horn",
+     "Brake, to a standstill if necessary",
+     "Swerve sharply",
+     "Keep the full beam on so the animal can see better"
+    ],
+    "why": "Full beam makes wild animals freeze. Dipping the lights and sounding the horn drives them off, and controlled braking is safer than swerving into oncoming traffic or a tree."
+   },
+   "correct": [
+    0,
+    1
+   ],
+   "sign": null,
+   "law": null,
+   "keepOrder": false
+  },
+  {
+   "id": "G026",
+   "section": "G",
+   "topic": "gefahren",
+   "points": 4,
+   "de": {
+    "q": "Wo müssen Sie bei Temperaturen um den Gefrierpunkt besonders mit Glätte rechnen?",
+    "o": [
+     "Auf Brücken",
+     "In Waldschneisen",
+     "Auf beleuchteten Straßen in der Ortsmitte"
+    ],
+    "why": "Brücken kühlen von unten und oben aus, und in Waldschneisen kommt kaum Sonne hin. Dort friert die Fahrbahn zuerst und taut zuletzt."
+   },
+   "en": {
+    "q": "Where must you particularly expect ice when temperatures are around freezing?",
+    "o": [
+     "On bridges",
+     "In clearings through woods",
+     "On lit streets in a town centre"
+    ],
+    "why": "Bridges cool from above and below, and little sun reaches woodland clearings. The road freezes there first and thaws last."
+   },
+   "correct": [
+    0,
+    1
+   ],
+   "sign": null,
+   "law": null,
+   "keepOrder": false
+  },
+  {
+   "id": "G027",
+   "section": "G",
+   "topic": "gefahren",
+   "points": 3,
+   "de": {
+    "q": "Wie lang ist nach der Faustformel der Bremsweg bei einer normalen Bremsung aus 50 km/h?",
+    "o": [
+     "15 m",
+     "25 m",
+     "50 m"
+    ],
+    "why": "Faustformel für den normalen Bremsweg: (Geschwindigkeit in km/h ÷ 10) × (Geschwindigkeit in km/h ÷ 10). Bei 50 km/h: 5 × 5 = 25 m."
+   },
+   "en": {
+    "q": "By the rule of thumb, what is the braking distance of a normal stop from 50 km/h?",
+    "o": [
+     "15 m",
+     "25 m",
+     "50 m"
+    ],
+    "why": "Rule of thumb for normal braking distance: (speed in km/h ÷ 10) × (speed in km/h ÷ 10). At 50 km/h: 5 × 5 = 25 m."
+   },
+   "correct": [
+    1
+   ],
+   "sign": null,
+   "law": null,
+   "keepOrder": true
+  },
+  {
+   "id": "G028",
+   "section": "G",
+   "topic": "gefahren",
+   "points": 3,
+   "de": {
+    "q": "Wie lang ist nach der Faustformel der Reaktionsweg bei 50 km/h?",
+    "o": [
+     "5 m",
+     "15 m",
+     "25 m"
+    ],
+    "why": "Faustformel für den Reaktionsweg: (Geschwindigkeit in km/h ÷ 10) × 3. Bei 50 km/h: 5 × 3 = 15 m, zurückgelegt in der knappen Sekunde, bevor die Bremse wirkt."
+   },
+   "en": {
+    "q": "By the rule of thumb, what is the reaction distance at 50 km/h?",
+    "o": [
+     "5 m",
+     "15 m",
+     "25 m"
+    ],
+    "why": "Rule of thumb for reaction distance: (speed in km/h ÷ 10) × 3. At 50 km/h: 5 × 3 = 15 m, covered in the second or so before the brakes act."
+   },
+   "correct": [
+    1
+   ],
+   "sign": null,
+   "law": null,
+   "keepOrder": true
+  },
+  {
+   "id": "G029",
+   "section": "G",
+   "topic": "gefahren",
+   "points": 4,
+   "de": {
+    "q": "Wie lang ist nach den Faustformeln der Anhalteweg bei einer normalen Bremsung aus 100 km/h?",
+    "o": [
+     "100 m",
+     "130 m",
+     "200 m"
+    ],
+    "why": "Anhalteweg = Reaktionsweg + Bremsweg. Bei 100 km/h: 10 × 3 = 30 m Reaktionsweg plus 10 × 10 = 100 m Bremsweg, zusammen 130 m."
+   },
+   "en": {
+    "q": "By the rules of thumb, what is the stopping distance of a normal stop from 100 km/h?",
+    "o": [
+     "100 m",
+     "130 m",
+     "200 m"
+    ],
+    "why": "Stopping distance = reaction distance + braking distance. At 100 km/h: 10 × 3 = 30 m reaction distance plus 10 × 10 = 100 m braking distance, 130 m in all."
+   },
+   "correct": [
+    1
+   ],
+   "sign": null,
+   "law": null,
+   "keepOrder": true
+  },
+  {
+   "id": "G030",
+   "section": "G",
+   "topic": "gefahren",
+   "points": 3,
+   "de": {
+    "q": "Wie verändert sich der Bremsweg, wenn sich die Geschwindigkeit verdoppelt?",
+    "o": [
+     "Er verdoppelt sich",
+     "Er vervierfacht sich",
+     "Er bleibt gleich"
+    ],
+    "why": "Der Bremsweg wächst mit dem Quadrat der Geschwindigkeit: doppelte Geschwindigkeit, vierfacher Bremsweg."
+   },
+   "en": {
+    "q": "How does the braking distance change when speed doubles?",
+    "o": [
+     "It doubles",
+     "It quadruples",
+     "It stays the same"
+    ],
+    "why": "Braking distance grows with the square of speed: twice the speed means four times the braking distance."
+   },
+   "correct": [
+    1
+   ],
+   "sign": null,
+   "law": null,
+   "keepOrder": false
+  },
+  {
+   "id": "G031",
+   "section": "G",
+   "topic": "verhalten",
+   "points": 4,
+   "de": {
+    "q": "Sie überholen einen Radfahrer. Welche Seitenabstände müssen Sie mindestens einhalten?",
+    "o": [
+     "Innerorts 1,5 m",
+     "Außerorts 2 m",
+     "Innerorts 1 m",
+     "Außerorts 1,5 m"
+    ],
+    "why": "Beim Überholen von Fußgängern, Radfahrern und E-Scooter-Fahrern mit einem Kraftfahrzeug beträgt der Seitenabstand innerorts mindestens 1,5 m und außerorts mindestens 2 m."
+   },
+   "en": {
+    "q": "You are overtaking a cyclist. What is the minimum side clearance you must leave?",
+    "o": [
+     "1.5 m in built-up areas",
+     "2 m outside built-up areas",
+     "1 m in built-up areas",
+     "1.5 m outside built-up areas"
+    ],
+    "why": "When a motor vehicle overtakes pedestrians, cyclists or e-scooter riders, the side clearance must be at least 1.5 m in built-up areas and 2 m outside them."
+   },
+   "correct": [
+    0,
+    1
+   ],
+   "sign": null,
+   "law": {
+    "ref": "§ 5 StVO",
+    "url": "https://www.gesetze-im-internet.de/stvo_2013/__5.html"
+   },
+   "keepOrder": false
+  },
+  {
+   "id": "G032",
+   "section": "G",
+   "topic": "verhalten",
+   "points": 4,
+   "de": {
+    "q": "Sie wollen nach dem Parken auf der Fahrbahnseite aussteigen. Was beachten Sie?",
+    "o": [
+     "Vor dem Öffnen auf den nachfolgenden Verkehr achten, auch auf Radfahrer",
+     "Die Tür mit der rechten Hand öffnen, so dass ich mich umdrehe und nach hinten sehe",
+     "Die Tür schnell und weit aufstoßen"
+    ],
+    "why": "Wer aussteigt, muss eine Gefährdung anderer ausschließen. Der Blick in Spiegel und über die Schulter, unterstützt durch den „holländischen Griff“, schützt vor allem Radfahrer vor einer plötzlich geöffneten Tür."
+   },
+   "en": {
+    "q": "After parking, you want to get out on the traffic side. What do you watch for?",
+    "o": [
+     "Check for traffic from behind before opening, including cyclists",
+     "Open the door with my right hand, so I turn and look back",
+     "Push the door open quickly and wide"
+    ],
+    "why": "Anyone getting out must rule out endangering others. Checking the mirror and over your shoulder, helped by the “Dutch reach”, protects cyclists above all from a door opening suddenly."
+   },
+   "correct": [
+    0,
+    1
+   ],
+   "sign": null,
+   "law": {
+    "ref": "§ 14 StVO",
+    "url": "https://www.gesetze-im-internet.de/stvo_2013/__14.html"
+   },
+   "keepOrder": false
+  },
+  {
+   "id": "G033",
+   "section": "G",
+   "topic": "verhalten",
+   "points": 4,
+   "de": {
+    "q": "Ein Fahrstreifen endet, der Verkehr ist dicht. Was gilt?",
+    "o": [
+     "Die Fahrzeuge wechseln unmittelbar vor Beginn der Verengung abwechselnd ein",
+     "Man soll so früh wie möglich auf den durchgehenden Fahrstreifen wechseln",
+     "Wer auf dem durchgehenden Fahrstreifen fährt, muss den Wechsel ermöglichen"
+    ],
+    "why": "Beim Reißverschlussverfahren ordnen sich die Fahrzeuge erst unmittelbar vor der Verengung abwechselnd ein. Der Verkehr auf dem durchgehenden Fahrstreifen muss das ermöglichen."
+   },
+   "en": {
+    "q": "A lane is ending and traffic is heavy. What applies?",
+    "o": [
+     "Vehicles merge in turn just before the lane narrows",
+     "Drivers should move into the continuing lane as early as possible",
+     "Drivers in the continuing lane must let others merge"
+    ],
+    "why": "Under the zip-merge rule, vehicles merge in turn only just before the narrowing. Traffic in the continuing lane must make that possible."
+   },
+   "correct": [
+    0,
+    2
+   ],
+   "sign": null,
+   "law": {
+    "ref": "§ 7 StVO",
+    "url": "https://www.gesetze-im-internet.de/stvo_2013/__7.html"
+   },
+   "keepOrder": false
+  },
+  {
+   "id": "G034",
+   "section": "G",
+   "topic": "verhalten",
+   "points": 4,
+   "de": {
+    "q": "Wann müssen Sie rechts überholen?",
+    "o": [
+     "Wenn das Fahrzeug vor mir links abbiegen will und sich eingeordnet hat",
+     "Auf der Autobahn, wenn links langsam gefahren wird",
+     "Eine Straßenbahn, die auf der Fahrbahnmitte fährt"
+    ],
+    "why": "Wer links abbiegen will und sich eingeordnet hat, ist rechts zu überholen, ebenso Schienenfahrzeuge. Langsamer Verkehr links ist dagegen kein Grund, rechts zu überholen."
+   },
+   "en": {
+    "q": "When must you overtake on the right?",
+    "o": [
+     "When the vehicle ahead wants to turn left and has moved over",
+     "On the motorway, when traffic on the left is slow",
+     "A tram running in the middle of the road"
+    ],
+    "why": "A vehicle that has signalled and moved over to turn left must be overtaken on the right, and so must trams. Slow traffic on the left is no reason to overtake on the right."
+   },
+   "correct": [
+    0,
+    2
+   ],
+   "sign": null,
+   "law": {
+    "ref": "§ 5 StVO",
+    "url": "https://www.gesetze-im-internet.de/stvo_2013/__5.html"
+   },
+   "keepOrder": false
+  },
+  {
+   "id": "G035",
+   "section": "G",
+   "topic": "verhalten",
+   "points": 4,
+   "de": {
+    "q": "Wann ist Überholen verboten?",
+    "o": [
+     "Bei unklarer Verkehrslage",
+     "Wenn ich nicht übersehen kann, dass der Gegenverkehr nicht behindert wird",
+     "Wenn das Fahrzeug vor mir langsamer als erlaubt fährt"
+    ],
+    "why": "Überholen darf nur, wer übersehen kann, dass während des ganzen Überholvorgangs jede Behinderung des Gegenverkehrs ausgeschlossen ist. Bei unklarer Verkehrslage ist es unzulässig."
+   },
+   "en": {
+    "q": "When is overtaking prohibited?",
+    "o": [
+     "When the traffic situation is unclear",
+     "When I cannot see that oncoming traffic will not be hindered",
+     "When the vehicle ahead is driving below the limit"
+    ],
+    "why": "You may overtake only if you can see that oncoming traffic will not be hindered at any point during the manoeuvre. Overtaking is prohibited when the traffic situation is unclear."
+   },
+   "correct": [
+    0,
+    1
+   ],
+   "sign": null,
+   "law": {
+    "ref": "§ 5 StVO",
+    "url": "https://www.gesetze-im-internet.de/stvo_2013/__5.html"
+   },
+   "keepOrder": false
+  },
+  {
+   "id": "G036",
+   "section": "G",
+   "topic": "verhalten",
+   "points": 3,
+   "de": {
+    "q": "Welchen Abstand halten Sie außerorts zum vorausfahrenden Fahrzeug mindestens ein?",
+    "o": [
+     "Etwa die Strecke, die ich in zwei Sekunden zurücklege",
+     "Eine Fahrzeuglänge",
+     "Etwa 10 m bei jeder Geschwindigkeit"
+    ],
+    "why": "Der Abstand muss so groß sein, dass man auch hinter einem plötzlich bremsenden Fahrzeug halten kann. Faustregeln: zwei Sekunden Abstand oder „halber Tacho“ in Metern."
+   },
+   "en": {
+    "q": "What is the minimum gap you keep to the vehicle ahead outside built-up areas?",
+    "o": [
+     "About the distance I cover in two seconds",
+     "One car length",
+     "About 10 m at any speed"
+    ],
+    "why": "The gap must let you stop even if the vehicle ahead brakes suddenly. Rules of thumb: a two-second gap, or half your speed in metres."
+   },
+   "correct": [
+    0
+   ],
+   "sign": null,
+   "law": {
+    "ref": "§ 4 StVO",
+    "url": "https://www.gesetze-im-internet.de/stvo_2013/__4.html"
+   },
+   "keepOrder": false
+  },
+  {
+   "id": "G037",
+   "section": "G",
+   "topic": "verhalten",
+   "points": 3,
+   "de": {
+    "q": "Wann dürfen Sie hupen?",
+    "o": [
+     "Wenn ich mich oder andere gefährdet sehe",
+     "Außerorts, um ein Überholen anzukündigen",
+     "Um Bekannte zu grüßen"
+    ],
+    "why": "Schall- und Leuchtzeichen darf nur geben, wer außerhalb geschlossener Ortschaften überholt oder wer sich oder andere gefährdet sieht."
+   },
+   "en": {
+    "q": "When may you sound the horn?",
+    "o": [
+     "When I see myself or others in danger",
+     "Outside built-up areas, to announce that I am overtaking",
+     "To greet people I know"
+    ],
+    "why": "Horn and headlight signals are only for announcing an overtake outside built-up areas, or when you see yourself or others in danger."
+   },
+   "correct": [
+    0,
+    1
+   ],
+   "sign": null,
+   "law": {
+    "ref": "§ 16 StVO",
+    "url": "https://www.gesetze-im-internet.de/stvo_2013/__16.html"
+   },
+   "keepOrder": false
+  },
+  {
+   "id": "G038",
+   "section": "G",
+   "topic": "verhalten",
+   "points": 4,
+   "de": {
+    "q": "Sie nähern sich einem Fußgängerüberweg (Zebrastreifen). Was gilt?",
+    "o": [
+     "Fußgängern, die erkennbar hinüberwollen, muss ich das Überqueren ermöglichen",
+     "Ich darf nur mit mäßiger Geschwindigkeit heranfahren",
+     "Überholen ist erlaubt, wenn gerade niemand den Überweg benutzt"
+    ],
+    "why": "Am Fußgängerüberweg muss man Fußgängern, die ihn erkennbar benutzen wollen, das Überqueren ermöglichen und darf nur mit mäßiger Geschwindigkeit heranfahren. An Überwegen darf nicht überholt werden."
+   },
+   "en": {
+    "q": "You are approaching a zebra crossing. What applies?",
+    "o": [
+     "I must let pedestrians who clearly want to cross do so",
+     "I may approach only at moderate speed",
+     "Overtaking is allowed if nobody is using the crossing at the moment"
+    ],
+    "why": "At a zebra crossing you must let pedestrians who clearly want to cross do so, and approach only at moderate speed. Overtaking at crossings is prohibited."
+   },
+   "correct": [
+    0,
+    1
+   ],
+   "sign": null,
+   "law": {
+    "ref": "§ 26 StVO",
+    "url": "https://www.gesetze-im-internet.de/stvo_2013/__26.html"
+   },
+   "keepOrder": false
+  },
+  {
+   "id": "G039",
+   "section": "G",
+   "topic": "verhalten",
+   "points": 4,
+   "de": {
+    "q": "Die Ampel springt von Grün auf Gelb. Wie verhalten Sie sich?",
+    "o": [
+     "Ich halte vor der Kreuzung, wenn das mit normaler Bremsung möglich ist",
+     "Ich beschleunige, um noch durchzukommen",
+     "Kann ich nicht mehr sicher anhalten, fahre ich vorsichtig weiter"
+    ],
+    "why": "Gelb ordnet an, vor der Kreuzung auf das nächste Zeichen zu warten. Wer so nah ist, dass er nur mit einer Gefahrbremsung halten könnte, fährt vorsichtig weiter."
+   },
+   "en": {
+    "q": "The light changes from green to amber. How do you behave?",
+    "o": [
+     "I stop before the crossroads if I can with normal braking",
+     "I speed up to get through",
+     "If I can no longer stop safely, I carry on with care"
+    ],
+    "why": "Amber means wait before the crossroads for the next signal. If you are so close that only an emergency stop would do, carry on with care."
+   },
+   "correct": [
+    0,
+    2
+   ],
+   "sign": null,
+   "law": {
+    "ref": "§ 37 StVO",
+    "url": "https://www.gesetze-im-internet.de/stvo_2013/__37.html"
+   },
+   "keepOrder": false
+  },
+  {
+   "id": "G040",
+   "section": "G",
+   "topic": "verhalten",
+   "points": 4,
+   "de": {
+    "q": "Wann dürfen Sie als Fahrer ein Mobiltelefon in die Hand nehmen?",
+    "o": [
+     "Wenn das Fahrzeug steht und der Motor vollständig ausgeschaltet ist",
+     "Beim Warten an einer roten Ampel mit Start-Stopp-Automatik",
+     "Für kurze Nachrichten bei langsamer Fahrt"
+    ],
+    "why": "Ein Mobiltelefon darf nur in die Hand genommen werden, wenn das Fahrzeug steht und der Motor vollständig aus ist. Ein von der Start-Stopp-Automatik abgeschalteter Motor zählt nicht."
+   },
+   "en": {
+    "q": "When may you, as the driver, pick up a mobile phone?",
+    "o": [
+     "When the vehicle is stationary and the engine is fully switched off",
+     "While waiting at a red light with stop-start on",
+     "For short messages while driving slowly"
+    ],
+    "why": "A mobile phone may be held only when the vehicle is stationary and the engine is fully off. An engine stopped by the stop-start system does not count."
+   },
+   "correct": [
+    0
+   ],
+   "sign": null,
+   "law": {
+    "ref": "§ 23 StVO",
+    "url": "https://www.gesetze-im-internet.de/stvo_2013/__23.html"
+   },
+   "keepOrder": false
+  },
+  {
+   "id": "G041",
+   "section": "G",
+   "topic": "verhalten",
+   "points": 3,
+   "de": {
+    "q": "Was ist im Tunnel verboten?",
+    "o": [
+     "Wenden",
+     "Ohne Abblendlicht durchfahren",
+     "Mit Abblendlicht durchfahren"
+    ],
+    "why": "Wer einen Tunnel (Zeichen 327) befährt, muss Abblendlicht benutzen und darf im Tunnel nicht wenden."
+   },
+   "en": {
+    "q": "What is prohibited in a tunnel?",
+    "o": [
+     "Turning round",
+     "Driving through without dipped headlights",
+     "Driving through with dipped headlights"
+    ],
+    "why": "In a tunnel (sign 327) you must use dipped headlights and must not turn round."
+   },
+   "correct": [
+    0,
+    1
+   ],
+   "sign": null,
+   "law": {
+    "ref": "Anlage 3 StVO",
+    "url": "https://www.gesetze-im-internet.de/stvo_2013/anlage_3.html"
+   },
+   "keepOrder": false
+  },
+  {
+   "id": "G042",
+   "section": "G",
+   "topic": "verhalten",
+   "points": 4,
+   "de": {
+    "q": "Was ist auf der Autobahn verboten?",
+    "o": [
+     "Wenden",
+     "Rückwärtsfahren",
+     "Halten, auch auf dem Seitenstreifen",
+     "Auf dem rechten Fahrstreifen fahren"
+    ],
+    "why": "Auf Autobahnen und Kraftfahrstraßen sind Wenden und Rückwärtsfahren verboten, ebenso das Halten, auch auf dem Seitenstreifen. Nur in einem Notfall oder bei einer Panne darf man dort anhalten."
+   },
+   "en": {
+    "q": "What is prohibited on the motorway?",
+    "o": [
+     "Turning round",
+     "Reversing",
+     "Stopping, including on the hard shoulder",
+     "Driving in the right-hand lane"
+    ],
+    "why": "On motorways and expressways, turning round, reversing and stopping, even on the hard shoulder, are prohibited. Stopping is allowed only in an emergency or a breakdown."
+   },
+   "correct": [
+    0,
+    1,
+    2
+   ],
+   "sign": null,
+   "law": {
+    "ref": "§ 18 StVO",
+    "url": "https://www.gesetze-im-internet.de/stvo_2013/__18.html"
+   },
+   "keepOrder": false
+  },
+  {
+   "id": "G043",
+   "section": "G",
+   "topic": "verhalten",
+   "points": 3,
+   "de": {
+    "q": "Dieses Zeichen kündigt eine Autobahn an. Welche Kraftfahrzeuge dürfen sie benutzen?",
+    "o": [
+     "Kraftfahrzeuge mit einer bauartbestimmten Höchstgeschwindigkeit von mehr als 25 km/h",
+     "Kraftfahrzeuge mit einer bauartbestimmten Höchstgeschwindigkeit von mehr als 60 km/h",
+     "Kraftfahrzeuge mit einer bauartbestimmten Höchstgeschwindigkeit von mehr als 80 km/h"
+    ],
+    "why": "Autobahnen und Kraftfahrstraßen dürfen nur Kraftfahrzeuge benutzen, die bauartbedingt schneller als 60 km/h fahren können; für mitgeführte Anhänger gilt dasselbe."
+   },
+   "en": {
+    "q": "This sign marks a motorway. Which motor vehicles may use it?",
+    "o": [
+     "Motor vehicles with a design speed of more than 25 km/h",
+     "Motor vehicles with a design speed of more than 60 km/h",
+     "Motor vehicles with a design speed of more than 80 km/h"
+    ],
+    "why": "Only motor vehicles built to go faster than 60 km/h may use motorways and expressways, and the same applies to any trailer they tow."
+   },
+   "correct": [
+    1
+   ],
+   "sign": {
+    "code": "z330-1",
+    "number": "330.1",
+    "de": "Autobahn",
+    "en": "Motorway"
+   },
+   "law": {
+    "ref": "§ 18 StVO",
+    "url": "https://www.gesetze-im-internet.de/stvo_2013/__18.html"
+   },
+   "keepOrder": true
+  },
+  {
+   "id": "G044",
+   "section": "G",
+   "topic": "vorfahrt",
+   "points": 4,
+   "de": {
+    "q": "Sie fahren über den Beschleunigungsstreifen auf die Autobahn auf. Was gilt?",
+    "o": [
+     "Der Verkehr auf der durchgehenden Fahrbahn hat Vorfahrt",
+     "Ich beschleunige auf dem Beschleunigungsstreifen auf die Geschwindigkeit des fließenden Verkehrs",
+     "Der Verkehr auf der Autobahn muss mich einfahren lassen"
+    ],
+    "why": "Der Verkehr auf der durchgehenden Fahrbahn der Autobahn hat Vorfahrt. Wer auffährt, nutzt den Beschleunigungsstreifen, um sich mit passender Geschwindigkeit in eine Lücke einzuordnen."
+   },
+   "en": {
+    "q": "You are joining the motorway from the slip road. What applies?",
+    "o": [
+     "Traffic on the main carriageway has priority",
+     "I use the slip road to match the speed of the traffic flow",
+     "Traffic on the motorway must let me in"
+    ],
+    "why": "Traffic on the motorway's main carriageway has priority. Drivers joining use the slip road to reach a suitable speed and merge into a gap."
+   },
+   "correct": [
+    0,
+    1
+   ],
+   "sign": null,
+   "law": {
+    "ref": "§ 18 StVO",
+    "url": "https://www.gesetze-im-internet.de/stvo_2013/__18.html"
+   },
+   "keepOrder": false
+  },
+  {
+   "id": "G045",
+   "section": "G",
+   "topic": "verhalten",
+   "points": 3,
+   "de": {
+    "q": "Ihr Auto bleibt auf einer schnellen Landstraße an einer schlecht sichtbaren Stelle liegen. Was tun Sie?",
+    "o": [
+     "Sofort das Warnblinklicht einschalten",
+     "Ein Warndreieck in ausreichender Entfernung aufstellen, bei schnellem Verkehr in etwa 100 m",
+     "Im Fahrzeug sitzen bleiben, ohne etwas zu tun, bis Hilfe kommt"
+    ],
+    "why": "Wer an einer Stelle liegen bleibt, an der das Fahrzeug nicht rechtzeitig erkannt werden kann, muss sofort das Warnblinklicht einschalten und dann ein Warndreieck in ausreichender Entfernung aufstellen, bei schnellem Verkehr in etwa 100 m."
+   },
+   "en": {
+    "q": "Your car breaks down on a fast country road where it is hard to see. What do you do?",
+    "o": [
+     "Switch on the hazard lights at once",
+     "Set up a warning triangle far enough back, about 100 m where traffic is fast",
+     "Stay in the car without doing anything until help comes"
+    ],
+    "why": "If your vehicle breaks down where it cannot be seen in time, switch on the hazard lights at once, then set up a warning triangle far enough back, about 100 m where traffic is fast."
+   },
+   "correct": [
+    0,
+    1
+   ],
+   "sign": null,
+   "law": {
+    "ref": "§ 15 StVO",
+    "url": "https://www.gesetze-im-internet.de/stvo_2013/__15.html"
+   },
+   "keepOrder": false
+  },
+  {
+   "id": "G046",
+   "section": "G",
+   "topic": "verhalten",
+   "points": 3,
+   "de": {
+    "q": "Wann müssen Sie abblenden?",
+    "o": [
+     "Wenn mir ein Fahrzeug entgegenkommt",
+     "Wenn ich dicht hinter einem anderen Fahrzeug fahre",
+     "Außerorts auf leerer Straße"
+    ],
+    "why": "Rechtzeitig abzublenden ist, wenn ein Fahrzeug entgegenkommt oder mit geringem Abstand vorausfährt, damit niemand geblendet wird."
+   },
+   "en": {
+    "q": "When must you dip your headlights?",
+    "o": [
+     "When a vehicle is coming towards me",
+     "When I am driving close behind another vehicle",
+     "On an empty road outside built-up areas"
+    ],
+    "why": "Dip your headlights in good time when a vehicle is coming towards you or driving a short distance ahead, so that nobody is dazzled."
+   },
+   "correct": [
+    0,
+    1
+   ],
+   "sign": null,
+   "law": {
+    "ref": "§ 17 StVO",
+    "url": "https://www.gesetze-im-internet.de/stvo_2013/__17.html"
+   },
+   "keepOrder": false
+  },
+  {
+   "id": "G047",
+   "section": "G",
+   "topic": "verhalten",
+   "points": 3,
+   "de": {
+    "q": "Wo ist das Parken unzulässig?",
+    "o": [
+     "Vor Grundstücksein- und -ausfahrten",
+     "Vor und hinter Kreuzungen und Einmündungen bis zu je 5 m von den Schnittpunkten der Fahrbahnkanten",
+     "Auf einem gekennzeichneten Parkstreifen"
+    ],
+    "why": "Unter anderem ist das Parken vor Grundstücksein- und -ausfahrten und bis zu je 5 m vor und hinter Kreuzungen und Einmündungen unzulässig, vor Kreuzungen mit baulichem Radweg rechts sogar bis 8 m."
+   },
+   "en": {
+    "q": "Where is parking prohibited?",
+    "o": [
+     "In front of entrances and exits to properties",
+     "Within 5 m before and after crossroads and junctions, measured from where the kerb lines meet",
+     "In a marked parking lane"
+    ],
+    "why": "Among other places, parking is prohibited in front of property entrances and exits and within 5 m before and after crossroads and junctions; before a crossroads with a separate cycle path on the right, it is 8 m."
+   },
+   "correct": [
+    0,
+    1
+   ],
+   "sign": null,
+   "law": {
+    "ref": "§ 12 StVO",
+    "url": "https://www.gesetze-im-internet.de/stvo_2013/__12.html"
+   },
+   "keepOrder": false
+  },
+  {
+   "id": "G048",
+   "section": "G",
+   "topic": "verhalten",
+   "points": 3,
+   "de": {
+    "q": "Wann parken Sie?",
+    "o": [
+     "Wenn ich länger als drei Minuten halte",
+     "Wenn ich mein Fahrzeug verlasse",
+     "Wenn ich verkehrsbedingt an einer roten Ampel warte"
+    ],
+    "why": "Wer sein Fahrzeug verlässt oder länger als drei Minuten hält, der parkt. Verkehrsbedingtes Warten ist weder Halten noch Parken."
+   },
+   "en": {
+    "q": "When are you parking?",
+    "o": [
+     "When I stop for more than three minutes",
+     "When I leave my vehicle",
+     "When I wait at a red light because of the traffic"
+    ],
+    "why": "Leaving your vehicle, or stopping for more than three minutes, counts as parking. Waiting because of traffic is neither stopping nor parking."
+   },
+   "correct": [
+    0,
+    1
+   ],
+   "sign": null,
+   "law": {
+    "ref": "§ 12 StVO",
+    "url": "https://www.gesetze-im-internet.de/stvo_2013/__12.html"
+   },
+   "keepOrder": false
+  },
+  {
+   "id": "G049",
+   "section": "G",
+   "topic": "zeichen",
+   "points": 3,
+   "de": {
+    "q": "Was bedeutet dieses Verkehrszeichen?",
+    "o": [
+     "Das Halten auf der Fahrbahn ist verboten",
+     "Halten ist bis zu drei Minuten erlaubt",
+     "Nur das Parken ist verboten"
+    ],
+    "why": "Zeichen 283 ist das absolute Haltverbot: Auf der Fahrbahn darf überhaupt nicht gehalten werden, auch nicht kurz zum Ein- oder Aussteigen."
+   },
+   "en": {
+    "q": "What does this sign mean?",
+    "o": [
+     "Stopping on the carriageway is prohibited",
+     "Stopping is allowed for up to three minutes",
+     "Only parking is prohibited"
+    ],
+    "why": "Sign 283 is a total ban on stopping: you may not stop on the carriageway at all, not even briefly to let someone in or out."
+   },
+   "correct": [
+    0
+   ],
+   "sign": {
+    "code": "z283",
+    "number": "283",
+    "de": "Absolutes Haltverbot",
+    "en": "No stopping"
+   },
+   "law": {
+    "ref": "Anlage 2 StVO",
+    "url": "https://www.gesetze-im-internet.de/stvo_2013/anlage_2.html"
+   },
+   "keepOrder": false
+  },
+  {
+   "id": "G050",
+   "section": "G",
+   "topic": "zeichen",
+   "points": 3,
+   "de": {
+    "q": "Was ist an diesem Verkehrszeichen erlaubt?",
+    "o": [
+     "Bis zu drei Minuten auf der Fahrbahn halten",
+     "Zum Be- oder Entladen auch länger halten, wenn es ohne Verzögerung geschieht",
+     "Eine Viertelstunde parken"
+    ],
+    "why": "Zeichen 286 ist das eingeschränkte Haltverbot: höchstens drei Minuten halten, ausgenommen zum Ein- oder Aussteigen und zum zügigen Be- oder Entladen."
+   },
+   "en": {
+    "q": "What is allowed at this sign?",
+    "o": [
+     "Stopping on the carriageway for up to three minutes",
+     "Stopping longer to load or unload, if it is done without delay",
+     "Parking for a quarter of an hour"
+    ],
+    "why": "Sign 286 restricts stopping: no more than three minutes, except to let people in or out and to load or unload without delay."
+   },
+   "correct": [
+    0,
+    1
+   ],
+   "sign": {
+    "code": "z286",
+    "number": "286",
+    "de": "Eingeschränktes Haltverbot",
+    "en": "Restricted stopping"
+   },
+   "law": {
+    "ref": "Anlage 2 StVO",
+    "url": "https://www.gesetze-im-internet.de/stvo_2013/anlage_2.html"
+   },
+   "keepOrder": false
+  },
+  {
+   "id": "G051",
+   "section": "G",
+   "topic": "zeichen",
+   "points": 3,
+   "de": {
+    "q": "Was bedeutet dieses Verkehrszeichen?",
+    "o": [
+     "Verbot der Einfahrt",
+     "Durchfahrt nur für Anlieger",
+     "Haltverbot"
+    ],
+    "why": "Zeichen 267 verbietet die Einfahrt. Man sieht es meist am Ende einer Einbahnstraße."
+   },
+   "en": {
+    "q": "What does this sign mean?",
+    "o": [
+     "No entry",
+     "Access for residents only",
+     "No stopping"
+    ],
+    "why": "Sign 267 means no entry. It is usually seen at the far end of a one-way street."
+   },
+   "correct": [
+    0
+   ],
+   "sign": {
+    "code": "z267",
+    "number": "267",
+    "de": "Verbot der Einfahrt",
+    "en": "No entry"
+   },
+   "law": {
+    "ref": "Anlage 2 StVO",
+    "url": "https://www.gesetze-im-internet.de/stvo_2013/anlage_2.html"
+   },
+   "keepOrder": false
+  },
+  {
+   "id": "G052",
+   "section": "G",
+   "topic": "zeichen",
+   "points": 3,
+   "de": {
+    "q": "Was bedeutet dieses Verkehrszeichen?",
+    "o": [
+     "Verbot für Fahrzeuge aller Art",
+     "Fahrräder und Krafträder dürfen geschoben werden",
+     "Nur Lastkraftwagen dürfen nicht hineinfahren"
+    ],
+    "why": "Zeichen 250 verbietet Fahrzeuge aller Art. Es gilt nicht für Handfahrzeuge; Krafträder und Fahrräder dürfen geschoben werden."
+   },
+   "en": {
+    "q": "What does this sign mean?",
+    "o": [
+     "No vehicles of any kind",
+     "Bicycles and motorcycles may be pushed",
+     "Only lorries must not enter"
+    ],
+    "why": "Sign 250 bans vehicles of any kind. It does not apply to handcarts, and bicycles and motorcycles may be pushed."
+   },
+   "correct": [
+    0,
+    1
+   ],
+   "sign": {
+    "code": "z250",
+    "number": "250",
+    "de": "Verbot für Fahrzeuge aller Art",
+    "en": "No vehicles"
+   },
+   "law": {
+    "ref": "Anlage 2 StVO",
+    "url": "https://www.gesetze-im-internet.de/stvo_2013/anlage_2.html"
+   },
+   "keepOrder": false
+  },
+  {
+   "id": "G053",
+   "section": "G",
+   "topic": "zeichen",
+   "points": 3,
+   "de": {
+    "q": "Was bedeutet dieses Verkehrszeichen?",
+    "o": [
+     "Ich darf nicht schneller als 30 km/h fahren",
+     "Ich muss mindestens 30 km/h fahren",
+     "30 km/h sind empfohlen"
+    ],
+    "why": "Zeichen 274 begrenzt die Höchstgeschwindigkeit auf den angegebenen Wert. Eine Mindestgeschwindigkeit zeigt ein blaues Rundzeichen (Zeichen 275)."
+   },
+   "en": {
+    "q": "What does this sign mean?",
+    "o": [
+     "I must not drive faster than 30 km/h",
+     "I must drive at least 30 km/h",
+     "30 km/h is recommended"
+    ],
+    "why": "Sign 274 sets the maximum speed shown. A minimum speed is shown by a round blue sign (sign 275)."
+   },
+   "correct": [
+    0
+   ],
+   "sign": {
+    "code": "z274-30",
+    "number": "274",
+    "de": "Zulässige Höchstgeschwindigkeit 30 km/h",
+    "en": "Maximum speed 30 km/h"
+   },
+   "law": {
+    "ref": "Anlage 2 StVO",
+    "url": "https://www.gesetze-im-internet.de/stvo_2013/anlage_2.html"
+   },
+   "keepOrder": false
+  },
+  {
+   "id": "G054",
+   "section": "G",
+   "topic": "zeichen",
+   "points": 3,
+   "de": {
+    "q": "Was bedeutet dieses Verkehrszeichen?",
+    "o": [
+     "Gefahrstelle",
+     "Ein Zusatzzeichen kann die Gefahr näher bezeichnen",
+     "Vorfahrt gewähren"
+    ],
+    "why": "Zeichen 101 warnt vor einer Gefahrstelle. Ein Zusatzzeichen darunter kann angeben, worum es sich handelt, etwa um Unfallgefahr oder Schäden an der Fahrbahn."
+   },
+   "en": {
+    "q": "What does this sign mean?",
+    "o": [
+     "Danger",
+     "A plate below it can say what the danger is",
+     "Give way"
+    ],
+    "why": "Sign 101 warns of a hazard. A plate below it can say what it is, such as an accident black spot or a damaged road surface."
+   },
+   "correct": [
+    0,
+    1
+   ],
+   "sign": {
+    "code": "z101",
+    "number": "101",
+    "de": "Gefahrstelle",
+    "en": "Danger"
+   },
+   "law": {
+    "ref": "Anlage 1 StVO",
+    "url": "https://www.gesetze-im-internet.de/stvo_2013/anlage_1.html"
+   },
+   "keepOrder": false
+  },
+  {
+   "id": "G055",
+   "section": "G",
+   "topic": "vorfahrt",
+   "points": 5,
+   "de": {
+    "q": "Was bedeutet dieses Verkehrszeichen?",
+    "o": [
+     "Schienenfahrzeuge haben Vorrang",
+     "Innerorts darf ich bis zu je 5 m, außerorts bis zu je 50 m davor und dahinter nicht parken",
+     "Ich muss in jedem Fall anhalten"
+    ],
+    "why": "Am Andreaskreuz (Zeichen 201) haben Schienenfahrzeuge Vorrang. Davor und dahinter gilt ein Parkverbot: innerorts bis zu je 5 m, außerorts bis zu je 50 m."
+   },
+   "en": {
+    "q": "What does this sign mean?",
+    "o": [
+     "Rail vehicles have priority",
+     "I must not park within 5 m before or after it in built-up areas, or within 50 m outside them",
+     "I must always stop"
+    ],
+    "why": "At the St Andrew's cross (sign 201), rail vehicles have priority. Parking is prohibited before and after it: within 5 m in built-up areas, within 50 m outside them."
+   },
+   "correct": [
+    0,
+    1
+   ],
+   "sign": {
+    "code": "z201",
+    "number": "201",
+    "de": "Andreaskreuz",
+    "en": "St Andrew's cross (level crossing)"
+   },
+   "law": {
+    "ref": "Anlage 2 StVO",
+    "url": "https://www.gesetze-im-internet.de/stvo_2013/anlage_2.html"
+   },
+   "keepOrder": false
+  },
+  {
+   "id": "G056",
+   "section": "G",
+   "topic": "vorfahrt",
+   "points": 5,
+   "de": {
+    "q": "An einem Bahnübergang senken sich die Schranken. Was tun Sie?",
+    "o": [
+     "Vor dem Andreaskreuz warten",
+     "Schnell noch hinüberfahren",
+     "Zwischen den Schranken warten"
+    ],
+    "why": "Wenn sich Schranken senken oder geschlossen sind, ein Zug naht oder rotes Licht blinkt, müssen Fahrzeuge vor dem Andreaskreuz warten."
+   },
+   "en": {
+    "q": "The barriers at a level crossing are coming down. What do you do?",
+    "o": [
+     "Wait before the St Andrew's cross",
+     "Hurry across",
+     "Wait between the barriers"
+    ],
+    "why": "When barriers are lowering or down, a train is approaching or a red light flashes, vehicles must wait before the St Andrew's cross."
+   },
+   "correct": [
+    0
+   ],
+   "sign": null,
+   "law": {
+    "ref": "§ 19 StVO",
+    "url": "https://www.gesetze-im-internet.de/stvo_2013/__19.html"
+   },
+   "keepOrder": false
+  },
+  {
+   "id": "G057",
+   "section": "G",
+   "topic": "zeichen",
+   "points": 3,
+   "de": {
+    "q": "Was gilt in einer Straße mit diesem Verkehrszeichen?",
+    "o": [
+     "Ich darf sie nur in Pfeilrichtung befahren",
+     "Ich darf auch auf der linken Seite halten und parken",
+     "Ich darf in ihr wenden"
+    ],
+    "why": "Eine Einbahnstraße (Zeichen 220) darf nur in Pfeilrichtung befahren werden. Dafür darf man dort auch links halten und parken."
+   },
+   "en": {
+    "q": "What applies in a street with this sign?",
+    "o": [
+     "I may drive along it only in the direction of the arrow",
+     "I may also stop and park on the left",
+     "I may turn round in it"
+    ],
+    "why": "A one-way street (sign 220) may be driven only in the direction of the arrow. In return, stopping and parking on the left are allowed there."
+   },
+   "correct": [
+    0,
+    1
+   ],
+   "sign": {
+    "code": "z220",
+    "number": "220",
+    "de": "Einbahnstraße",
+    "en": "One-way street"
+   },
+   "law": {
+    "ref": "§ 12 StVO",
+    "url": "https://www.gesetze-im-internet.de/stvo_2013/__12.html"
+   },
+   "keepOrder": false
+  },
+  {
+   "id": "G058",
+   "section": "G",
+   "topic": "zeichen",
+   "points": 3,
+   "de": {
+    "q": "Was bedeutet dieses Verkehrszeichen?",
+    "o": [
+     "Ich muss rechts abbiegen",
+     "Ich darf rechts abbiegen, aber auch geradeaus fahren",
+     "Rechts abbiegen ist nur empfohlen"
+    ],
+    "why": "Zeichen 209 schreibt die Fahrtrichtung rechts vor. Wer ein Fahrzeug führt, muss ihr folgen."
+   },
+   "en": {
+    "q": "What does this sign mean?",
+    "o": [
+     "I must turn right",
+     "I may turn right but may also go straight on",
+     "Turning right is only recommended"
+    ],
+    "why": "Sign 209 makes turning right compulsory. Every driver must follow it."
+   },
+   "correct": [
+    0
+   ],
+   "sign": {
+    "code": "z209",
+    "number": "209",
+    "de": "Vorgeschriebene Fahrtrichtung rechts",
+    "en": "Turn right"
+   },
+   "law": {
+    "ref": "Anlage 2 StVO",
+    "url": "https://www.gesetze-im-internet.de/stvo_2013/anlage_2.html"
+   },
+   "keepOrder": false
+  },
+  {
+   "id": "G059",
+   "section": "G",
+   "topic": "umwelt",
+   "points": 3,
+   "de": {
+    "q": "Wie fahren Sie umweltschonend?",
+    "o": [
+     "Früh hochschalten",
+     "Den Motor im Stand warmlaufen lassen",
+     "Vorausschauend fahren und unnötiges Bremsen vermeiden"
+    ],
+    "why": "Niedrige Drehzahlen und gleichmäßiges, vorausschauendes Fahren sparen Kraftstoff. Den Motor im Stand laufen zu lassen, ist verboten und schadet der Umwelt."
+   },
+   "en": {
+    "q": "How do you drive in an environmentally friendly way?",
+    "o": [
+     "Change up early",
+     "Let the engine warm up while stationary",
+     "Look ahead and avoid unnecessary braking"
+    ],
+    "why": "Low revs and smooth, anticipatory driving save fuel. Leaving the engine running while stationary is prohibited and harms the environment."
+   },
+   "correct": [
+    0,
+    2
+   ],
+   "sign": null,
+   "law": {
+    "ref": "§ 30 StVO",
+    "url": "https://www.gesetze-im-internet.de/stvo_2013/__30.html"
+   },
+   "keepOrder": false
+  },
+  {
+   "id": "G060",
+   "section": "G",
+   "topic": "umwelt",
+   "points": 3,
+   "de": {
+    "q": "Dürfen Sie im Winter den Motor im Stand warmlaufen lassen?",
+    "o": [
+     "Nein, unnötiges Laufenlassen des Motors ist verboten",
+     "Ja, bis zu fünf Minuten",
+     "Ja, solange der Motor kalt ist"
+    ],
+    "why": "Es ist verboten, Fahrzeugmotoren unnötig laufen zu lassen. Ein Motor wird ohnehin beim Fahren mit geringer Last schneller warm."
+   },
+   "en": {
+    "q": "In winter, may you let the engine warm up while stationary?",
+    "o": [
+     "No, running the engine unnecessarily is prohibited",
+     "Yes, for up to five minutes",
+     "Yes, as long as the engine is cold"
+    ],
+    "why": "Running a vehicle's engine unnecessarily is prohibited. An engine warms up faster anyway when driven gently."
+   },
+   "correct": [
+    0
+   ],
+   "sign": null,
+   "law": {
+    "ref": "§ 30 StVO",
+    "url": "https://www.gesetze-im-internet.de/stvo_2013/__30.html"
+   },
+   "keepOrder": false
+  },
+  {
+   "id": "G061",
+   "section": "G",
+   "topic": "umwelt",
+   "points": 3,
+   "de": {
+    "q": "Was erhöht den Kraftstoffverbrauch?",
+    "o": [
+     "Ein unbenutzter Dachgepäckträger",
+     "Zu niedriger Reifendruck",
+     "Im Schiebebetrieb mit eingelegtem Gang rollen"
+    ],
+    "why": "Ein Dachträger erhöht den Luftwiderstand und zu wenig Luft im Reifen den Rollwiderstand. Rollen mit eingelegtem Gang nutzt dagegen die Schubabschaltung und verbraucht keinen Kraftstoff."
+   },
+   "en": {
+    "q": "What increases fuel consumption?",
+    "o": [
+     "An unused roof rack",
+     "Tyre pressure that is too low",
+     "Coasting in gear with the foot off the accelerator"
+    ],
+    "why": "A roof rack adds air resistance, and under-inflated tyres add rolling resistance. Coasting in gear, by contrast, uses the fuel cut-off and burns no fuel."
+   },
+   "correct": [
+    0,
+    1
+   ],
+   "sign": null,
+   "law": null,
+   "keepOrder": false
+  },
+  {
+   "id": "G062",
+   "section": "G",
+   "topic": "umwelt",
+   "points": 3,
+   "de": {
+    "q": "Wie entsorgen Sie Altöl nach einem Ölwechsel?",
+    "o": [
+     "Bei einer Annahmestelle, zum Beispiel dort, wo ich das Öl gekauft habe",
+     "Im Abfluss oder Gully",
+     "Im Hausmüll"
+    ],
+    "why": "Schon wenig Altöl verunreinigt große Mengen Wasser. Händler, die Motoröl verkaufen, müssen Altöl in gleicher Menge zurücknehmen."
+   },
+   "en": {
+    "q": "How do you dispose of used oil after an oil change?",
+    "o": [
+     "At a collection point, for example where I bought the oil",
+     "Down a drain",
+     "With the household rubbish"
+    ],
+    "why": "Even a little used oil contaminates large amounts of water. Shops that sell engine oil must take back the same amount of used oil."
+   },
+   "correct": [
+    0
+   ],
+   "sign": null,
+   "law": null,
+   "keepOrder": false
+  },
+  {
+   "id": "G063",
+   "section": "G",
+   "topic": "eignung",
+   "points": 5,
+   "de": {
+    "q": "Ab welchem Blutalkoholwert handeln Sie ordnungswidrig, auch ohne Ausfallerscheinungen?",
+    "o": [
+     "0,3 Promille",
+     "0,5 Promille",
+     "1,1 Promille"
+    ],
+    "why": "Ab 0,5 Promille im Blut (0,25 mg/l in der Atemluft) ist das Fahren eine Ordnungswidrigkeit. Mit Ausfallerscheinungen kann es schon ab 0,3 Promille eine Straftat sein."
+   },
+   "en": {
+    "q": "From what blood alcohol level do you commit an offence, even without signs of impairment?",
+    "o": [
+     "0.3 per mille",
+     "0.5 per mille",
+     "1.1 per mille"
+    ],
+    "why": "From 0.5 per mille in the blood (0.25 mg/l in the breath), driving is an administrative offence. With signs of impairment it can be a crime from 0.3 per mille."
+   },
+   "correct": [
+    1
+   ],
+   "sign": null,
+   "law": {
+    "ref": "§ 24a StVG",
+    "url": "https://www.gesetze-im-internet.de/stvg/__24a.html"
+   },
+   "keepOrder": true
+  },
+  {
+   "id": "G064",
+   "section": "G",
+   "topic": "eignung",
+   "points": 5,
+   "de": {
+    "q": "Was gilt für Fahranfänger in der Probezeit und für Fahrer unter 21 Jahren?",
+    "o": [
+     "Sie dürfen während der Fahrt keinen Alkohol trinken",
+     "Sie dürfen die Fahrt nicht antreten, wenn sie unter der Wirkung von Alkohol stehen",
+     "Bis 0,5 Promille dürfen sie fahren"
+    ],
+    "why": "In der Probezeit und vor dem 21. Geburtstag gilt ein absolutes Alkoholverbot am Steuer: kein Alkohol beim Fahren und keine Fahrt unter Alkoholwirkung."
+   },
+   "en": {
+    "q": "What applies to new drivers on probation and to drivers under 21?",
+    "o": [
+     "They must not drink alcohol while driving",
+     "They must not set off while under the influence of alcohol",
+     "They may drive up to 0.5 per mille"
+    ],
+    "why": "During probation and before turning 21, drivers must not drink at all: no alcohol while driving and no driving under its influence."
+   },
+   "correct": [
+    0,
+    1
+   ],
+   "sign": null,
+   "law": {
+    "ref": "§ 24c StVG",
+    "url": "https://www.gesetze-im-internet.de/stvg/__24c.html"
+   },
+   "keepOrder": false
+  },
+  {
+   "id": "G065",
+   "section": "G",
+   "topic": "eignung",
+   "points": 4,
+   "de": {
+    "q": "Woran erkennen Sie, dass Sie übermüdet sind?",
+    "o": [
+     "Häufiges Gähnen",
+     "Brennende Augen",
+     "Bessere Konzentration"
+    ],
+    "why": "Gähnen, brennende Augen und Konzentrationsschwäche sind Warnzeichen. Dann hilft nur eine Pause, am besten mit kurzem Schlaf."
+   },
+   "en": {
+    "q": "How can you tell that you are overtired?",
+    "o": [
+     "Frequent yawning",
+     "Stinging eyes",
+     "Improved concentration"
+    ],
+    "why": "Yawning, stinging eyes and poor concentration are warning signs. The only remedy is a break, ideally with a short nap."
+   },
+   "correct": [
+    0,
+    1
+   ],
+   "sign": null,
+   "law": null,
+   "keepOrder": false
+  },
+  {
+   "id": "G066",
+   "section": "G",
+   "topic": "eignung",
+   "points": 4,
+   "de": {
+    "q": "Sie müssen ein Medikament einnehmen. Was tun Sie, bevor Sie fahren?",
+    "o": [
+     "Den Beipackzettel lesen oder ärztlich fragen, ob es die Fahrtüchtigkeit beeinträchtigt",
+     "Bei Zweifeln nicht selbst fahren",
+     "Die Wirkung mit Kaffee ausgleichen"
+    ],
+    "why": "Viele Medikamente machen müde oder verlangsamen die Reaktion. Wer unsicher ist, ob er fahrtüchtig ist, fährt nicht."
+   },
+   "en": {
+    "q": "You have to take a medicine. What do you do before driving?",
+    "o": [
+     "Read the leaflet or ask a doctor whether it affects driving",
+     "If in doubt, not drive myself",
+     "Offset its effect with coffee"
+    ],
+    "why": "Many medicines cause drowsiness or slow your reactions. If you are unsure whether you are fit to drive, do not drive."
+   },
+   "correct": [
+    0,
+    1
+   ],
+   "sign": null,
+   "law": null,
+   "keepOrder": false
+  },
+  {
+   "id": "G067",
+   "section": "G",
+   "topic": "eignung",
+   "points": 3,
+   "de": {
+    "q": "Wie lange dauert die Probezeit nach dem ersten Erwerb einer Fahrerlaubnis?",
+    "o": [
+     "1 Jahr",
+     "2 Jahre",
+     "3 Jahre"
+    ],
+    "why": "Die Probezeit dauert zwei Jahre ab der Erteilung der ersten Fahrerlaubnis."
+   },
+   "en": {
+    "q": "How long is the probation period after getting a first driving licence?",
+    "o": [
+     "1 year",
+     "2 years",
+     "3 years"
+    ],
+    "why": "The probation period lasts two years from when the first licence is issued."
+   },
+   "correct": [
+    1
+   ],
+   "sign": null,
+   "law": {
+    "ref": "§ 2a StVG",
+    "url": "https://www.gesetze-im-internet.de/stvg/__2a.html"
+   },
+   "keepOrder": true
+  },
+  {
+   "id": "G068",
+   "section": "G",
+   "topic": "eignung",
+   "points": 4,
+   "de": {
+    "q": "Was folgt aus einem schwerwiegenden Verstoß in der Probezeit?",
+    "o": [
+     "Die Teilnahme an einem Aufbauseminar wird angeordnet",
+     "Die Probezeit verlängert sich um zwei Jahre",
+     "Die Fahrerlaubnis wird für immer entzogen"
+    ],
+    "why": "Nach einem schwerwiegenden oder zwei weniger schwerwiegenden Verstößen ordnet die Behörde ein Aufbauseminar an, und die Probezeit verlängert sich um zwei Jahre auf insgesamt vier."
+   },
+   "en": {
+    "q": "What follows a serious offence during probation?",
+    "o": [
+     "Attending a remedial course is ordered",
+     "Probation is extended by two years",
+     "The licence is revoked for good"
+    ],
+    "why": "After one serious or two less serious offences, the authority orders a remedial course and probation is extended by two years, to four in all."
+   },
+   "correct": [
+    0,
+    1
+   ],
+   "sign": null,
+   "law": {
+    "ref": "§ 2a StVG",
+    "url": "https://www.gesetze-im-internet.de/stvg/__2a.html"
+   },
+   "keepOrder": false
+  },
+  {
+   "id": "G069",
+   "section": "G",
+   "topic": "verhalten",
+   "points": 4,
+   "de": {
+    "q": "Sie sind an einem Unfall beteiligt. Was müssen Sie tun?",
+    "o": [
+     "Sofort halten",
+     "Die Unfallstelle sichern",
+     "Weiterfahren, wenn nur Sachschaden entstanden ist und niemand zusieht"
+    ],
+    "why": "Nach einem Unfall muss jeder Beteiligte sofort halten, den Verkehr sichern und bei geringfügigem Schaden an die Seite fahren. Wer sich unerlaubt entfernt, begeht eine Straftat."
+   },
+   "en": {
+    "q": "You are involved in an accident. What must you do?",
+    "o": [
+     "Stop at once",
+     "Secure the scene",
+     "Drive on if there is only damage to property and nobody is watching"
+    ],
+    "why": "After an accident everyone involved must stop at once and secure the scene, moving aside if the damage is minor. Leaving without permission is a crime."
+   },
+   "correct": [
+    0,
+    1
+   ],
+   "sign": null,
+   "law": {
+    "ref": "§ 34 StVO",
+    "url": "https://www.gesetze-im-internet.de/stvo_2013/__34.html"
+   },
+   "keepOrder": false
+  },
+  {
+   "id": "G070",
+   "section": "G",
+   "topic": "verhalten",
+   "points": 4,
+   "de": {
+    "q": "Sie kommen als Erste an eine Unfallstelle mit Verletzten. Was tun Sie?",
+    "o": [
+     "Die Unfallstelle absichern",
+     "Den Notruf 112 wählen und Erste Hilfe leisten",
+     "Vorbeifahren, um nicht zu stören"
+    ],
+    "why": "Wer bei einem Unglücksfall nicht hilft, obwohl es erforderlich und zumutbar ist, macht sich strafbar. Absichern, Notruf und Erste Hilfe gehören zusammen."
+   },
+   "en": {
+    "q": "You are the first to reach an accident with injured people. What do you do?",
+    "o": [
+     "Secure the scene",
+     "Call the emergency number 112 and give first aid",
+     "Drive past so as not to get in the way"
+    ],
+    "why": "Failing to help in an emergency when it is necessary and reasonable is a crime. Securing the scene, calling for help and giving first aid go together."
+   },
+   "correct": [
+    0,
+    1
+   ],
+   "sign": null,
+   "law": {
+    "ref": "§ 323c StGB",
+    "url": "https://www.gesetze-im-internet.de/stgb/__323c.html"
+   },
+   "keepOrder": false
+  },
+  {
+   "id": "G071",
+   "section": "G",
+   "topic": "verhalten",
+   "points": 3,
+   "de": {
+    "q": "Wer muss sich während der Fahrt anschnallen?",
+    "o": [
+     "Alle Insassen auf Sitzen mit vorgeschriebenem Sicherheitsgurt",
+     "Nur die Person am Steuer",
+     "Mitfahrer auf der Rückbank nur auf der Autobahn"
+    ],
+    "why": "Vorgeschriebene Sicherheitsgurte müssen während der Fahrt von allen angelegt sein, vorne wie hinten und auf jeder Straße."
+   },
+   "en": {
+    "q": "Who must wear a seat belt while the car is moving?",
+    "o": [
+     "Everyone in a seat with a required seat belt",
+     "Only the driver",
+     "Rear passengers only on the motorway"
+    ],
+    "why": "Required seat belts must be worn by everyone while driving, in the front and the back and on every road."
+   },
+   "correct": [
+    0
+   ],
+   "sign": null,
+   "law": {
+    "ref": "§ 21a StVO",
+    "url": "https://www.gesetze-im-internet.de/stvo_2013/__21a.html"
+   },
+   "keepOrder": false
+  },
+  {
+   "id": "G072",
+   "section": "G",
+   "topic": "verhalten",
+   "points": 3,
+   "de": {
+    "q": "Wann müssen Sie auch am Tag mit Abblendlicht fahren?",
+    "o": [
+     "Wenn Nebel, Schneefall oder Regen die Sicht erheblich behindern",
+     "Im Tunnel",
+     "Bei Sonnenschein auf der Autobahn"
+    ],
+    "why": "Behindern Nebel, Schneefall oder Regen die Sicht erheblich, ist auch am Tag mit Abblendlicht zu fahren. Im Tunnel ist es ebenfalls vorgeschrieben."
+   },
+   "en": {
+    "q": "When must you use dipped headlights during the day?",
+    "o": [
+     "When fog, snow or rain severely limit visibility",
+     "In a tunnel",
+     "In sunshine on the motorway"
+    ],
+    "why": "When fog, snow or rain severely limit visibility, dipped headlights are required during the day too. They are also required in tunnels."
+   },
+   "correct": [
+    0,
+    1
+   ],
+   "sign": null,
+   "law": {
+    "ref": "§ 17 StVO",
+    "url": "https://www.gesetze-im-internet.de/stvo_2013/__17.html"
+   },
+   "keepOrder": false
+  },
+  {
+   "id": "B001",
+   "section": "B",
+   "topic": "verhalten",
+   "points": 3,
+   "de": {
+    "q": "Wie schnell dürfen Sie mit einem Pkw innerhalb geschlossener Ortschaften höchstens fahren, wenn nichts anderes angeordnet ist?",
+    "o": [
+     "30 km/h",
+     "50 km/h",
+     "60 km/h"
+    ],
+    "why": "Innerhalb geschlossener Ortschaften beträgt die zulässige Höchstgeschwindigkeit für alle Kraftfahrzeuge 50 km/h, sofern Verkehrszeichen nichts anderes anordnen."
+   },
+   "en": {
+    "q": "What is the speed limit for a car in built-up areas, unless signs say otherwise?",
+    "o": [
+     "30 km/h",
+     "50 km/h",
+     "60 km/h"
+    ],
+    "why": "In built-up areas the speed limit for all motor vehicles is 50 km/h, unless signs say otherwise."
+   },
+   "correct": [
+    1
+   ],
+   "sign": null,
+   "law": {
+    "ref": "§ 3 StVO",
+    "url": "https://www.gesetze-im-internet.de/stvo_2013/__3.html"
+   },
+   "keepOrder": true
+  },
+  {
+   "id": "B002",
+   "section": "B",
+   "topic": "verhalten",
+   "points": 3,
+   "de": {
+    "q": "Wie schnell dürfen Sie mit einem Pkw außerhalb geschlossener Ortschaften auf einer Landstraße mit einem Fahrstreifen je Richtung höchstens fahren?",
+    "o": [
+     "80 km/h",
+     "100 km/h",
+     "120 km/h"
+    ],
+    "why": "Außerorts gilt für Pkw 100 km/h. Die Grenze entfällt auf Autobahnen, auf Straßen mit baulich getrennten Richtungsfahrbahnen und auf Straßen mit mindestens zwei markierten Fahrstreifen je Richtung."
+   },
+   "en": {
+    "q": "What is the speed limit for a car on a country road with one lane in each direction?",
+    "o": [
+     "80 km/h",
+     "100 km/h",
+     "120 km/h"
+    ],
+    "why": "Outside built-up areas the limit for cars is 100 km/h. It does not apply on motorways, dual carriageways or roads with at least two marked lanes in each direction."
+   },
+   "correct": [
+    1
+   ],
+   "sign": null,
+   "law": {
+    "ref": "§ 3 StVO",
+    "url": "https://www.gesetze-im-internet.de/stvo_2013/__3.html"
+   },
+   "keepOrder": true
+  },
+  {
+   "id": "B003",
+   "section": "B",
+   "topic": "verhalten",
+   "points": 4,
+   "de": {
+    "q": "Wie schnell dürfen Sie mit einem Pkw mit Anhänger auf der Autobahn höchstens fahren, wenn keine Ausnahmegenehmigung vorliegt?",
+    "o": [
+     "60 km/h",
+     "80 km/h",
+     "100 km/h"
+    ],
+    "why": "Für Pkw mit Anhänger gelten außerorts und auf Autobahnen 80 km/h. Nur mit einer eingetragenen Tempo-100-Zulassung sind auf Autobahnen 100 km/h erlaubt."
+   },
+   "en": {
+    "q": "What is the speed limit for a car towing a trailer on the motorway, without a special permit?",
+    "o": [
+     "60 km/h",
+     "80 km/h",
+     "100 km/h"
+    ],
+    "why": "Cars towing a trailer are limited to 80 km/h outside built-up areas and on motorways. Only with a registered 100 km/h approval may they go 100 km/h on motorways."
+   },
+   "correct": [
+    1
+   ],
+   "sign": null,
+   "law": {
+    "ref": "§ 18 StVO",
+    "url": "https://www.gesetze-im-internet.de/stvo_2013/__18.html"
+   },
+   "keepOrder": true
+  },
+  {
+   "id": "B004",
+   "section": "B",
+   "topic": "verhalten",
+   "points": 3,
+   "de": {
+    "q": "Wie schnell dürfen Sie mit Schneeketten höchstens fahren?",
+    "o": [
+     "30 km/h",
+     "50 km/h",
+     "80 km/h"
+    ],
+    "why": "Mit Schneeketten beträgt die Höchstgeschwindigkeit auch unter günstigsten Umständen 50 km/h."
+   },
+   "en": {
+    "q": "What is the highest speed you may drive at with snow chains fitted?",
+    "o": [
+     "30 km/h",
+     "50 km/h",
+     "80 km/h"
+    ],
+    "why": "With snow chains the speed limit is 50 km/h, even in the best conditions."
+   },
+   "correct": [
+    1
+   ],
+   "sign": null,
+   "law": {
+    "ref": "§ 3 StVO",
+    "url": "https://www.gesetze-im-internet.de/stvo_2013/__3.html"
+   },
+   "keepOrder": true
+  },
+  {
+   "id": "B005",
+   "section": "B",
+   "topic": "verhalten",
+   "points": 3,
+   "de": {
+    "q": "Welche Richtgeschwindigkeit gilt auf Autobahnen für Pkw?",
+    "o": [
+     "120 km/h",
+     "130 km/h",
+     "150 km/h"
+    ],
+    "why": "Auf Autobahnen ohne Tempolimit gilt für Pkw eine Richtgeschwindigkeit von 130 km/h. Wer schneller fährt, kann bei einem Unfall eine Mithaftung tragen."
+   },
+   "en": {
+    "q": "What is the recommended speed for cars on motorways?",
+    "o": [
+     "120 km/h",
+     "130 km/h",
+     "150 km/h"
+    ],
+    "why": "On motorways without a speed limit, the recommended speed for cars is 130 km/h. Drivers who go faster can share liability in an accident."
+   },
+   "correct": [
+    1
+   ],
+   "sign": null,
+   "law": null,
+   "keepOrder": true
+  },
+  {
+   "id": "B006",
+   "section": "B",
+   "topic": "technik",
+   "points": 3,
+   "de": {
+    "q": "Welche Profiltiefe müssen die Reifen eines Pkw mindestens haben?",
+    "o": [
+     "1,0 mm",
+     "1,6 mm",
+     "3,0 mm"
+    ],
+    "why": "Das Hauptprofil muss am ganzen Umfang mindestens 1,6 mm tief sein. Für Sommerreifen werden 3 mm, für Winterreifen 4 mm empfohlen, weil der Bremsweg bei Nässe und Schnee darunter deutlich länger wird."
+   },
+   "en": {
+    "q": "What is the minimum tread depth for a car's tyres?",
+    "o": [
+     "1.0 mm",
+     "1.6 mm",
+     "3.0 mm"
+    ],
+    "why": "The main tread must be at least 1.6 mm deep all round. 3 mm is recommended for summer tyres and 4 mm for winter tyres, because braking distances on wet and snowy roads grow markedly below that."
+   },
+   "correct": [
+    1
+   ],
+   "sign": null,
+   "law": {
+    "ref": "§ 36 StVZO",
+    "url": "https://www.gesetze-im-internet.de/stvzo_2012/__36.html"
+   },
+   "keepOrder": true
+  },
+  {
+   "id": "B007",
+   "section": "B",
+   "topic": "technik",
+   "points": 4,
+   "de": {
+    "q": "Mit welchen Reifen dürfen Sie bei Glatteis, Schneeglätte oder Schneematsch fahren?",
+    "o": [
+     "Mit Reifen, die das Alpine-Symbol (Bergpiktogramm mit Schneeflocke) tragen",
+     "Mit Sommerreifen, wenn das Profil mindestens 4 mm tief ist",
+     "Mit beliebigen Reifen, wenn ich langsam fahre"
+    ],
+    "why": "Bei winterlichen Straßenverhältnissen dürfen Kraftfahrzeuge nur mit Reifen für winterliche Wetterverhältnisse fahren. Diese tragen das Alpine-Symbol."
+   },
+   "en": {
+    "q": "Which tyres may you use on black ice, packed snow or slush?",
+    "o": [
+     "Tyres marked with the alpine symbol (a mountain with a snowflake)",
+     "Summer tyres, if the tread is at least 4 mm deep",
+     "Any tyres, if I drive slowly"
+    ],
+    "why": "In wintry conditions, motor vehicles may only use tyres for wintry weather, which carry the alpine symbol."
+   },
+   "correct": [
+    0
+   ],
+   "sign": null,
+   "law": {
+    "ref": "§ 2 StVO",
+    "url": "https://www.gesetze-im-internet.de/stvo_2013/__2.html"
+   },
+   "keepOrder": false
+  },
+  {
+   "id": "B008",
+   "section": "B",
+   "topic": "betrieb",
+   "points": 3,
+   "de": {
+    "q": "Wie muss Ladung im Pkw gesichert sein?",
+    "o": [
+     "So, dass sie selbst bei einer Vollbremsung oder einem plötzlichen Ausweichen nicht verrutscht, umfällt oder herabfällt",
+     "Nur für Fahrten auf der Autobahn",
+     "Nur, wenn sie schwerer als 50 kg ist"
+    ],
+    "why": "Ladung muss so verstaut und gesichert sein, dass sie selbst bei Vollbremsung oder plötzlicher Ausweichbewegung nicht verrutschen, umfallen, herabfallen oder vermeidbaren Lärm erzeugen kann."
+   },
+   "en": {
+    "q": "How must a load in a car be secured?",
+    "o": [
+     "So that it cannot slide, topple or fall even under emergency braking or a sudden swerve",
+     "Only for journeys on the motorway",
+     "Only if it weighs more than 50 kg"
+    ],
+    "why": "A load must be stowed and secured so that it cannot slide, topple, roll about, fall off or make avoidable noise, even under emergency braking or a sudden swerve."
+   },
+   "correct": [
+    0
+   ],
+   "sign": null,
+   "law": {
+    "ref": "§ 22 StVO",
+    "url": "https://www.gesetze-im-internet.de/stvo_2013/__22.html"
+   },
+   "keepOrder": false
+  },
+  {
+   "id": "B009",
+   "section": "B",
+   "topic": "betrieb",
+   "points": 3,
+   "de": {
+    "q": "Ab welchem Überstand nach hinten müssen Sie Ladung besonders kenntlich machen, etwa mit einer hellroten Fahne?",
+    "o": [
+     "Ab mehr als 0,5 m über die Rückstrahler",
+     "Ab mehr als 1 m über die Rückstrahler",
+     "Ab mehr als 1,5 m über die Rückstrahler"
+    ],
+    "why": "Ragt Ladung mehr als 1 m über die Rückstrahler hinaus, muss ihr Ende kenntlich gemacht werden, etwa mit einer hellroten Fahne von mindestens 30 × 30 cm."
+   },
+   "en": {
+    "q": "From what overhang at the back must a load be specially marked, for example with a bright red flag?",
+    "o": [
+     "More than 0.5 m beyond the rear reflectors",
+     "More than 1 m beyond the rear reflectors",
+     "More than 1.5 m beyond the rear reflectors"
+    ],
+    "why": "If a load sticks out more than 1 m beyond the rear reflectors, its end must be marked, for example with a bright red flag of at least 30 × 30 cm."
+   },
+   "correct": [
+    1
+   ],
+   "sign": null,
+   "law": {
+    "ref": "§ 22 StVO",
+    "url": "https://www.gesetze-im-internet.de/stvo_2013/__22.html"
+   },
+   "keepOrder": true
+  },
+  {
+   "id": "B010",
+   "section": "B",
+   "topic": "technik",
+   "points": 2,
+   "de": {
+    "q": "Wann prüfen Sie den Reifendruck?",
+    "o": [
+     "Bei kalten Reifen",
+     "Regelmäßig, etwa alle zwei Wochen und vor langen Fahrten oder mit schwerer Beladung",
+     "Nur bei der Hauptuntersuchung"
+    ],
+    "why": "Warme Reifen zeigen einen zu hohen Druck an, also misst man kalt. Reifen verlieren langsam Luft; zu wenig Druck verlängert den Bremsweg, verschlechtert die Kurvenstabilität und erhöht den Verbrauch."
+   },
+   "en": {
+    "q": "When do you check the tyre pressure?",
+    "o": [
+     "When the tyres are cold",
+     "Regularly, about every two weeks, and before long journeys or carrying heavy loads",
+     "Only at the periodic vehicle inspection"
+    ],
+    "why": "Warm tyres read too high, so measure them cold. Tyres slowly lose air; too little pressure lengthens braking distances, weakens grip in bends and raises consumption."
+   },
+   "correct": [
+    0,
+    1
+   ],
+   "sign": null,
+   "law": null,
+   "keepOrder": false
+  },
+  {
+   "id": "B011",
+   "section": "B",
+   "topic": "technik",
+   "points": 3,
+   "de": {
+    "q": "Warum muss die Bremsflüssigkeit regelmäßig erneuert werden?",
+    "o": [
+     "Sie nimmt Wasser auf, wodurch ihr Siedepunkt sinkt",
+     "Sie verdunstet mit der Zeit",
+     "Sie wird mit der Zeit dickflüssig"
+    ],
+    "why": "Bremsflüssigkeit zieht Feuchtigkeit an. Mit dem Wasseranteil sinkt der Siedepunkt, und bei starker Beanspruchung können sich Dampfblasen bilden, so dass die Bremse versagt."
+   },
+   "en": {
+    "q": "Why must brake fluid be replaced regularly?",
+    "o": [
+     "It absorbs water, which lowers its boiling point",
+     "It evaporates over time",
+     "It thickens over time"
+    ],
+    "why": "Brake fluid attracts moisture. As its water content rises its boiling point falls, and under heavy use vapour bubbles can form so that the brakes fail."
+   },
+   "correct": [
+    0
+   ],
+   "sign": null,
+   "law": null,
+   "keepOrder": false
+  },
+  {
+   "id": "B012",
+   "section": "B",
+   "topic": "technik",
+   "points": 3,
+   "de": {
+    "q": "Was bewirkt das Antiblockiersystem (ABS) bei einer Vollbremsung?",
+    "o": [
+     "Das Fahrzeug bleibt lenkbar",
+     "Die Räder blockieren nicht",
+     "Der Bremsweg wird unter allen Umständen kürzer"
+    ],
+    "why": "ABS verhindert, dass die Räder blockieren, so dass das Fahrzeug auch bei einer Vollbremsung lenkbar bleibt. Auf losem Untergrund wie Schotter oder Neuschnee kann der Bremsweg sogar länger werden."
+   },
+   "en": {
+    "q": "What does the anti-lock braking system (ABS) do under emergency braking?",
+    "o": [
+     "The vehicle can still be steered",
+     "The wheels do not lock",
+     "The braking distance is shorter in all conditions"
+    ],
+    "why": "ABS stops the wheels from locking, so the vehicle can still be steered under full braking. On loose surfaces such as gravel or fresh snow, the braking distance can even get longer."
+   },
+   "correct": [
+    0,
+    1
+   ],
+   "sign": null,
+   "law": null,
+   "keepOrder": false
+  },
+  {
+   "id": "B013",
+   "section": "B",
+   "topic": "betrieb",
+   "points": 3,
+   "de": {
+    "q": "Was müssen Sie in einem Pkw mitführen?",
+    "o": [
+     "Ein Warndreieck",
+     "Einen Verbandkasten",
+     "Eine Warnweste",
+     "Einen Feuerlöscher"
+    ],
+    "why": "In jedem Pkw müssen ein Warndreieck, eine Warnweste und ein Verbandkasten mitgeführt werden. Ein Feuerlöscher ist nur in bestimmten Fahrzeugen wie Bussen vorgeschrieben."
+   },
+   "en": {
+    "q": "What must you carry in a car?",
+    "o": [
+     "A warning triangle",
+     "A first-aid kit",
+     "A high-visibility vest",
+     "A fire extinguisher"
+    ],
+    "why": "Every car must carry a warning triangle, a high-visibility vest and a first-aid kit. A fire extinguisher is required only in certain vehicles such as buses."
+   },
+   "correct": [
+    0,
+    1,
+    2
+   ],
+   "sign": null,
+   "law": {
+    "ref": "§ 53a StVZO",
+    "url": "https://www.gesetze-im-internet.de/stvzo_2012/__53a.html"
+   },
+   "keepOrder": false
+  },
+  {
+   "id": "B014",
+   "section": "B",
+   "topic": "betrieb",
+   "points": 2,
+   "de": {
+    "q": "Wie oft muss ein Pkw zur Hauptuntersuchung?",
+    "o": [
+     "Alle 2 Jahre, ein neues Fahrzeug erstmals nach 3 Jahren",
+     "Jedes Jahr",
+     "Alle 4 Jahre"
+    ],
+    "why": "Pkw müssen alle 24 Monate zur Hauptuntersuchung, neu zugelassene Fahrzeuge erstmals nach 36 Monaten."
+   },
+   "en": {
+    "q": "How often must a car undergo the periodic vehicle inspection?",
+    "o": [
+     "Every 2 years, a new car for the first time after 3 years",
+     "Every year",
+     "Every 4 years"
+    ],
+    "why": "Cars must be inspected every 24 months, and newly registered cars for the first time after 36 months."
+   },
+   "correct": [
+    0
+   ],
+   "sign": null,
+   "law": {
+    "ref": "§ 29 StVZO",
+    "url": "https://www.gesetze-im-internet.de/stvzo_2012/__29.html"
+   },
+   "keepOrder": false
+  },
+  {
+   "id": "B015",
+   "section": "B",
+   "topic": "eignung",
+   "points": 4,
+   "de": {
+    "q": "Welche Anhänger dürfen Sie mit der Fahrerlaubnis der Klasse B ziehen?",
+    "o": [
+     "Anhänger mit einer zulässigen Gesamtmasse von höchstens 750 kg",
+     "Schwerere Anhänger, wenn die zulässige Gesamtmasse der Kombination 3500 kg nicht übersteigt",
+     "Jeden Anhänger, den das Zugfahrzeug laut Zulassung ziehen darf"
+    ],
+    "why": "Klasse B erlaubt Anhänger bis 750 kg zulässiger Gesamtmasse, schwerere nur, wenn die Kombination insgesamt höchstens 3500 kg zulässige Gesamtmasse hat. Für mehr braucht man B96 oder BE."
+   },
+   "en": {
+    "q": "Which trailers may you tow with a class B licence?",
+    "o": [
+     "Trailers with a maximum permitted mass of up to 750 kg",
+     "Heavier trailers, if the combination's maximum permitted mass does not exceed 3500 kg",
+     "Any trailer the towing vehicle is registered to tow"
+    ],
+    "why": "Class B allows trailers up to 750 kg maximum permitted mass, and heavier ones only if the whole combination stays within 3500 kg. Anything more needs B96 or BE."
+   },
+   "correct": [
+    0,
+    1
+   ],
+   "sign": null,
+   "law": {
+    "ref": "§ 6 FeV",
+    "url": "https://www.gesetze-im-internet.de/fev_2010/__6.html"
+   },
+   "keepOrder": false
+  },
+  {
+   "id": "B016",
+   "section": "B",
+   "topic": "eignung",
+   "points": 3,
+   "de": {
+    "q": "Bis zu welcher zulässigen Gesamtmasse dürfen Sie mit Klasse B Kraftfahrzeuge führen?",
+    "o": [
+     "2800 kg",
+     "3500 kg",
+     "7500 kg"
+    ],
+    "why": "Klasse B gilt für Kraftfahrzeuge bis 3500 kg zulässiger Gesamtmasse, die für höchstens acht Personen außer dem Fahrer gebaut sind."
+   },
+   "en": {
+    "q": "Up to what maximum permitted mass may you drive motor vehicles with a class B licence?",
+    "o": [
+     "2800 kg",
+     "3500 kg",
+     "7500 kg"
+    ],
+    "why": "Class B covers motor vehicles up to 3500 kg maximum permitted mass, built to carry no more than eight people besides the driver."
+   },
+   "correct": [
+    1
+   ],
+   "sign": null,
+   "law": {
+    "ref": "§ 6 FeV",
+    "url": "https://www.gesetze-im-internet.de/fev_2010/__6.html"
+   },
+   "keepOrder": true
+  },
+  {
+   "id": "B017",
+   "section": "B",
+   "topic": "eignung",
+   "points": 4,
+   "de": {
+    "q": "Was gilt beim begleiteten Fahren ab 17?",
+    "o": [
+     "Ich darf nur mit einer in der Prüfungsbescheinigung namentlich eingetragenen Begleitperson fahren",
+     "Die Begleitperson muss mindestens 30 Jahre alt sein",
+     "Die Begleitperson darf mir ins Lenkrad greifen und Fahraufgaben übernehmen"
+    ],
+    "why": "Begleitpersonen müssen in der Prüfungsbescheinigung stehen, mindestens 30 Jahre alt sein und seit fünf Jahren Klasse B haben. Sie stehen nur als Ansprechpartner zur Verfügung und geben Rat oder kurze Hinweise."
+   },
+   "en": {
+    "q": "What applies to accompanied driving from age 17?",
+    "o": [
+     "I may drive only with a companion named on my test certificate",
+     "The companion must be at least 30 years old",
+     "The companion may grab the wheel and take over driving tasks"
+    ],
+    "why": "Companions must be named on the test certificate, be at least 30 and have held a class B licence for five years. They are there only to talk to, giving advice or brief pointers."
+   },
+   "correct": [
+    0,
+    1
+   ],
+   "sign": null,
+   "law": {
+    "ref": "§ 48a FeV",
+    "url": "https://www.gesetze-im-internet.de/fev_2010/__48a.html"
+   },
+   "keepOrder": false
+  },
+  {
+   "id": "B018",
+   "section": "B",
+   "topic": "betrieb",
+   "points": 4,
+   "de": {
+    "q": "Ein Kind ist 8 Jahre alt und 130 cm groß. Wie darf es im Pkw mitfahren?",
+    "o": [
+     "Nur mit einer für das Kind geeigneten Kinderrückhalteeinrichtung",
+     "Mit dem normalen Sicherheitsgurt, weil es älter als 6 Jahre ist",
+     "Auf dem Schoß eines Erwachsenen, wenn beide angeschnallt sind"
+    ],
+    "why": "Kinder unter 12 Jahren, die kleiner als 150 cm sind, dürfen auf Sitzen mit Gurtpflicht nur in einer für sie geeigneten Kinderrückhalteeinrichtung mitfahren."
+   },
+   "en": {
+    "q": "A child is 8 years old and 130 cm tall. How may they travel in a car?",
+    "o": [
+     "Only in a child restraint suited to them",
+     "With the normal seat belt, because they are older than 6",
+     "On an adult's lap, if both are belted"
+    ],
+    "why": "Children under 12 who are shorter than 150 cm may only travel in seats with seat belts if they use a child restraint suited to them."
+   },
+   "correct": [
+    0
+   ],
+   "sign": null,
+   "law": {
+    "ref": "§ 21 StVO",
+    "url": "https://www.gesetze-im-internet.de/stvo_2013/__21.html"
+   },
+   "keepOrder": false
+  },
+  {
+   "id": "B019",
+   "section": "B",
+   "topic": "betrieb",
+   "points": 4,
+   "de": {
+    "q": "Wann darf ein rückwärtsgerichteter Kindersitz auf dem Beifahrersitz benutzt werden?",
+    "o": [
+     "Nur wenn der Beifahrer-Frontairbag abgeschaltet ist",
+     "Immer, wenn das Kind angeschnallt ist",
+     "Nur auf kurzen Strecken innerorts"
+    ],
+    "why": "Ein auslösender Frontairbag trifft die Rückenlehne eines rückwärtsgerichteten Kindersitzes mit großer Wucht. Auf einem Sitz mit aktivem Frontairbag ist ein solcher Sitz deshalb nicht zulässig."
+   },
+   "en": {
+    "q": "When may a rear-facing child seat be used on the front passenger seat?",
+    "o": [
+     "Only when the passenger front airbag is switched off",
+     "Always, as long as the child is belted in",
+     "Only on short trips in built-up areas"
+    ],
+    "why": "A deploying front airbag strikes the back of a rear-facing child seat with great force, so such a seat is not allowed where the front airbag is active."
+   },
+   "correct": [
+    0
+   ],
+   "sign": null,
+   "law": {
+    "ref": "§ 35a StVZO",
+    "url": "https://www.gesetze-im-internet.de/stvzo_2012/__35a.html"
+   },
+   "keepOrder": false
+  },
+  {
+   "id": "B020",
+   "section": "B",
+   "topic": "gefahren",
+   "points": 4,
+   "de": {
+    "q": "Sie fahren ein langes, steiles Gefälle hinab. Wie verhindern Sie, dass die Bremsen überhitzen?",
+    "o": [
+     "Einen niedrigen Gang einlegen und die Motorbremse nutzen",
+     "Im Leerlauf rollen und mit der Fußbremse bremsen",
+     "Dauernd leicht auf der Bremse stehen"
+    ],
+    "why": "Bei Dauerbremsung werden die Bremsen heiß und verlieren Wirkung. Ein niedriger Gang lässt den Motor bremsen; die Fußbremse dient nur zum kurzen, kräftigen Nachbremsen."
+   },
+   "en": {
+    "q": "You are driving down a long, steep descent. How do you stop the brakes overheating?",
+    "o": [
+     "Select a low gear and use engine braking",
+     "Coast in neutral and use the foot brake",
+     "Keep the brake lightly pressed all the way"
+    ],
+    "why": "Constant braking makes the brakes hot and weak. A low gear lets the engine do the braking; use the foot brake only for short, firm applications."
+   },
+   "correct": [
+    0
+   ],
+   "sign": null,
+   "law": null,
+   "keepOrder": false
+  },
+  {
+   "id": "B021",
+   "section": "B",
+   "topic": "technik",
+   "points": 3,
+   "de": {
+    "q": "Ihr Pkw ist schwer beladen. Was ändert sich?",
+    "o": [
+     "Der Bremsweg wird länger",
+     "Die Scheinwerfer müssen gegebenenfalls mit der Leuchtweitenregulierung tiefer gestellt werden",
+     "Das Fahrzeug wird in Kurven stabiler"
+    ],
+    "why": "Mehr Masse verlängert den Bremsweg und verändert das Fahrverhalten in Kurven. Hinten schwer beladen leuchten die Scheinwerfer höher und blenden, wenn man sie nicht tiefer stellt."
+   },
+   "en": {
+    "q": "Your car is heavily loaded. What changes?",
+    "o": [
+     "The braking distance gets longer",
+     "The headlights may need lowering with the headlight levelling control",
+     "The car becomes more stable in bends"
+    ],
+    "why": "More mass lengthens the braking distance and changes handling in bends. Loaded at the back, the headlights point higher and dazzle others unless lowered."
+   },
+   "correct": [
+    0,
+    1
+   ],
+   "sign": null,
+   "law": null,
+   "keepOrder": false
+  },
+  {
+   "id": "B022",
+   "section": "B",
+   "topic": "technik",
+   "points": 2,
+   "de": {
+    "q": "Während der Fahrt leuchtet die Öldruck-Kontrollleuchte auf. Was tun Sie?",
+    "o": [
+     "So bald wie möglich verkehrsgerecht anhalten und den Motor abstellen",
+     "Bis zur nächsten Werkstatt weiterfahren",
+     "Den Ölstand prüfen"
+    ],
+    "why": "Ohne Öldruck wird der Motor nicht mehr geschmiert und kann in kurzer Zeit schwer beschädigt werden. Anhalten, Motor abstellen und den Ölstand prüfen."
+   },
+   "en": {
+    "q": "While you are driving, the oil pressure warning light comes on. What do you do?",
+    "o": [
+     "Stop safely as soon as possible and switch off the engine",
+     "Drive on to the next garage",
+     "Check the oil level"
+    ],
+    "why": "Without oil pressure the engine is no longer lubricated and can be badly damaged within a short time. Stop, switch off the engine and check the oil level."
+   },
+   "correct": [
+    0,
+    2
+   ],
+   "sign": null,
+   "law": null,
+   "keepOrder": false
+  },
+  {
+   "id": "B023",
+   "section": "B",
+   "topic": "verhalten",
+   "points": 4,
+   "de": {
+    "q": "Was gilt beim Rückwärtsfahren?",
+    "o": [
+     "Eine Gefährdung anderer muss ausgeschlossen sein, wenn nötig lasse ich mich einweisen",
+     "Auf Autobahnen und Kraftfahrstraßen ist es verboten",
+     "Beim Rückwärtsfahren habe ich Vorrang"
+    ],
+    "why": "Beim Rückwärtsfahren muss sich der Fahrer so verhalten, dass eine Gefährdung anderer ausgeschlossen ist, erforderlichenfalls mit Einweiser. Auf Autobahnen und Kraftfahrstraßen ist es ganz verboten."
+   },
+   "en": {
+    "q": "What applies when reversing?",
+    "o": [
+     "I must rule out endangering others, and have someone guide me if necessary",
+     "It is prohibited on motorways and expressways",
+     "I have priority while reversing"
+    ],
+    "why": "Drivers reversing must rule out endangering others, with someone guiding them if necessary. On motorways and expressways reversing is prohibited altogether."
+   },
+   "correct": [
+    0,
+    1
+   ],
+   "sign": null,
+   "law": {
+    "ref": "§ 9 StVO",
+    "url": "https://www.gesetze-im-internet.de/stvo_2013/__9.html"
+   },
+   "keepOrder": false
+  },
+  {
+   "id": "B024",
+   "section": "B",
+   "topic": "verhalten",
+   "points": 3,
+   "de": {
+    "q": "Reicht in der Dämmerung das Tagfahrlicht aus?",
+    "o": [
+     "Nein, ich muss die vorgeschriebene Beleuchtung, also das Abblendlicht, einschalten",
+     "Ja",
+     "Ja, außer auf der Autobahn"
+    ],
+    "why": "In der Dämmerung und bei Dunkelheit ist die vorgeschriebene Beleuchtung zu benutzen. Tagfahrlicht schaltet die Schlussleuchten meist nicht ein, so dass das Fahrzeug von hinten schlecht zu sehen ist."
+   },
+   "en": {
+    "q": "Are daytime running lights enough at dusk?",
+    "o": [
+     "No, I must switch on the required lights, that is the dipped headlights",
+     "Yes",
+     "Yes, except on the motorway"
+    ],
+    "why": "At dusk and in the dark, the required lights must be used. Daytime running lights usually leave the rear lights off, so the car is hard to see from behind."
+   },
+   "correct": [
+    0
+   ],
+   "sign": null,
+   "law": {
+    "ref": "§ 17 StVO",
+    "url": "https://www.gesetze-im-internet.de/stvo_2013/__17.html"
+   },
+   "keepOrder": false
+  },
+  {
+   "id": "B025",
+   "section": "B",
+   "topic": "umwelt",
+   "points": 3,
+   "de": {
+    "q": "Wie verhalten Sie sich vor einer roten Ampel, um Kraftstoff zu sparen?",
+    "o": [
+     "Mit eingelegtem Gang ausrollen lassen, so dass die Schubabschaltung wirkt",
+     "Auskuppeln und im Leerlauf rollen",
+     "Bis kurz vor der Ampel Gas geben und dann stark bremsen"
+    ],
+    "why": "Rollt der Wagen mit eingelegtem Gang, unterbricht die Schubabschaltung die Kraftstoffzufuhr. Im Leerlauf verbraucht der Motor dagegen weiter Kraftstoff."
+   },
+   "en": {
+    "q": "How do you save fuel when approaching a red light?",
+    "o": [
+     "Let the car coast in gear, so that the fuel cut-off works",
+     "Press the clutch and coast in neutral",
+     "Keep accelerating until just before the light, then brake hard"
+    ],
+    "why": "When the car coasts in gear, the fuel cut-off stops the fuel supply. In neutral the engine keeps burning fuel."
+   },
+   "correct": [
+    0
+   ],
+   "sign": null,
+   "law": null,
+   "keepOrder": false
+  },
+  {
+   "id": "B026",
+   "section": "B",
+   "topic": "technik",
+   "points": 2,
+   "de": {
+    "q": "Was bewirkt die Rekuperation bei einem Elektroauto?",
+    "o": [
+     "Beim Verzögern wird Bewegungsenergie in elektrische Energie zurückverwandelt",
+     "Der Akku lädt sich im Stand von selbst auf",
+     "Das Fahrzeug verzögert spürbar, sobald ich vom Fahrpedal gehe"
+    ],
+    "why": "Bei der Rekuperation arbeitet der Elektromotor als Generator und lädt den Akku. Dabei bremst das Auto spürbar, oft schon ohne Betätigung der Bremse."
+   },
+   "en": {
+    "q": "What does regenerative braking do in an electric car?",
+    "o": [
+     "When slowing down, kinetic energy is turned back into electrical energy",
+     "The battery charges itself while parked",
+     "The car slows noticeably as soon as I lift off the accelerator"
+    ],
+    "why": "With regenerative braking the electric motor works as a generator and charges the battery. The car slows noticeably, often without the brake pedal."
+   },
+   "correct": [
+    0,
+    2
+   ],
+   "sign": null,
+   "law": null,
+   "keepOrder": false
+  },
+  {
+   "id": "B027",
+   "section": "B",
+   "topic": "gefahren",
+   "points": 4,
+   "de": {
+    "q": "Warum müssen Sie mit einem Elektroauto bei niedriger Geschwindigkeit besonders auf Fußgänger und Radfahrer achten?",
+    "o": [
+     "Weil es bei niedriger Geschwindigkeit kaum zu hören ist",
+     "Weil es langsamer beschleunigt als ein Verbrenner",
+     "Weil Fußgänger vor Elektroautos keinen Vorrang haben"
+    ],
+    "why": "Elektroautos sind bei geringer Geschwindigkeit fast lautlos. Fußgänger und Radfahrer, die sich auf ihr Gehör verlassen, bemerken sie oft erst spät."
+   },
+   "en": {
+    "q": "Why must you watch out especially for pedestrians and cyclists in an electric car at low speed?",
+    "o": [
+     "Because it can hardly be heard at low speed",
+     "Because it accelerates more slowly than a combustion car",
+     "Because pedestrians have no priority over electric cars"
+    ],
+    "why": "Electric cars are almost silent at low speed. Pedestrians and cyclists who rely on their hearing often notice them late."
+   },
+   "correct": [
+    0
+   ],
+   "sign": null,
+   "law": null,
+   "keepOrder": false
+  },
+  {
+   "id": "B028",
+   "section": "B",
+   "topic": "betrieb",
+   "points": 3,
+   "de": {
+    "q": "Was beachten Sie beim Tanken?",
+    "o": [
+     "Den Motor abstellen",
+     "Nicht rauchen und kein offenes Feuer",
+     "Die Zündung eingeschaltet lassen, damit die Tankanzeige stimmt"
+    ],
+    "why": "Kraftstoffdämpfe sind leicht entzündlich. Beim Tanken muss der Motor aus sein, und Rauchen und offenes Feuer sind tabu."
+   },
+   "en": {
+    "q": "What do you watch for when refuelling?",
+    "o": [
+     "Switch off the engine",
+     "No smoking and no naked flames",
+     "Leave the ignition on so the fuel gauge is accurate"
+    ],
+    "why": "Fuel vapour ignites easily. The engine must be off while refuelling, and smoking and naked flames are off limits."
+   },
+   "correct": [
+    0,
+    1
+   ],
+   "sign": null,
+   "law": null,
+   "keepOrder": false
+  },
+  {
+   "id": "B029",
+   "section": "B",
+   "topic": "gefahren",
+   "points": 4,
+   "de": {
+    "q": "Sie fahren mit einem Anhänger. Was ändert sich im Vergleich zur Fahrt ohne Anhänger?",
+    "o": [
+     "Der Bremsweg wird länger",
+     "Beim Überholen brauche ich deutlich mehr Strecke",
+     "Seitenwind wirkt sich weniger aus"
+    ],
+    "why": "Ein Anhänger verlängert Brems- und Überholwege, und das Gespann reagiert empfindlicher auf Seitenwind und Lenkbewegungen."
+   },
+   "en": {
+    "q": "You are towing a trailer. What changes compared with driving without one?",
+    "o": [
+     "The braking distance gets longer",
+     "I need much more distance to overtake",
+     "Crosswinds have less effect"
+    ],
+    "why": "A trailer lengthens braking and overtaking distances, and the combination reacts more sensitively to crosswinds and steering."
+   },
+   "correct": [
+    0,
+    1
+   ],
+   "sign": null,
+   "law": null,
+   "keepOrder": false
+  },
+  {
+   "id": "B030",
+   "section": "B",
+   "topic": "technik",
+   "points": 3,
+   "de": {
+    "q": "Woran erkennen Sie, dass die Stoßdämpfer verschlissen sein könnten?",
+    "o": [
+     "Das Fahrzeug schaukelt nach Bodenwellen nach",
+     "Die Reifen nutzen sich ungleichmäßig ab",
+     "Der Kraftstoffverbrauch sinkt"
+    ],
+    "why": "Verschlissene Stoßdämpfer lassen die Räder springen: Das Fahrzeug schaukelt nach, die Reifen nutzen sich fleckig ab, und Bremsweg und Kurvenhalt werden schlechter."
+   },
+   "en": {
+    "q": "How can you tell that the shock absorbers might be worn?",
+    "o": [
+     "The car keeps bouncing after bumps",
+     "The tyres wear unevenly",
+     "Fuel consumption drops"
+    ],
+    "why": "Worn shock absorbers let the wheels bounce: the car keeps rocking, the tyres wear in patches, and braking and grip in bends get worse."
+   },
+   "correct": [
+    0,
+    1
+   ],
+   "sign": null,
+   "law": null,
+   "keepOrder": false
+  }
+ ]
+}

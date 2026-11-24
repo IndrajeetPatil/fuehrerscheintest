@@ -1,0 +1,86 @@
+// Starting a mock exam or practice session in the progress store.
+import { useCallback, useRef } from "react";
+
+import { api } from "./api.ts";
+import { describeError } from "./describeError.ts";
+import type { ActiveSession, Focus, Question, Summary } from "./schemas.ts";
+import { createSession } from "./session.ts";
+
+interface StartRequest {
+  mode: "exam" | "practice";
+  focus: Focus | null;
+  pick: (stats: Summary["stats"]) => Question[];
+}
+
+/**
+ * Opens a session in the progress store, unless progress has not loaded yet
+ * or nothing matches the request.
+ * @param summary - Settings and statistics, once loaded.
+ * @param request - Mode, focus and how to pick the questions.
+ * @returns The new session, or null when there is nothing to start.
+ */
+async function startSession(
+  summary: Summary | null,
+  request: StartRequest,
+): Promise<ActiveSession | null> {
+  if (summary === null) {
+    return null;
+  }
+  const { shuffleOptions } = summary.settings;
+  const picked = request.pick(summary.stats);
+  if (picked.length === 0) {
+    return null;
+  }
+  const { id } = await api.startSession({
+    mode: request.mode,
+    focus: request.focus,
+    questionCount: picked.length,
+  });
+  return createSession({
+    id,
+    mode: request.mode,
+    focus: request.focus,
+    questions: picked,
+    shuffleOptions,
+  });
+}
+
+interface StarterOptions {
+  summary: Summary | null;
+  onStarted: (session: ActiveSession) => void;
+  onError: (message: string) => void;
+}
+
+/**
+ * Starts sessions one at a time: a second click or Enter while the first
+ * request is in flight does not open a second session.
+ * @param options - Summary, success and error callbacks.
+ * @returns The start action.
+ */
+function useStarter(
+  options: StarterOptions,
+): (request: StartRequest) => Promise<void> {
+  const { summary, onStarted, onError } = options;
+  const starting = useRef(false);
+  return useCallback(
+    async (request: StartRequest): Promise<void> => {
+      if (starting.current) {
+        return;
+      }
+      starting.current = true;
+      try {
+        const session = await startSession(summary, request);
+        if (session !== null) {
+          onStarted(session);
+        }
+      } catch (error) {
+        onError(`Could not start a session: ${describeError(error)}`);
+      }
+      starting.current = false;
+    },
+    [onError, onStarted, summary],
+  );
+}
+
+export { useStarter };
+export type { StartRequest };

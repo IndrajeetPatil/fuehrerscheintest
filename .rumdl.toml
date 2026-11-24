@@ -1,0 +1,20 @@
+# rumdl (Markdown linter) configuration. Run: make lint-markdown
+
+[global]
+# Prose is written in long, unwrapped lines so editing a sentence does not
+# reflow the paragraph. Prompts under .github/prompts/ start with YAML front
+# matter and no heading, so the first-line heading rule is off globally.
+disable = ["MD013", "MD041"]
+exclude = [
+  "node_modules",
+  "dist",
+  ".venv",
+  "scripts/.venv",
+  ".agents/skills/agent-browser",
+]
+
+[MD025]
+# DESIGN.md's front matter holds a nested `title:` typography token; rumdl
+# reads it as the document title and flags the real `# DESIGN.md` heading as a
+# duplicate H1, so front-matter title detection is off.
+front-matter-title = ""

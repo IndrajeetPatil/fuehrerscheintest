@@ -1,0 +1,61 @@
+name: Commit conventions
+
+# Validates every commit of a pull request and its title, which becomes the
+# squash-merge subject on `main`. Re-runs when the title is edited.
+on:
+  pull_request:
+    branches: [main]
+    types: [opened, synchronize, reopened, edited]
+
+permissions:
+  contents: read
+
+defaults:
+  run:
+    shell: bash
+
+concurrency:
+  group: commitlint-${{ github.ref }}
+  cancel-in-progress: true
+
+env:
+  FORCE_COLOR: "1"
+  PREK_COLOR: always
+
+jobs:
+  commitlint:
+    name: Conventional Commits
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+
+      - name: Install prek
+        uses: j178/prek-action@7b101f8338a08d2bd6fdb3625e4e7692428763a3 # v3.1.1
+        with:
+          # Newest prek in this action revision's SHA256 table, so every
+          # download stays checksum-verified and moves with the action pin.
+          prek-version: latest-known
+          install-only: true
+          cache: false
+
+      - name: Validate commit messages
+        env:
+          FROM_REF: ${{ github.event.pull_request.base.sha }}
+          TO_REF: ${{ github.event.pull_request.head.sha }}
+        run: |
+          for commit in $(git rev-list --reverse --end-of-options "${FROM_REF:?}..${TO_REF:?}"); do
+            printf 'Checking commit %s\n' "$commit"
+            git show --no-patch --format=%B "$commit" > "$RUNNER_TEMP/commit-message"
+            prek run conventional-pre-commit --stage commit-msg --commit-msg-filename "$RUNNER_TEMP/commit-message"
+          done
+
+      - name: Validate pull request title
+        env:
+          PR_TITLE: ${{ github.event.pull_request.title }}
+        run: |
+          printf '%s\n' "$PR_TITLE" > "$RUNNER_TEMP/pr-title"
+          prek run conventional-pre-commit --stage commit-msg --commit-msg-filename "$RUNNER_TEMP/pr-title"
