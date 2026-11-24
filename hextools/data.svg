@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 252 136" width="504" height="272">
+  <!-- Bilingual question card: a German card with its English twin behind -->
+  <rect x="62" y="6" width="182" height="118" rx="12" fill="#f2efe8" stroke="#5d574c" stroke-width="5"/>
+  <rect x="8" y="16" width="182" height="114" rx="12" fill="#fdfcf9" stroke="#201d18" stroke-width="6"/>
+  <!-- Warning-triangle motif from the app's favicon -->
+  <path d="M 40 29 L 56 58 H 24 Z" fill="#fdfcf9" stroke="#9a3d2e" stroke-width="5" stroke-linejoin="round"/>
+  <rect x="38" y="38" width="4" height="10" rx="1" fill="#201d18"/>
+  <circle cx="40" cy="52.5" r="2.2" fill="#201d18"/>
+  <!-- Question text -->
+  <g fill="none" stroke-linecap="round">
+    <path d="M 68 36 H 172" stroke="#201d18" stroke-width="7"/>
+    <path d="M 68 53 H 146" stroke="#5d574c" stroke-width="6"/>
+  </g>
+  <!-- Answer checkboxes: two of them ticked, as questions can have several right answers -->
+  <g fill="#14584d">
+    <rect x="25" y="73" width="16" height="16" rx="3"/>
+    <rect x="25" y="101" width="16" height="16" rx="3"/>
+  </g>
+  <g fill="none" stroke="#ffffff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M 28 81 L 32 85 L 38 77"/>
+    <path d="M 28 109 L 32 113 L 38 105"/>
+  </g>
+  <rect x="104" y="74" width="14" height="14" rx="3" fill="none" stroke="#5d574c" stroke-width="4"/>
+  <g fill="none" stroke-linecap="round" stroke-width="6">
+    <path d="M 50 81 H 92" stroke="#14584d"/>
+    <path d="M 50 109 H 88" stroke="#14584d"/>
+    <path d="M 128 81 H 174" stroke="#e3ded2"/>
+  </g>
+</svg>
