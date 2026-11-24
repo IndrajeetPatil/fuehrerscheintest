@@ -63,13 +63,7 @@ tests and security, which have their own targets.
 
 ## Git workflow
 
-```mermaid
-flowchart LR
-  Branch["Feature branch"] --> Hooks["prek hooks<br/>pre-commit · pre-push · commit-msg"]
-  Hooks --> PR["Pull request"]
-  PR --> CI["QA · E2E · Docs · Data pipeline<br/>Hooks · Security · Commit conventions"]
-  CI --> Merge["Squash merge<br/>into main"]
-```
+![A feature branch passes prek hooks, a pull request, and hosted checks before squash merging into main and deploying to Pages.](images/git-workflow.webp)
 
 | Hook stage | Runs                                                      |
 | ---------- | --------------------------------------------------------- |

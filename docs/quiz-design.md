@@ -57,17 +57,7 @@ by `progress.ts`, which re-judges every answer against the bundled key.
 
 Each question's state comes from your most recent answers to it.
 
-```mermaid
-stateDiagram-v2
-  direction LR
-  [*] --> New
-  New --> Missed: wrong
-  New --> Once: right
-  Once --> Mastered: right
-  Once --> Missed: wrong
-  Missed --> Once: right
-  Mastered --> Missed: wrong
-```
+![Mastery states: a new question can be missed or answered correctly once; later answers move it between missed, once, and mastered.](images/mastery-states.webp)
 
 | State    | Rule                                  | Dashboard label                   |
 | -------- | ------------------------------------- | --------------------------------- |

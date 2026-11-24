@@ -39,13 +39,7 @@ Set your exam date on the dashboard. Run `make` to see every other command;
 
 ## How it works
 
-```mermaid
-flowchart LR
-  Bank[["questions/*.toml"]] -- "make data" --> Build["scripts/build_data.py<br/>checks every entry"]
-  Build --> Catalogue[["src/data/catalogue.json<br/>public/signs/*.svg"]]
-  Catalogue --> App["React app in the browser"]
-  App <--> IDB[("IndexedDB<br/>your progress")]
-```
+![Question files are checked and built into a catalogue before the browser app saves progress in IndexedDB.](docs/images/data-pipeline.webp)
 
 The questions are written in TOML, checked and built into a JSON catalogue,
 then everything runs in your browser: the app asks the questions, judges each

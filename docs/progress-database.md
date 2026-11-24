@@ -7,37 +7,17 @@ backup to keep it safe or move it.
 
 ## Document
 
-```mermaid
-erDiagram
-  progress ||--o{ sessions : holds
-  progress ||--o{ answers : holds
-  sessions ||--o{ answers : "sessionId"
-  progress {
-    int version "1"
-    object settings "partial: examDate, showEnglish, shuffleOptions"
-    int nextSessionId "optional; never decreases"
-  }
-  sessions {
-    int id
-    text mode "exam | practice"
-    text focus "smart, new, mistakes, heavy, all, selected"
-    int questionCount
-    text startedAt
-    text finishedAt "null while open"
-    int durationMs
-  }
-  answers {
-    int id
-    int sessionId
-    text questionId "G001.., B001.."
-    int position
-    json chosen "ticked options 0-3, ascending; empty = unanswered"
-    bool correct
-    bool retry "second try in practice"
-    int timeMs
-    text answeredAt
-  }
-```
+![One progress record contains settings and sessions; each session contains answers, and each answer refers to its question ID.](images/progress-record.webp)
+
+The root record also has `version` (currently 1) and an optional
+`nextSessionId`, which never decreases. Settings contain `examDate`,
+`showEnglish`, and `shuffleOptions`. Each session records its `id`, `mode`
+(`exam` or `practice`),
+`focus` (`smart`, `new`, `mistakes`, `heavy`, `all`, or `selected`),
+`questionCount`, `startedAt`, `finishedAt` (null while open), and `durationMs`.
+Each answer records its `id`, `sessionId`, `questionId` (`G001…` or `B001…`),
+`position`, `chosen` option indexes (0–3, ascending; empty when unanswered),
+`correct`, `retry` (a second practice try), `timeMs`, and `answeredAt`.
 
 The document is validated with `progressSchema` (`src/lib/schemas.ts`) every
 time it is read, and timestamps are ISO 8601 in UTC. Answer ids are one more
