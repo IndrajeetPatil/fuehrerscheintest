@@ -1,4 +1,4 @@
-# Führerscheintest — driving theory trainer
+# Führerscheintest — driving theory trainer <img src="docs/images/logo.png" align="right" width="240" alt="fuehrerscheintest hex sticker" />
 
 A free study app for the German class B driving theory test (_theoretische
 Fahrerlaubnisprüfung_). Every question is shown in German and English side by
