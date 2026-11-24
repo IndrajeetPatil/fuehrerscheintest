@@ -3,16 +3,7 @@
 The questions are original practice questions in TOML, written from German
 traffic law. `make data` checks them and builds the catalogue the app bundles.
 
-```mermaid
-flowchart LR
-  G[["questions/grundstoff.toml"]] --> Load["questions.py<br/>parse and check"]
-  B[["questions/klasse-b.toml"]] --> Load
-  Load --> Build["build_data.py"]
-  Laws["laws.py<br/>§ → URL"] --> Build
-  Signs["signs.py<br/>SVG drawings"] --> Build
-  Build --> JSON[["src/data/catalogue.json"]]
-  Build --> SVG[["public/signs/*.svg"]]
-```
+![The Grundstoff and Klasse B TOML files, law links, and traffic sign drawings feed the checker and build, which produce the JSON catalogue and SVG signs.](images/question-data-pipeline.webp)
 
 ## Why original questions
 

@@ -7,30 +7,7 @@ on GitHub Pages.
 
 ## Components
 
-```mermaid
-flowchart LR
-  subgraph Browser["Browser · React 19"]
-    UI["Dashboard · Quiz · Results · Catalogue · Datenschutz"]
-    Logic["lib/quiz.ts<br/>sampling, shuffling, mastery"]
-    Session["lib/session.ts<br/>session state"]
-    Local[("localStorage<br/>active session, theme")]
-    API["lib/api.ts<br/>progress API"]
-    Store["lib/progress.ts<br/>changes, judging"]
-    IDB[("IndexedDB<br/>progress document")]
-    UI --> Logic
-    UI --> Session
-    Session <--> Local
-    UI --> API --> Store
-    API <--> IDB
-  end
-
-  Catalogue[["src/data/catalogue.json<br/>public/signs/*.svg"]]
-  Pages["GitHub Pages<br/>or vp preview"]
-
-  Pages -- "static files" --> Browser
-  Catalogue --> UI
-  Catalogue -- "answer key" --> Store
-```
+![Architecture map showing the browser UI, quiz and session state, local storage, progress API and store, IndexedDB, bundled catalogue, and static hosting.](images/architecture.webp)
 
 | Layer           | Files                                                                   | Role                                                                                                                                 |
 | --------------- | ----------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------ |
@@ -48,22 +25,7 @@ flowchart LR
 
 A practice answer, from key press to saved result:
 
-```mermaid
-sequenceDiagram
-  participant You
-  participant Quiz as QuizView · useQuiz
-  participant Session as session.ts · localStorage
-  participant API as api.ts
-  participant Store as progress.ts
-  participant IDB as IndexedDB
-  You->>Quiz: tick options, press Enter
-  Quiz->>Session: check(): lock the answer, queue a retry if missed
-  Quiz->>API: answer(sessionId, chosen options)
-  API->>IDB: open a readwrite transaction
-  API->>Store: recordAnswer(): validate, judge against the key
-  Store-->>API: next document, correct or not
-  API->>IDB: write the document, commit
-```
+![A practice answer is locked in the session, checked by the progress API against the bundled key, then committed to IndexedDB.](images/practice-answer-flow.webp)
 
 A mock exam stores nothing per question. On submit (or when the timer runs
 out) it passes every answer to `api.finish`, stored in a single transaction.
