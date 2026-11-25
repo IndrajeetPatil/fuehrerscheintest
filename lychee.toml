@@ -16,8 +16,6 @@ exclude = [
   # Local dev and preview servers.
   "^http://localhost",
   "^http://127\\.0\\.0\\.1",
-  # The app exists only once its first deployment is live.
-  "^https://www\\.indrapatil\\.com/fuehrerscheintest",
 ]
 
 # GitHub returns 429 without a token; lychee reads GITHUB_TOKEN when set.
