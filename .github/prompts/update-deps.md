@@ -25,7 +25,8 @@ then iterate until `make ci` passes.
 
 Also keep the Playwright image tag and digest in `.github/workflows/e2e.yml` and
 `makefiles/testing.mk` in lockstep with `@playwright/test`, and check the pinned
-rumdl, zizmor, actionlint and gitleaks versions in `makefiles/`.
+rumdl, zizmor, actionlint and gitleaks versions in `makefiles/`, and the
+`@lhci/cli` version in the `lighthouse` task of `vite.config.ts`.
 
 ## Agent browser CLI and skill
 
@@ -58,7 +59,7 @@ project dependencies and lockfiles:
 ## Validate
 
 - `make ci` — every static gate, unit tests and the build.
-- `make test-e2e` and `make security`.
+- `make test-e2e`, `make lighthouse`, and `make security`.
 - `make hooks` and `make hooks-push`.
 - `make data` after Python changes; it must report no question problems, and
   `git diff --stat src/data public/signs` should be empty.
