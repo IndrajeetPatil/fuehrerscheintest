@@ -44,12 +44,12 @@ test("describes the page for search engines and social cards", async ({
   const image = await head
     .locator('meta[property="og:image"]')
     .getAttribute("content");
-  expect(image).toBe(`${CANONICAL}og-image.png`);
+  expect(image).toBe(`${CANONICAL}social-card.png`);
   await expect(head.locator('meta[name="twitter:image"]')).toHaveAttribute(
     "content",
     image ?? "",
   );
-  const card = await request.get("/og-image.png");
+  const card = await request.get("/social-card.png");
   expect(card.ok()).toBe(true);
   expect(card.headers()["content-type"]).toBe("image/png");
 

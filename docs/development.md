@@ -138,7 +138,7 @@ social networks read is static and lives in `index.html` and `public/`.
 | What                                                                          | Where                                                                                                  |
 | ----------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------ |
 | Title, description, canonical URL, `robots`, `format-detection`               | `index.html` head                                                                                      |
-| Open Graph and Twitter card (`summary_large_image`)                           | `index.html` head, image `public/og-image.png` (1200 × 630)                                            |
+| Open Graph and Twitter card (`summary_large_image`)                           | `index.html` head, image `public/social-card.png` (1200 × 630)                                         |
 | `WebApplication` and `BreadcrumbList` structured data (JSON-LD)               | `index.html` head                                                                                      |
 | Summary for readers and crawlers without JavaScript                           | `<noscript>` in `index.html`                                                                           |
 | [llms.txt](https://llmstxt.org/) for AI assistants                            | `public/llms.txt`, linked with `rel="describedby"`                                                     |
@@ -148,8 +148,9 @@ social networks read is static and lives in `index.html` and `public/`.
 
 `make social-card` renders the card and the icons from
 `scripts/social-card.mjs` with Playwright's Chromium; rerun it and commit the
-images after changing their copy, the favicon or the design tokens. Keep the head, the
-`<noscript>` summary and `llms.txt` in step with the README's feature list.
+images after changing their copy, the favicon, the hex sticker or the design
+tokens. Keep the head, the `<noscript>` summary and `llms.txt` in step with
+the README's feature list.
 Absolute URLs in the head point at <https://www.indrapatil.com/fuehrerscheintest/>;
 Vite prefixes root-relative links with the base path. `public/` is copied
 verbatim, so the manifest uses relative URLs; `404.html` links to the app by
