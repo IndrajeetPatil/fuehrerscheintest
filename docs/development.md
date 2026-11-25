@@ -71,12 +71,12 @@ tests and security, which have their own targets.
 | pre-push   | TypeScript types; Ruff, ty and pyrefly; unit tests        |
 | commit-msg | Conventional Commits (strict)                             |
 
-| Rule                          | Detail                                                                                                                                                         |
-| ----------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Commit messages and PR titles | Conventional Commits (`feat`, `fix`, `docs`, `refactor`, `test`, `build`, `ci`, `chore`, …)                                                                    |
-| `main`                        | `protected-main` ruleset: pull requests, squash merges only, every workflow's check required on a branch up to date with `main`, no deletion or force-push     |
-| Workflows                     | Pull requests only, except `Pages`, which deploys `main` to GitHub Pages; actions pinned to full commit SHAs; least-privilege tokens; no persisted credentials |
-| Merge settings                | Squash only, auto-merge allowed, branches deleted after merge                                                                                                  |
+| Rule                          | Detail                                                                                                                                                                         |
+| ----------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Commit messages and PR titles | Conventional Commits (`feat`, `fix`, `docs`, `refactor`, `test`, `build`, `ci`, `chore`, …)                                                                                    |
+| `main`                        | `Protect main` ruleset: pull requests, squash merges only, review threads resolved, every pull-request check required (no up-to-date branch needed), no deletion or force-push |
+| Workflows                     | Pull requests only, except `Pages`, which deploys `main` to GitHub Pages; actions pinned to full commit SHAs; least-privilege tokens; no persisted credentials                 |
+| Merge settings                | Squash only, auto-merge allowed, branches deleted after merge; pull requests from collaborators only                                                                           |
 
 ## Versions
 
@@ -119,8 +119,8 @@ GitHub Pages: it builds with `make build-pages`, which sets `BASE_PATH` to
 account's custom domain serves it at
 <https://www.indrapatil.com/fuehrerscheintest/>. `index.html` loads the same
 Google Analytics tag as the rest of that site, except on `localhost` and
-`127.0.0.1`, so local runs and tests send nothing. Turn it
-on once under **Settings → Pages → Source: GitHub Actions**.
+`127.0.0.1`, so local runs and tests send nothing. Pages uses
+**Source: GitHub Actions** with **Enforce HTTPS** on.
 
 To check a Pages build locally:
 

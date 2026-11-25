@@ -16,8 +16,7 @@ exclude = [
   # Local dev and preview servers.
   "^http://localhost",
   "^http://127\\.0\\.0\\.1",
-  # The repository and the published app exist only once they are published.
-  "^https://github\\.com/IndrajeetPatil/fuehrerscheintest",
+  # The app exists only once its first deployment is live.
   "^https://www\\.indrapatil\\.com/fuehrerscheintest",
 ]
 
