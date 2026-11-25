@@ -4,9 +4,10 @@
  * icons (Apple touch icon and web app manifest icons) into public/ with
  * Playwright's Chromium.
  *
- * The card follows DESIGN.md: warm paper, Fraunces headings, Hanken Grotesk
- * text, the teal accent, hairline rules and no shadows. Run `make social-card`
- * after changing the copy or the design tokens, and commit the images.
+ * The card follows DESIGN.md: warm paper, a Fraunces title, Hanken Grotesk
+ * text, the teal accent and no shadows, with the hex sticker on the right.
+ * Run `make social-card` after changing the copy, the sticker or the design
+ * tokens, and commit the images.
  */
 
 import { readFile } from "node:fs/promises";
@@ -46,6 +47,9 @@ const hanken = await fontUrl(
 );
 const favicon = await readFile("public/favicon.svg", "utf8");
 
+// The hex sticker, inlined so the page needs no file access.
+const sticker = await readFile("docs/images/logo.png", "base64");
+
 const STYLE = `
   @font-face { font-family: Fraunces; src: url(${fraunces}) format("woff2"); font-weight: 100 900; }
   @font-face { font-family: Hanken; src: url(${hanken}) format("woff2"); font-weight: 100 900; }
@@ -54,60 +58,29 @@ const STYLE = `
   body {
     background: #faf8f4; color: #201d18;
     font-family: Hanken, sans-serif;
-    padding: 64px 72px; display: flex; flex-direction: column;
-  }
-  .top { display: flex; align-items: center; gap: 20px; }
-  .top svg { width: 56px; height: 56px; }
-  .mark {
-    color: #14584d; font-weight: 600; font-size: 22px;
-    letter-spacing: 0.08em; text-transform: uppercase;
+    padding: 0 72px 0 88px;
+    display: flex; align-items: center; justify-content: space-between; gap: 48px;
   }
   h1 {
-    font-family: Fraunces, serif; font-weight: 600;
-    font-size: 92px; line-height: 1.05; letter-spacing: -0.01em;
-    margin-top: 28px;
+    font-family: Fraunces, serif; font-weight: 700;
+    font-size: 80px; line-height: 1.05; letter-spacing: -0.01em;
   }
-  .lede { color: #5d574c; font-size: 30px; line-height: 1.4; margin-top: 16px; }
-  .pair {
-    display: grid; grid-template-columns: 1fr 1fr; gap: 32px;
-    border-top: 1px solid #e3ded2; border-bottom: 1px solid #e3ded2;
-    padding: 24px 0; margin-top: 36px;
-  }
-  .pair p { font-size: 24px; line-height: 1.4; }
-  .pair .lang {
-    color: #5d574c; font-size: 16px; font-weight: 600;
-    letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 6px;
-  }
-  .pair .answer { color: #14584d; font-weight: 600; margin-top: 6px; }
-  .foot {
-    display: flex; justify-content: space-between; align-items: baseline;
-    margin-top: auto; font-size: 24px; color: #5d574c;
-  }
-  .foot strong { color: #201d18; font-weight: 600; }
+  .rule { width: 72px; height: 4px; background: #14584d; margin: 24px 0 28px; }
+  .lede { color: #5d574c; font-size: 30px; line-height: 1.45; }
+  .url { color: #14584d; font-size: 24px; margin-top: 64px; }
+  img { height: 470px; flex: none; }
 `;
 
 const CARD_HTML = `<!doctype html>
 <html lang="de"><head><meta charset="utf-8"><style>${STYLE}</style></head>
 <body>
-  <div class="top">${favicon}<p class="mark">Theorieprüfung Klasse B · Driving theory test</p></div>
-  <h1>Führerscheintest</h1>
-  <p class="lede">Deutsch und Englisch nebeneinander · German and English side by side</p>
-  <div class="pair">
-    <div>
-      <p class="lang">Deutsch · 5 Punkte</p>
-      <p>Sie kommen aus einem Feldweg auf eine Straße. Wer hat Vorfahrt?</p>
-      <p class="answer">Der Verkehr auf der Straße</p>
-    </div>
-    <div>
-      <p class="lang">English · 5 points</p>
-      <p>You are coming out of a farm track onto a road. Who has priority?</p>
-      <p class="answer">The traffic on the road</p>
-    </div>
+  <div>
+    <h1>Führerscheintest</h1>
+    <div class="rule"></div>
+    <p class="lede">Theorieprüfung · Driving theory test<br>Deutsch und Englisch · German and English</p>
+    <p class="url">www.indrapatil.com/fuehrerscheintest</p>
   </div>
-  <p class="foot">
-    <span><strong>Probeprüfung · Mock exam</strong> — kostenlos · free</span>
-    <span>indrapatil.com/fuehrerscheintest</span>
-  </p>
+  <img alt="" src="data:image/png;base64,${sticker}">
 </body></html>`;
 
 /**
@@ -134,7 +107,7 @@ try {
   await page.evaluate(async () => {
     await document.fonts.ready;
   });
-  await page.screenshot({ path: "public/og-image.png" });
+  await page.screenshot({ path: "public/social-card.png" });
 
   for (const { path, size, scale } of ICONS) {
     // Each icon reuses the page, so they render one after another.
