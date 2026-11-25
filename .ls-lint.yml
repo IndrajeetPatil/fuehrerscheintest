@@ -49,6 +49,7 @@ ignore:
   - .rumdl_cache
   - .pytest_cache
   - .fallow
+  - .lighthouseci
   - dist
   - coverage
   - data

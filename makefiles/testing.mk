@@ -28,3 +28,7 @@ test-e2e-docker: ## Run the end-to-end suite in the pinned CI Playwright image
 	docker run --rm -v "$(CURDIR)":/work -v fst-node-modules:/work/node_modules \
 		-v fst-vite-plus:/root/.vite-plus -w /work $(PLAYWRIGHT_IMAGE) \
 		bash scripts/run-e2e.sh
+
+.PHONY: lighthouse
+lighthouse: build-pages ## Lighthouse CI on the Pages build: five mobile runs, median asserted
+	BASE_PATH=$(PAGES_BASE) $(VP) run lighthouse

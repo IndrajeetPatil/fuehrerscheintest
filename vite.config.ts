@@ -16,6 +16,7 @@ const GENERATED = [
   "data/**",
   ".cache/**",
   ".fallow/**",
+  ".lighthouseci/**",
   "playwright-report/**",
   "test-results/**",
 ];
@@ -80,6 +81,12 @@ export default defineConfig({
         cache: false,
       },
       build: { command: "vp build", cache: false },
+      // Audits an existing build; `make lighthouse` builds it for the Pages
+      // base path first, which the preview server must share.
+      lighthouse: {
+        command: "vp dlx @lhci/cli@0.16.1 autorun",
+        cache: false,
+      },
     },
   },
   test: {

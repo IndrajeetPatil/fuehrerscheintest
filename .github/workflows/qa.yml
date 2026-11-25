@@ -28,7 +28,7 @@ jobs:
   qa:
     name: QA
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 20
     steps:
       - name: Checkout
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
@@ -75,3 +75,8 @@ jobs:
 
       - name: Production build
         run: make build
+
+      # Rebuilds for the Pages base path and audits it in the runner's Chrome:
+      # five mobile-throttled runs, median asserted (.lighthouserc.json).
+      - name: Lighthouse CI
+        run: make lighthouse
