@@ -71,7 +71,8 @@ runs [Lighthouse CI](https://github.com/GoogleChrome/lighthouse-ci)
 (`@lhci/cli` 0.16.1) against the app five times
 with Lighthouse's default mobile throttling. The self-contained `Lighthouse`
 workflow runs on every pull request and manual dispatch, auditing only the
-main app page. Assertions in `.lighthouserc.json` apply to each metric's
+main app page. Its build uses `vp build --logLevel warn` to retain warnings
+and errors while keeping routine build output out of the audit log. Assertions in `.lighthouserc.json` apply to each metric's
 median, and each one fails the build:
 
 | Assertion                                                   | Threshold |
