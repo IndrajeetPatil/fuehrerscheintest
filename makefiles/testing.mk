@@ -1,9 +1,5 @@
 ##@ Tests
 
-# Pinned Playwright image for CI-identical end-to-end runs. Keep the tag and
-# digest in lockstep with @playwright/test in package.json and e2e.yml.
-PLAYWRIGHT_IMAGE := mcr.microsoft.com/playwright:v1.65.1-noble@sha256:1507cbfc550a63a6b7396791ca4f00df17beb56342d2447b3f106c306f525579
-
 .PHONY: test
 test: test-unit test-scripts ## Unit tests: TypeScript (Vitest) and Python (pytest)
 
@@ -21,13 +17,7 @@ test-scripts: ## pytest suite of the data pipeline
 
 .PHONY: test-e2e
 test-e2e: node_modules ## Build, then Playwright end-to-end and axe accessibility tests
-	$(VP) run test:e2e
-
-.PHONY: test-e2e-docker
-test-e2e-docker: ## Run the end-to-end suite in the pinned CI Playwright image
-	docker run --rm -v "$(CURDIR)":/work -v fst-node-modules:/work/node_modules \
-		-v fst-vite-plus:/root/.vite-plus -w /work $(PLAYWRIGHT_IMAGE) \
-		bash scripts/run-e2e.sh
+	$(VP) exec playwright test
 
 .PHONY: lighthouse
 lighthouse: node_modules ## Lighthouse CI on the Pages build: five mobile runs, median asserted

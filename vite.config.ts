@@ -80,10 +80,9 @@ export default defineConfig({
       },
       "test:e2e": {
         command: "playwright test",
-        dependsOn: ["build"],
         cache: false,
       },
-      build: { command: "vp build", cache: false },
+      build: { command: "vp build --logLevel warn", cache: false },
       // Build quietly for the Pages base path, then audit with the same base
       // path in the preview server.
       lighthouse: {
