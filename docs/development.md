@@ -68,7 +68,7 @@ tests, Lighthouse, and security, which have their own targets.
 `make lighthouse` builds the app for the GitHub Pages base path
 (`/fuehrerscheintest/`), serves that build with `vp preview` on port 5189, and
 runs [Lighthouse CI](https://github.com/GoogleChrome/lighthouse-ci)
-(`@lhci/cli` 0.16.1, which bundles Lighthouse 13.6) against the app five times
+(`@lhci/cli` 0.16.1) against the app five times
 with Lighthouse's default mobile throttling. The self-contained `Lighthouse`
 workflow runs on every pull request and manual dispatch, auditing only the
 main app page. Assertions in `.lighthouserc.json` apply to each metric's
