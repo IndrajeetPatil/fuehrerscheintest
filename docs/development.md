@@ -68,10 +68,12 @@ tests, Lighthouse, and security, which have their own targets.
 `make lighthouse` builds the app for the GitHub Pages base path
 (`/fuehrerscheintest/`), serves that build with `vp preview` on port 5189, and
 runs [Lighthouse CI](https://github.com/GoogleChrome/lighthouse-ci)
-(`@lhci/cli` 0.16.1, which bundles Lighthouse 13.6) against the app five times
-with Lighthouse's default mobile throttling. The QA workflow runs it on every
-pull request. Assertions in `.lighthouserc.json` apply to the median run, and
-each one fails the build:
+(`@lhci/cli` 0.16.1) against the app five times
+with Lighthouse's default mobile throttling. The self-contained `Lighthouse`
+workflow runs on every pull request and manual dispatch, auditing only the
+main app page. Its build uses `vp build --logLevel warn` to retain warnings
+and errors while keeping routine build output out of the audit log. Assertions in `.lighthouserc.json` apply to each metric's
+median, and each one fails the build:
 
 | Assertion                                                   | Threshold |
 | ----------------------------------------------------------- | --------- |
@@ -81,8 +83,12 @@ each one fails the build:
 | Cumulative Layout Shift                                     | ≤ 0.1     |
 | Total Blocking Time                                         | ≤ 200 ms  |
 
-If a score drops, fix the page rather than the threshold. The median report is
-uploaded to Lighthouse CI's temporary public storage, and the log links to it.
+If a score drops, fix the page rather than the threshold. Native assertion
+logs show actual values, limits, and samples in colour. HTML and JSON reports
+are retained as `lighthouse-reports` artefacts for 14 days, including after
+failures. Dependencies and the exact Node/Vite+ toolchain are cached;
+measurements always run afresh. No status token or public report storage is
+needed.
 
 ## Git workflow
 
@@ -98,7 +104,7 @@ uploaded to Lighthouse CI's temporary public storage, and the log links to it.
 | ----------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | Commit messages and PR titles | Conventional Commits (`feat`, `fix`, `docs`, `refactor`, `test`, `build`, `ci`, `chore`, …)                                                                                    |
 | `main`                        | `Protect main` ruleset: pull requests, squash merges only, review threads resolved, every pull-request check required (no up-to-date branch needed), no deletion or force-push |
-| Workflows                     | Pull requests only, except `Pages`, which deploys `main` to GitHub Pages; actions pinned to full commit SHAs; least-privilege tokens; no persisted credentials                 |
+| Workflows                     | Pull requests, with manual dispatch for `Lighthouse`; `Pages` deploys `main` to GitHub Pages; actions pinned to full commit SHAs; least-privilege tokens; no persisted credentials                 |
 | Merge settings                | Squash only, auto-merge allowed, branches deleted after merge; pull requests from collaborators only                                                                           |
 
 ## Versions
