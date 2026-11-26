@@ -2,7 +2,7 @@
   "ci": {
     "collect": {
       "//": "Serve the GitHub Pages build under its /fuehrerscheintest/ base path, as deployed. Lighthouse's default mobile throttling applies; assert the median of five runs so CI neither passes on one lucky sample nor fails on one or two slow ones.",
-      "startServerCommand": "vp preview --port 5189",
+      "startServerCommand": "BASE_PATH=/fuehrerscheintest/ vp preview --port 5189",
       "startServerReadyPattern": "Local",
       "url": ["http://127.0.0.1:5189/fuehrerscheintest/"],
       "numberOfRuns": 5
@@ -16,9 +16,9 @@
         "categories:best-practices": ["error", { "minScore": 1 }],
         "categories:seo": ["error", { "minScore": 1 }],
         "categories:agentic-browsing": ["error", { "minScore": 1 }],
-        "largest-contentful-paint": ["error", { "maxNumericValue": 4000 }],
+        "largest-contentful-paint": ["error", { "maxNumericValue": 3000 }],
         "cumulative-layout-shift": ["error", { "maxNumericValue": 0.1 }],
-        "total-blocking-time": ["error", { "maxNumericValue": 200 }]
+        "total-blocking-time": ["error", { "maxNumericValue": 150 }]
       }
     },
     "upload": {

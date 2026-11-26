@@ -31,4 +31,4 @@ test-e2e-docker: ## Run the end-to-end suite in the pinned CI Playwright image
 
 .PHONY: lighthouse
 lighthouse: node_modules ## Lighthouse CI on the Pages build: five mobile runs, median asserted
-	BASE_PATH=$(PAGES_BASE) $(VP) run lighthouse
+	$(VP) run lighthouse
