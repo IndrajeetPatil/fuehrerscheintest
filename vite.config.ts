@@ -84,11 +84,11 @@ export default defineConfig({
         cache: false,
       },
       build: { command: "vp build", cache: false },
-      // Build quietly for the Pages base path supplied by `make lighthouse`,
-      // then audit with the same base path in the preview server.
+      // Build quietly for the Pages base path, then audit with the same base
+      // path in the preview server.
       lighthouse: {
         command:
-          "vp build --logLevel warn && vp dlx --silent @lhci/cli@0.16.1 collect && vp dlx --silent @lhci/cli@0.16.1 assert",
+          "BASE_PATH=/fuehrerscheintest/ vp build --logLevel warn && vp dlx --silent @lhci/cli@0.16.1 collect && vp dlx --silent @lhci/cli@0.16.1 assert",
         cache: false,
       },
     },
