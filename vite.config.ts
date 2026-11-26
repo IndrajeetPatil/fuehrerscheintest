@@ -87,7 +87,8 @@ export default defineConfig({
       // Audits an existing build; `make lighthouse` builds it for the Pages
       // base path first, which the preview server must share.
       lighthouse: {
-        command: "vp dlx @lhci/cli@0.16.1 autorun",
+        command:
+          "vp dlx --silent @lhci/cli@0.16.1 collect && vp dlx --silent @lhci/cli@0.16.1 assert",
         cache: false,
       },
     },

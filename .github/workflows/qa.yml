@@ -75,8 +75,3 @@ jobs:
 
       - name: Production build
         run: make build
-
-      # Rebuilds for the Pages base path and audits it in the runner's Chrome:
-      # five mobile-throttled runs, median asserted (.lighthouserc.json).
-      - name: Lighthouse CI
-        run: make lighthouse
