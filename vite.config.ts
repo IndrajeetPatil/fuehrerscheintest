@@ -82,7 +82,7 @@ export default defineConfig({
         command: "playwright test",
         cache: false,
       },
-      build: { command: "vp build", cache: false },
+      build: { command: "vp build --logLevel warn", cache: false },
       // Build quietly for the Pages base path, then audit with the same base
       // path in the preview server.
       lighthouse: {
