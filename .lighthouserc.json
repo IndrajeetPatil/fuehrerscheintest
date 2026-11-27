@@ -2,7 +2,7 @@
   "ci": {
     "collect": {
       "//": "Serve the GitHub Pages build under its /fuehrerscheintest/ base path, as deployed. Lighthouse's default mobile throttling applies; assert the median of five runs so CI neither passes on one lucky sample nor fails on one or two slow ones.",
-      "startServerCommand": "BASE_PATH=/fuehrerscheintest/ vp preview --port 5189",
+      "startServerCommand": "PAGES_BASE=/fuehrerscheintest/ vp preview --port 5189",
       "startServerReadyPattern": "Local",
       "url": ["http://127.0.0.1:5189/fuehrerscheintest/"],
       "numberOfRuns": 5
