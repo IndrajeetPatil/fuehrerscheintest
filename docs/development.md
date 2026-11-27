@@ -143,7 +143,7 @@ for interaction, flat surfaces without shadows, in light and dark modes.
 ## Publishing
 
 `.github/workflows/pages.yml` deploys every push to `main` (or a manual run) to
-GitHub Pages: it builds with `make build-pages`, which sets `BASE_PATH` to
+GitHub Pages: it builds with `make build-pages`, which sets `PAGES_BASE` to
 `/<repository>/`, and deploys `dist/` with the official Pages actions. The
 account's custom domain serves it at
 <https://www.indrapatil.com/fuehrerscheintest/>. `index.html` loads the same
@@ -155,7 +155,7 @@ To check a Pages build locally:
 
 ```sh
 make build-pages
-BASE_PATH=/fuehrerscheintest/ vp preview   # http://localhost:5179/fuehrerscheintest/
+PAGES_BASE=/fuehrerscheintest/ vp preview   # http://localhost:5179/fuehrerscheintest/
 ```
 
 ## Search, AI and social sharing
